@@ -1,0 +1,33 @@
+.test2Button {
+    width: 240px;
+    height: 60px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    background-color: rgb(200, 120, 120);
+    font-size: 18px;
+    -unity-font-style: bold;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    -unity-text-outline-color: rgb(255, 255, 255);
+    -unity-text-outline-width: 0;
+    max-width: 100%;
+    max-height: 20%;
+    position: relative;
+}
+
+.test2Button:hover {
+    scale: 1.2 1.2;
+    background-color: rgb(180, 76, 76);
+}

@@ -1,0 +1,4 @@
+repository "Minigame - 2D URP@Techfall@cloud"
+  path "/"
+    br "/main"
+    co "/main"

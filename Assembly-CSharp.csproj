@@ -60,13 +60,16 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Car.cs" />
     <Compile Include="Assets\Scripts\NoiseTriggerController.cs" />
-    <Compile Include="Assets\Scripts\StarSpawnerController.cs" />
-    <Compile Include="Assets\Scripts\StarController.cs" />
+    <Compile Include="Assets\Scripts\Tire.cs" />
     <Compile Include="Assets\Scripts\FirstUIDocController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\UXML Files\Car_Inspector_UXML.uxml" />
     <None Include="Assets\UI Builder\FirstUIBuild.uxml" />
+    <None Include="Assets\UI Toolkit\UIStarSpawnUXML.uxml" />
+    <None Include="Assets\UI Toolkit\UIStarSpawnEditor.uss" />
     <None Include="Assets\firstButton.uss" />
   </ItemGroup>
   <ItemGroup>

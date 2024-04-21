@@ -1,0 +1,30 @@
+{
+    "UxmlGuid": "24089a8b719f33e4fb363b407c218770",
+    "UxmlPath": "Assets/UI Toolkit/UIStarSpawnUXML.uxml",
+    "CanvasX": 0,
+    "CanvasY": 0,
+    "CanvasWidth": 400,
+    "CanvasHeight": 600,
+    "MatchGameView": false,
+    "ZoomScale": 0.8999999761581421,
+    "PanOffset": {
+        "x": 196.0894775390625,
+        "y": 71.24739074707031
+    },
+    "ColorModeBackgroundOpacity": 1.0,
+    "ImageModeCanvasBackgroundOpacity": 1.0,
+    "CameraModeCanvasBackgroundOpacity": 1.0,
+    "EnableCanvasBackground": false,
+    "CanvasBackgroundMode": 0,
+    "CanvasBackgroundColor": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 1.0
+    },
+    "CanvasBackgroundImage": {
+        "instanceID": 0
+    },
+    "CanvasBackgroundImageScaleMode": 1,
+    "CanvasBackgroundCameraName": ""
+}

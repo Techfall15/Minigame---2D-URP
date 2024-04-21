@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Label tabindex="-1" text="Label Created in UI Builder" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+    <ui:TextField picking-mode="Ignore" label="Make of the car" binding-path="m_Make" name="make" class="unity-base-field__aligned" />
+    <uie:PropertyField name="year" binding-path="m_YearBuilt" label="Year Built" class="unity-base-field__aligned" />
+    <uie:PropertyField name="color" binding-path="m_Color" label="Color" class="unity-base-field__aligned" />
+    <uie:PropertyField name="tires" binding-path="m_Tires" label="Tires" />
+    <ui:Foldout text="Default Inspector" name="Default_Inspector" />
+</ui:UXML>

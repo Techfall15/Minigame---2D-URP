@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:IntegerField label="Spawn Amount" value="10" binding-path="m_spawnAmount" name="spawnAmount" style="width: auto; flex-direction: row; align-items: stretch; justify-content: space-around; align-self: stretch;" />
+    <uie:PropertyField name="starColor" binding-path="m_starColor" label="Star Color" />
+    <uie:PropertyField name="starList" binding-path="m_starControllers" label="Star List" />
+</ui:UXML>

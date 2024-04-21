@@ -4,51 +4,35 @@
         "m_EditorHideFlags": 0,
         "m_Name": "BuilderDocument",
         "m_EditorClassIdentifier": "UnityEditor.UIBuilderModule:Unity.UI.Builder:BuilderDocument",
-        "m_CurrentCanvasTheme": 4,
+        "m_CurrentCanvasTheme": 0,
         "m_CurrentCanvasThemeStyleSheetReference": {
-            "fileID": -4733365628477956816,
-            "guid": "1c06552af1ecc3b41ad57308d879081e",
-            "type": 3
+            "instanceID": 0
         },
         "m_CodePreviewVisible": true,
         "m_OpenUXMLFiles": [
             {
-                "m_OpenUSSFiles": [
-                    {
-                        "m_StyleSheet": {
-                            "fileID": 7433441132597879392,
-                            "guid": "cea6406725330ee4a85cd8624ed8b8b5",
-                            "type": 3
-                        },
-                        "m_BackupStyleSheet": {
-                            "instanceID": 0
-                        },
-                        "m_OldPath": "Assets/firstButton.uss"
-                    }
-                ],
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UI Builder/FirstUIBuild.uxml",
+                "m_OpenUSSFiles": [],
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UXML Files/Car_Inspector_UXML.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "53fe5e79ee8fa7245bc6e0c0cb7dde5a",
+                    "guid": "525a6bdf96aad8f44b96f6dbc89d8886",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "fileID": 7433441132597879392,
-                    "guid": "cea6406725330ee4a85cd8624ed8b8b5",
-                    "type": 3
+                    "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "53fe5e79ee8fa7245bc6e0c0cb7dde5a",
-                    "UxmlPath": "Assets/UI Builder/FirstUIBuild.uxml",
+                    "UxmlGuid": "525a6bdf96aad8f44b96f6dbc89d8886",
+                    "UxmlPath": "Assets/UXML Files/Car_Inspector_UXML.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
-                    "CanvasWidth": 1920,
-                    "CanvasHeight": 1080,
-                    "MatchGameView": true,
-                    "ZoomScale": 0.44999998807907107,
+                    "CanvasWidth": 350,
+                    "CanvasHeight": 450,
+                    "MatchGameView": false,
+                    "ZoomScale": 1.0,
                     "PanOffset": {
-                        "x": 33.100189208984378,
-                        "y": 88.85930633544922
+                        "x": 303.5,
+                        "y": 65.0
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,

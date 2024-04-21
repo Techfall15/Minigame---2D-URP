@@ -52,25 +52,40 @@ MonoBehaviour:
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-local-styles-foldout__builder-inspector-style-section-foldout-transition__Unity.UI.Builder.PersistedFoldout
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__0__Unity.UI.Builder.PersistedFoldout
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__1__Unity.UI.Builder.PersistedFoldout
-  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__2__Unity.UI.Builder.PersistedFoldout
-  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__3__Unity.UI.Builder.PersistedFoldout
-  - __PanelContainer__rootVisualContainer__main-view-split-view__explorer-library-split-view__unity-ui-builder-library__unity-ui-builder-library-project-view__samples-tree__UnityEngine.UIElements.TreeView
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__S__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__St__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__Sta__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__Star__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__Start__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StartS__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__Stars__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsS__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSp__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSpa__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSpaw__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSpawn__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSpawne__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSpawned__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSpawnedL__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSpawnedLi__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSpawnedLis__UnityEngine.UIElements.Foldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__unity-builder-viewport__canvas__StarsSpawnedList__UnityEngine.UIElements.Foldout
   m_Values:
   - '{"m_FixedPaneDimension":300.0}'
-  - '{"m_FixedPaneDimension":350.0}'
+  - '{"m_FixedPaneDimension":434.0}'
   - '{"m_FixedPaneDimension":200.0}'
+  - '{"m_ElementInfoVisibilityState":0}'
+  - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0},"m_ExpandedItemIds":[]}'
   - '{"m_ElementInfoVisibilityState":0}'
   - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0},"m_ExpandedItemIds":[1]}'
-  - '{"m_ElementInfoVisibilityState":0}'
-  - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0},"m_ExpandedItemIds":[1,-321878967,748497371]}'
   - '{"m_ShowPackageTemplates":false,"m_ViewMode":0,"m_ActiveTab":0}'
-  - '{"m_SelectedItemId":-2090534668}'
-  - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":483.0}'
+  - '{"m_SelectedItemId":-1189317104}'
+  - '{"m_Value":240.0,"m_LowValue":0.0,"m_HighValue":1296.0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_FixedPaneDimension":300.0}'
-  - '{"m_FixedPaneDimension":20.0}'
-  - '{"m_FixedPaneDimension":200.0}'
-  - '{"m_CachedScrollPositionCount":5,"m_OldestScrollPositionIndex":3,"m_CachedContentHeights":[1484.0,1399.0,1096.0,1189.0,1428.0],"m_CachedScrollPositions":[{"scrollPosition":162.0,"maxScrollValue":643.0},{"scrollPosition":270.0,"maxScrollValue":558.0},{"scrollPosition":255.0,"maxScrollValue":255.0},{"scrollPosition":162.0,"maxScrollValue":348.0},{"scrollPosition":162.0,"maxScrollValue":587.0}]}'
+  - '{"m_FixedPaneDimension":143.0}'
+  - '{"m_FixedPaneDimension":123.0}'
+  - '{"m_CachedScrollPositionCount":2,"m_OldestScrollPositionIndex":0,"m_CachedContentHeights":[974.0,917.0,0.0,0.0,0.0],"m_CachedScrollPositions":[{"scrollPosition":76.0,"maxScrollValue":238.0},{"scrollPosition":0.0,"maxScrollValue":181.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0}]}'
   - '{"m_Value":true}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
@@ -78,21 +93,36 @@ MonoBehaviour:
   - '{"m_Value":false}'
   - '{"m_Value":false}'
   - '{"m_Value":true}'
-  - '{"m_Value":true}'
-  - '{"m_Value":false}'
-  - '{"m_Value":true,"fieldValues":[]}'
-  - '{"m_Value":false,"fieldValues":[]}'
-  - '{"m_Value":false}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
   - '{"m_Value":true,"fieldValues":[]}'
-  - '{"m_Value":false}'
-  - '{"m_Value":true,"fieldValues":[{"r":0.0,"g":0.0,"b":0.0,"a":1.0},{"r":0.0,"g":0.0,"b":0.0,"a":1.0},{"r":0.0,"g":0.0,"b":0.0,"a":1.0},{"r":0.0,"g":0.0,"b":0.0,"a":1.0}]}'
-  - '{"m_Value":false,"fieldValues":[]}'
-  - '{"m_Value":false,"fieldValues":[]}'
+  - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
-  - '{"m_Value":true}'
+  - '{"m_Value":false}'
+  - '{"m_Value":true,"fieldValues":[]}'
+  - '{"m_Value":false}'
+  - '{"m_Value":true,"fieldValues":[{"r":0.0,"g":0.0,"b":0.0,"a":0.0},{"r":0.0,"g":0.0,"b":0.0,"a":0.0},{"r":0.0,"g":0.0,"b":0.0,"a":0.0},{"r":0.0,"g":0.0,"b":0.0,"a":0.0}]}'
+  - '{"m_Value":true,"fieldValues":[]}'
+  - '{"m_Value":true,"fieldValues":[]}'
+  - '{"m_Value":false}'
+  - '{"m_Value":false}'
+  - '{"m_Value":false}'
+  - '{"m_Value":false}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
   - '{}'
   - '{}'
   - '{}'

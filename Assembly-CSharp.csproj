@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\NoiseTriggerController.cs" />
+    <Compile Include="Assets\Scripts\StarSpawnerController.cs" />
+    <Compile Include="Assets\Scripts\StarController.cs" />
     <Compile Include="Assets\Scripts\FirstUIDocController.cs" />
   </ItemGroup>
   <ItemGroup>

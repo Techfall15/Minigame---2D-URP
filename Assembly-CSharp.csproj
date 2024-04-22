@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Car.cs" />
+    <Compile Include="Assets\Scripts\StarSystem.cs" />
     <Compile Include="Assets\Scripts\NoiseTriggerController.cs" />
     <Compile Include="Assets\Scripts\Tire.cs" />
     <Compile Include="Assets\Scripts\FirstUIDocController.cs" />
@@ -68,6 +69,7 @@
   <ItemGroup>
     <None Include="Assets\UXML Files\Car_Inspector_UXML.uxml" />
     <None Include="Assets\UI Builder\FirstUIBuild.uxml" />
+    <None Include="Assets\UXML Files\StarSystem_Inspector_UXML.uxml" />
     <None Include="Assets\UI Toolkit\UIStarSpawnUXML.uxml" />
     <None Include="Assets\UI Toolkit\UIStarSpawnEditor.uss" />
     <None Include="Assets\firstButton.uss" />

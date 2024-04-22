@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Label tabindex="-1" text="Spawns within (-x,x) &amp; (-y,y)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="spawnPosLimitLabel" style="align-self: center; margin-top: 4px; margin-bottom: 4px; font-size: 14px;" />
+    <ui:Vector2Field name="spawnPositionLimit" binding-path="m_spawnPositionLimit" style="margin-bottom: 8px;" />
+    <uie:PropertyField name="spawnAmount" binding-path="m_spawnAmount" label="Amount to spawn" style="font-size: 14px;" />
+    <ui:VisualElement name="starScale" style="flex-direction: row; align-items: stretch;">
+        <ui:Label tabindex="-1" text="Scale" parse-escape-sequences="true" display-tooltip-when-elided="true" style="flex-grow: 1; -unity-text-align: middle-left; font-size: 14px; margin-left: 3px; margin-right: 16px;" />
+        <ui:Slider high-value="1" name="StarScaleSlider" binding-path="m_starScale" show-input-field="true" inverted="false" style="margin-bottom: 4px; flex-grow: 1;" />
+    </ui:VisualElement>
+    <uie:PropertyField name="starColor" binding-path="m_starColor" label="Star Color" style="font-size: 14px;" />
+</ui:UXML>

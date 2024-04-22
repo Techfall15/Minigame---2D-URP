@@ -12,27 +12,27 @@
         "m_OpenUXMLFiles": [
             {
                 "m_OpenUSSFiles": [],
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UXML Files/Car_Inspector_UXML.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UXML Files/StarSystem_Inspector_UXML.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "525a6bdf96aad8f44b96f6dbc89d8886",
+                    "guid": "6396b75601a7758408be3bf7f2a43a71",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
                     "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "525a6bdf96aad8f44b96f6dbc89d8886",
-                    "UxmlPath": "Assets/UXML Files/Car_Inspector_UXML.uxml",
+                    "UxmlGuid": "6396b75601a7758408be3bf7f2a43a71",
+                    "UxmlPath": "Assets/UXML Files/StarSystem_Inspector_UXML.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
                     "CanvasWidth": 350,
-                    "CanvasHeight": 450,
+                    "CanvasHeight": 443,
                     "MatchGameView": false,
-                    "ZoomScale": 1.0,
+                    "ZoomScale": 0.8999999761581421,
                     "PanOffset": {
-                        "x": 303.5,
-                        "y": 65.0
+                        "x": 127.25,
+                        "y": 93.20001220703125
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,

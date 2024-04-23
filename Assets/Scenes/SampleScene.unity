@@ -123,6 +123,2561 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &140396352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 140396354}
+  - component: {fileID: 140396355}
+  m_Layer: 0
+  m_Name: StarSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &140396354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140396352}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140396355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140396352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6d714abd5a69442a263495c9b0e85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_spawnAmount: 500
+  m_starScale: 0.1
+  m_spawnPositionLimit: {x: 8.5, y: 4.5}
+  m_starList:
+  - m_scale: 0.03872742
+    m_speed: 0.4466878
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 2.316155, y: -1.3518157}
+    m_starIndex: 0
+  - m_scale: 0.014825726
+    m_speed: 0.80766547
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -4.8593254, y: 0.77709866}
+    m_starIndex: 0
+  - m_scale: 0.04336081
+    m_speed: 0.20776772
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 5.436079, y: 2.7842293}
+    m_starIndex: 0
+  - m_scale: 0.055457085
+    m_speed: 0.2344159
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 5.0299063, y: -1.831223}
+    m_starIndex: 0
+  - m_scale: 0.003056538
+    m_speed: 0.91162914
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -7.0642967, y: 2.6314604}
+    m_starIndex: 0
+  - m_scale: 0.040686853
+    m_speed: 0.8430893
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 1.0379734, y: -1.3429171}
+    m_starIndex: 0
+  - m_scale: 0.061901074
+    m_speed: 0.48609513
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 1.1904678, y: 1.0290955}
+    m_starIndex: 0
+  - m_scale: 0.0077656507
+    m_speed: 0.82733035
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 4.8172355, y: -2.2435098}
+    m_starIndex: 0
+  - m_scale: 0.07833332
+    m_speed: 0.13834186
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.5186033, y: -3.5774164}
+    m_starIndex: 0
+  - m_scale: 0.048089594
+    m_speed: 0.31707752
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 5.8373356, y: 2.516662}
+    m_starIndex: 0
+  - m_scale: 0.048469014
+    m_speed: 0.1917705
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 2.7864883, y: -2.5954804}
+    m_starIndex: 0
+  - m_scale: 0.06319552
+    m_speed: 0.5157182
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.1553669, y: 1.8065588}
+    m_starIndex: 0
+  - m_scale: 0.032323834
+    m_speed: 0.35998335
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 8.452372, y: -0.9992565}
+    m_starIndex: 0
+  - m_scale: 0.050706834
+    m_speed: 0.18057355
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0.08467102, y: -2.9294434}
+    m_starIndex: 0
+  - m_scale: 0.090892814
+    m_speed: 0.9555723
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -4.936967, y: 2.9366121}
+    m_starIndex: 0
+  - m_scale: 0.073919155
+    m_speed: 0.26638418
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 0.6123457, y: 2.9294462}
+    m_starIndex: 0
+  - m_scale: 0.086483
+    m_speed: 0.1906327
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 7.6385245, y: 3.8427515}
+    m_starIndex: 0
+  - m_scale: 0.021476878
+    m_speed: 0.77202874
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 8.288057, y: -0.7594143}
+    m_starIndex: 0
+  - m_scale: 0.09021156
+    m_speed: 0.9216999
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 7.7451634, y: -2.553916}
+    m_starIndex: 0
+  - m_scale: 0.07110757
+    m_speed: 0.8883276
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -2.713481, y: -2.618987}
+    m_starIndex: 0
+  - m_scale: 0.067788474
+    m_speed: 0.67658526
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -2.2740583, y: 4.410537}
+    m_starIndex: 0
+  - m_scale: 0.052677996
+    m_speed: 0.87021303
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 1.2109525, y: -3.8702602}
+    m_starIndex: 0
+  - m_scale: 0.099252105
+    m_speed: 0.7020685
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -3.8530266, y: 1.3509254}
+    m_starIndex: 0
+  - m_scale: 0.0054099085
+    m_speed: 0.9941866
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -7.8774033, y: 0.38447046}
+    m_starIndex: 0
+  - m_scale: 0.09099758
+    m_speed: 0.552516
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -5.918745, y: -2.8042088}
+    m_starIndex: 0
+  - m_scale: 0.06766136
+    m_speed: 0.92156494
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -8.339949, y: -0.5228629}
+    m_starIndex: 0
+  - m_scale: 0.054673236
+    m_speed: 0.53389746
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 3.5217743, y: -3.517395}
+    m_starIndex: 0
+  - m_scale: 0.055946883
+    m_speed: 0.5395207
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 6.992032, y: -0.59930265}
+    m_starIndex: 0
+  - m_scale: 0.06674957
+    m_speed: 0.64741015
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -6.976061, y: -3.3296118}
+    m_starIndex: 0
+  - m_scale: 0.06151646
+    m_speed: 0.8246745
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -6.6160574, y: -4.181819}
+    m_starIndex: 0
+  - m_scale: 0.03779295
+    m_speed: 0.6527872
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 6.514618, y: -0.106321335}
+    m_starIndex: 0
+  - m_scale: 0.055662222
+    m_speed: 0.87992865
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.7919967, y: 1.7382182}
+    m_starIndex: 0
+  - m_scale: 0.033938285
+    m_speed: 0.16814968
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -2.0529203, y: 4.104994}
+    m_starIndex: 0
+  - m_scale: 0.065894745
+    m_speed: 0.21587262
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -1.7982063, y: 3.4230716}
+    m_starIndex: 0
+  - m_scale: 0.03348548
+    m_speed: 0.30288228
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 1.395643, y: -0.75591564}
+    m_starIndex: 0
+  - m_scale: 0.02929011
+    m_speed: 0.69594234
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -7.4365997, y: 4.247349}
+    m_starIndex: 0
+  - m_scale: 0.09119014
+    m_speed: 0.5978165
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 4.6544037, y: -1.2341042}
+    m_starIndex: 0
+  - m_scale: 0.01180495
+    m_speed: 0.12954625
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -4.351241, y: 1.3463968}
+    m_starIndex: 0
+  - m_scale: 0.038233157
+    m_speed: 0.9922036
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -3.4470482, y: -3.8928509}
+    m_starIndex: 0
+  - m_scale: 0.026619453
+    m_speed: 0.7638609
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.5954244, y: 2.1791897}
+    m_starIndex: 0
+  - m_scale: 0.052292235
+    m_speed: 0.72999746
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -3.8983002, y: -1.3707209}
+    m_starIndex: 0
+  - m_scale: 0.08247807
+    m_speed: 0.59946513
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -3.0479662, y: -0.69424427}
+    m_starIndex: 0
+  - m_scale: 0.0839625
+    m_speed: 0.47595146
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 2.55066, y: -0.18560743}
+    m_starIndex: 0
+  - m_scale: 0.033191867
+    m_speed: 0.35471013
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -0.9442148, y: 1.663318}
+    m_starIndex: 0
+  - m_scale: 0.035435375
+    m_speed: 0.8405514
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 7.907074, y: 1.2323664}
+    m_starIndex: 0
+  - m_scale: 0.082085446
+    m_speed: 0.64887744
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -5.318918, y: 3.5946205}
+    m_starIndex: 0
+  - m_scale: 0.017539037
+    m_speed: 0.3988182
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -6.920991, y: 0.60122097}
+    m_starIndex: 0
+  - m_scale: 0.09193727
+    m_speed: 0.344308
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 1.7275078, y: 2.1219437}
+    m_starIndex: 0
+  - m_scale: 0.04104962
+    m_speed: 0.43296304
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 2.6021793, y: 1.0461683}
+    m_starIndex: 0
+  - m_scale: 0.061536975
+    m_speed: 0.8746092
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.3341203, y: 1.1126013}
+    m_starIndex: 0
+  - m_scale: 0.07391806
+    m_speed: 0.102734886
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -6.1280594, y: 0.69287205}
+    m_starIndex: 0
+  - m_scale: 0.024320757
+    m_speed: 0.4649044
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 1.605643, y: 1.0453905}
+    m_starIndex: 0
+  - m_scale: 0.0114537
+    m_speed: 0.8537803
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.2028818, y: -0.44374847}
+    m_starIndex: 0
+  - m_scale: 0.06379526
+    m_speed: 0.45547417
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -6.5801306, y: -2.7326946}
+    m_starIndex: 0
+  - m_scale: 0.06142933
+    m_speed: 0.43081492
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -1.100193, y: 3.6279879}
+    m_starIndex: 0
+  - m_scale: 0.046578106
+    m_speed: 0.46271667
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -3.2490962, y: 3.4726915}
+    m_starIndex: 0
+  - m_scale: 0.074706055
+    m_speed: 0.96634257
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.7974298, y: -1.3177505}
+    m_starIndex: 0
+  - m_scale: 0.08608126
+    m_speed: 0.331092
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 2.2357004, y: -2.5872202}
+    m_starIndex: 0
+  - m_scale: 0.061219078
+    m_speed: 0.13896263
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0.852128, y: 1.9482621}
+    m_starIndex: 0
+  - m_scale: 0.02052983
+    m_speed: 0.86574674
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 2.384075, y: -0.06005287}
+    m_starIndex: 0
+  - m_scale: 0.052254695
+    m_speed: 0.30105624
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 7.6014366, y: 1.0939964}
+    m_starIndex: 0
+  - m_scale: 0.07440268
+    m_speed: 0.95744365
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.030768394, y: 0.4858632}
+    m_starIndex: 0
+  - m_scale: 0.021467745
+    m_speed: 0.28127164
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -6.4112616, y: 0.51996505}
+    m_starIndex: 0
+  - m_scale: 0.09313484
+    m_speed: 0.24132538
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 4.8033657, y: 2.0536041}
+    m_starIndex: 0
+  - m_scale: 0.056172807
+    m_speed: 0.93572396
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -7.425912, y: 1.7724755}
+    m_starIndex: 0
+  - m_scale: 0.009710431
+    m_speed: 0.3802674
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 0.67255497, y: 2.6222036}
+    m_starIndex: 0
+  - m_scale: 0.0703272
+    m_speed: 0.32291496
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -3.5463355, y: 2.1231625}
+    m_starIndex: 0
+  - m_scale: 0.03486324
+    m_speed: 0.5855356
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -6.129841, y: -2.3939776}
+    m_starIndex: 0
+  - m_scale: 0.047025364
+    m_speed: 0.5842291
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.6409626, y: 1.1421938}
+    m_starIndex: 0
+  - m_scale: 0.06884905
+    m_speed: 0.74687725
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -5.8229475, y: 1.9973239}
+    m_starIndex: 0
+  - m_scale: 0.065665066
+    m_speed: 0.8742696
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 7.309519, y: -0.9710417}
+    m_starIndex: 0
+  - m_scale: 0.00037983657
+    m_speed: 0.17629501
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 2.2318358, y: 2.9519963}
+    m_starIndex: 0
+  - m_scale: 0.08077576
+    m_speed: 0.51711285
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -4.0483265, y: -4.1529207}
+    m_starIndex: 0
+  - m_scale: 0.0026931406
+    m_speed: 0.96930456
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 1.5403652, y: 3.3134089}
+    m_starIndex: 0
+  - m_scale: 0.04260227
+    m_speed: 0.6220327
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 1.1940346, y: 1.2062836}
+    m_starIndex: 0
+  - m_scale: 0.010254419
+    m_speed: 0.5555327
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.7339296, y: 2.277883}
+    m_starIndex: 0
+  - m_scale: 0.062612236
+    m_speed: 0.527187
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.447035, y: -4.3934917}
+    m_starIndex: 0
+  - m_scale: 0.07679693
+    m_speed: 0.27514094
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -2.2822983, y: -2.248829}
+    m_starIndex: 0
+  - m_scale: 0.053699788
+    m_speed: 0.74615425
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -6.722782, y: -2.6928968}
+    m_starIndex: 0
+  - m_scale: 0.05636595
+    m_speed: 0.7585955
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 1.5894203, y: 4.274062}
+    m_starIndex: 0
+  - m_scale: 0.032999735
+    m_speed: 0.81952626
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 1.8749158, y: 3.8481824}
+    m_starIndex: 0
+  - m_scale: 0.09264231
+    m_speed: 0.15265971
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -0.65597534, y: 3.5505722}
+    m_starIndex: 0
+  - m_scale: 0.050923735
+    m_speed: 0.52580225
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -2.538745, y: -4.435316}
+    m_starIndex: 0
+  - m_scale: 0.035006613
+    m_speed: 0.9585428
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 4.461418, y: 4.228116}
+    m_starIndex: 0
+  - m_scale: 0.09548014
+    m_speed: 0.39161572
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -1.7036979, y: 0.08629465}
+    m_starIndex: 0
+  - m_scale: 0.037144393
+    m_speed: 0.14086753
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 5.5139923, y: -0.12620401}
+    m_starIndex: 0
+  - m_scale: 0.046516698
+    m_speed: 0.45344022
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 8.061232, y: 3.231989}
+    m_starIndex: 0
+  - m_scale: 0.091249906
+    m_speed: 0.1654593
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 0.634711, y: -4.342163}
+    m_starIndex: 0
+  - m_scale: 0.038206942
+    m_speed: 0.45820734
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 3.4053245, y: -0.46283197}
+    m_starIndex: 0
+  - m_scale: 0.03347319
+    m_speed: 0.6621119
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -6.7178125, y: -1.4314923}
+    m_starIndex: 0
+  - m_scale: 0.060849827
+    m_speed: 0.66830677
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 7.2842054, y: -3.001925}
+    m_starIndex: 0
+  - m_scale: 0.039924618
+    m_speed: 0.9231665
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -7.380481, y: -0.28516006}
+    m_starIndex: 0
+  - m_scale: 0.08720125
+    m_speed: 0.44823286
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -2.6401825, y: -2.509039}
+    m_starIndex: 0
+  - m_scale: 0.0776953
+    m_speed: 0.26350328
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 7.9629173, y: 3.85981}
+    m_starIndex: 0
+  - m_scale: 0.038194414
+    m_speed: 0.41251475
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -1.9410951, y: 4.105465}
+    m_starIndex: 0
+  - m_scale: 0.06109944
+    m_speed: 0.31305397
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 4.9305606, y: 2.9007373}
+    m_starIndex: 0
+  - m_scale: 0.09649052
+    m_speed: 0.37578425
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 3.1203094, y: 0.5291821}
+    m_starIndex: 0
+  - m_scale: 0.07199919
+    m_speed: 0.41115412
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -7.698616, y: -0.79682684}
+    m_starIndex: 0
+  - m_scale: 0.021479417
+    m_speed: 0.64232254
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.4029908, y: 1.4467866}
+    m_starIndex: 0
+  - m_scale: 0.017268633
+    m_speed: 0.7776419
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -4.415681, y: 1.4901559}
+    m_starIndex: 0
+  - m_scale: 0.077198885
+    m_speed: 0.559289
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 2.4870708, y: 3.5647943}
+    m_starIndex: 0
+  - m_scale: 0.02047639
+    m_speed: 0.2600543
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -3.2369735, y: 1.9060612}
+    m_starIndex: 0
+  - m_scale: 0.034733493
+    m_speed: 0.16730842
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -8.42086, y: 2.1921864}
+    m_starIndex: 0
+  - m_scale: 0.07436371
+    m_speed: 0.22028442
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0.4102497, y: -1.9384136}
+    m_starIndex: 0
+  - m_scale: 0.07137461
+    m_speed: 0.6586232
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.6441746, y: -2.6139498}
+    m_starIndex: 0
+  - m_scale: 0.08215983
+    m_speed: 0.62814945
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -5.1950836, y: 2.144382}
+    m_starIndex: 0
+  - m_scale: 0.0132430075
+    m_speed: 0.21544367
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 7.0921946, y: -3.249023}
+    m_starIndex: 0
+  - m_scale: 0.09182703
+    m_speed: 0.71199244
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -4.2922964, y: -1.1869307}
+    m_starIndex: 0
+  - m_scale: 0.020108331
+    m_speed: 0.4811426
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -6.524726, y: 0.72747993}
+    m_starIndex: 0
+  - m_scale: 0.043923147
+    m_speed: 0.15723749
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 4.7291164, y: 1.454725}
+    m_starIndex: 0
+  - m_scale: 0.03057794
+    m_speed: 0.77976906
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.9042187, y: 2.3696232}
+    m_starIndex: 0
+  - m_scale: 0.05939079
+    m_speed: 0.36975807
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 1.9622564, y: -2.3344994}
+    m_starIndex: 0
+  - m_scale: 0.0050289035
+    m_speed: 0.25722873
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -3.725688, y: -2.4532695}
+    m_starIndex: 0
+  - m_scale: 0.018785918
+    m_speed: 0.9014909
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -1.5743163, y: 3.646554}
+    m_starIndex: 0
+  - m_scale: 0.09225773
+    m_speed: 0.98511523
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 1.4246752, y: -3.6967783}
+    m_starIndex: 0
+  - m_scale: 0.009782243
+    m_speed: 0.50930893
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 1.2986841, y: 1.4337435}
+    m_starIndex: 0
+  - m_scale: 0.0535824
+    m_speed: 0.79196477
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -1.7901669, y: -2.8545966}
+    m_starIndex: 0
+  - m_scale: 0.013660776
+    m_speed: 0.28990167
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 0.22306442, y: -0.8572936}
+    m_starIndex: 0
+  - m_scale: 0.07906475
+    m_speed: 0.18861687
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.269598, y: -2.4245443}
+    m_starIndex: 0
+  - m_scale: 0.049861606
+    m_speed: 0.6364135
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -2.9628916, y: -2.6452436}
+    m_starIndex: 0
+  - m_scale: 0.037048727
+    m_speed: 0.25941408
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -3.856723, y: -1.9110004}
+    m_starIndex: 0
+  - m_scale: 0.013035036
+    m_speed: 0.60478246
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -5.022791, y: -3.413653}
+    m_starIndex: 0
+  - m_scale: 0.06964475
+    m_speed: 0.84649104
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0.50307965, y: 0.14305544}
+    m_starIndex: 0
+  - m_scale: 0.02247777
+    m_speed: 0.44838026
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 0.5441685, y: 2.7622128}
+    m_starIndex: 0
+  - m_scale: 0.037143763
+    m_speed: 0.9778711
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 3.0215023, y: -0.035110474}
+    m_starIndex: 0
+  - m_scale: 0.056645293
+    m_speed: 0.7255245
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 5.1624675, y: -3.0130916}
+    m_starIndex: 0
+  - m_scale: 0.021137977
+    m_speed: 0.36249477
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -3.5579052, y: -0.8998022}
+    m_starIndex: 0
+  - m_scale: 0.08029208
+    m_speed: 0.59648275
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -1.8973761, y: -1.2679548}
+    m_starIndex: 0
+  - m_scale: 0.09442874
+    m_speed: 0.27210298
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -3.4459887, y: 1.8996958}
+    m_starIndex: 0
+  - m_scale: 0.07310857
+    m_speed: 0.29258326
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -1.7307749, y: -0.057520866}
+    m_starIndex: 0
+  - m_scale: 0.043520924
+    m_speed: 0.8191235
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.093990326, y: -1.7913985}
+    m_starIndex: 0
+  - m_scale: 0.0034303428
+    m_speed: 0.47631398
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -6.356062, y: -0.9127079}
+    m_starIndex: 0
+  - m_scale: 0.0061941864
+    m_speed: 0.6336648
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.1087723, y: 0.86117315}
+    m_starIndex: 0
+  - m_scale: 0.050803035
+    m_speed: 0.78882056
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -6.4178333, y: 3.2222676}
+    m_starIndex: 0
+  - m_scale: 0.032734007
+    m_speed: 0.76019186
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 0.37505817, y: -2.4207592}
+    m_starIndex: 0
+  - m_scale: 0.08269054
+    m_speed: 0.4456354
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 2.8041418, y: -3.3275733}
+    m_starIndex: 0
+  - m_scale: 0.017485177
+    m_speed: 0.71229744
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 4.055872, y: -1.3549045}
+    m_starIndex: 0
+  - m_scale: 0.08615112
+    m_speed: 0.89455205
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 4.680686, y: 0.09498167}
+    m_starIndex: 0
+  - m_scale: 0.07080622
+    m_speed: 0.96495974
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.483225, y: -4.116415}
+    m_starIndex: 0
+  - m_scale: 0.0612722
+    m_speed: 0.6596124
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.5048914, y: -1.5706013}
+    m_starIndex: 0
+  - m_scale: 0.07902733
+    m_speed: 0.6903219
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -2.5989926, y: 2.5599227}
+    m_starIndex: 0
+  - m_scale: 0.07876928
+    m_speed: 0.5391856
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -5.405878, y: -1.7563529}
+    m_starIndex: 0
+  - m_scale: 0.04646177
+    m_speed: 0.14806476
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -1.7269487, y: 4.025605}
+    m_starIndex: 0
+  - m_scale: 0.08660382
+    m_speed: 0.39403528
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 7.4226294, y: 3.4896708}
+    m_starIndex: 0
+  - m_scale: 0.015409839
+    m_speed: 0.5993679
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 4.2356195, y: -3.9736807}
+    m_starIndex: 0
+  - m_scale: 0.014808381
+    m_speed: 0.9070944
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -2.2748125, y: -0.54341507}
+    m_starIndex: 0
+  - m_scale: 0.037423488
+    m_speed: 0.8365667
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -0.04656887, y: -1.3192697}
+    m_starIndex: 0
+  - m_scale: 0.04654787
+    m_speed: 0.8129069
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -0.37564564, y: -1.98174}
+    m_starIndex: 0
+  - m_scale: 0.0010097265
+    m_speed: 0.58931565
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.1715403, y: -2.3858967}
+    m_starIndex: 0
+  - m_scale: 0.07572257
+    m_speed: 0.26953
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 4.654896, y: -4.0557566}
+    m_starIndex: 0
+  - m_scale: 0.030118901
+    m_speed: 0.24659099
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 2.1403003, y: 2.8631077}
+    m_starIndex: 0
+  - m_scale: 0.04540593
+    m_speed: 0.78990644
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.30238533, y: 0.5225711}
+    m_starIndex: 0
+  - m_scale: 0.037666887
+    m_speed: 0.7907451
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 1.0585654, y: -1.6035013}
+    m_starIndex: 0
+  - m_scale: 0.00042582751
+    m_speed: 0.5549485
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 8.327276, y: -0.093019485}
+    m_starIndex: 0
+  - m_scale: 0.011871576
+    m_speed: 0.13459298
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -2.8800926, y: 0.582307}
+    m_starIndex: 0
+  - m_scale: 0.05358532
+    m_speed: 0.41926125
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 5.178968, y: 3.8059645}
+    m_starIndex: 0
+  - m_scale: 0.09478507
+    m_speed: 0.9687128
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 6.899131, y: -0.17092371}
+    m_starIndex: 0
+  - m_scale: 0.02374599
+    m_speed: 0.280793
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.603279, y: 0.466218}
+    m_starIndex: 0
+  - m_scale: 0.06715387
+    m_speed: 0.6542574
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.7559757, y: -0.24755764}
+    m_starIndex: 0
+  - m_scale: 0.012007582
+    m_speed: 0.5661272
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 5.6431675, y: -0.49576712}
+    m_starIndex: 0
+  - m_scale: 0.09244539
+    m_speed: 0.67024505
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 0.382102, y: -4.1538877}
+    m_starIndex: 0
+  - m_scale: 0.04766801
+    m_speed: 0.56101567
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.9247074, y: -1.2954078}
+    m_starIndex: 0
+  - m_scale: 0.028025752
+    m_speed: 0.11885464
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 2.8826346, y: 3.61643}
+    m_starIndex: 0
+  - m_scale: 0.029601974
+    m_speed: 0.13329157
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -2.0115118, y: 2.0586534}
+    m_starIndex: 0
+  - m_scale: 0.09294949
+    m_speed: 0.5871655
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 8.405146, y: 0.6968074}
+    m_starIndex: 0
+  - m_scale: 0.058691114
+    m_speed: 0.5089011
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -0.7207098, y: 0.74128485}
+    m_starIndex: 0
+  - m_scale: 0.046218928
+    m_speed: 0.5461156
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 1.3711014, y: 0.93059933}
+    m_starIndex: 0
+  - m_scale: 0.04882578
+    m_speed: 0.16591926
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -1.2118399, y: 0.6407877}
+    m_starIndex: 0
+  - m_scale: 0.08251548
+    m_speed: 0.20613876
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 4.0552416, y: -0.9230646}
+    m_starIndex: 0
+  - m_scale: 0.08681867
+    m_speed: 0.94431853
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -0.6552336, y: 2.7544804}
+    m_starIndex: 0
+  - m_scale: 0.06712834
+    m_speed: 0.14238149
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 4.6798143, y: -2.7044382}
+    m_starIndex: 0
+  - m_scale: 0.05327457
+    m_speed: 0.27099618
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 2.787826, y: -3.0212026}
+    m_starIndex: 0
+  - m_scale: 0.07150517
+    m_speed: 0.58404726
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -2.899908, y: 0.75098896}
+    m_starIndex: 0
+  - m_scale: 0.08705896
+    m_speed: 0.9748162
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -1.4349642, y: 3.6214082}
+    m_starIndex: 0
+  - m_scale: 0.04600939
+    m_speed: 0.24280971
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -2.644582, y: 1.9142741}
+    m_starIndex: 0
+  - m_scale: 0.083839335
+    m_speed: 0.3607847
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.706789, y: 2.4601822}
+    m_starIndex: 0
+  - m_scale: 0.06908279
+    m_speed: 0.37200278
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 3.2688293, y: -1.8548855}
+    m_starIndex: 0
+  - m_scale: 0.00071759225
+    m_speed: 0.36384895
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 6.306654, y: 4.390334}
+    m_starIndex: 0
+  - m_scale: 0.06359821
+    m_speed: 0.65155387
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 7.4594517, y: 2.0708928}
+    m_starIndex: 0
+  - m_scale: 0.0292718
+    m_speed: 0.80855775
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 5.9255705, y: -1.8844981}
+    m_starIndex: 0
+  - m_scale: 0.09200567
+    m_speed: 0.27050212
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -1.4455061, y: 1.7824993}
+    m_starIndex: 0
+  - m_scale: 0.015898718
+    m_speed: 0.29320285
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -6.77182, y: -3.230195}
+    m_starIndex: 0
+  - m_scale: 0.045534927
+    m_speed: 0.4609035
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 6.777235, y: -2.727045}
+    m_starIndex: 0
+  - m_scale: 0.050169688
+    m_speed: 0.6941975
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 7.884247, y: -0.7143426}
+    m_starIndex: 0
+  - m_scale: 0.06957459
+    m_speed: 0.94904083
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -3.9928246, y: -3.249815}
+    m_starIndex: 0
+  - m_scale: 0.07109211
+    m_speed: 0.3172821
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 6.941309, y: -2.6602278}
+    m_starIndex: 0
+  - m_scale: 0.0847097
+    m_speed: 0.2290357
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -6.461234, y: 0.87844324}
+    m_starIndex: 0
+  - m_scale: 0.094229616
+    m_speed: 0.5211356
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -4.3199263, y: -1.7835375}
+    m_starIndex: 0
+  - m_scale: 0.060517937
+    m_speed: 0.72368604
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 3.728605, y: 2.440322}
+    m_starIndex: 0
+  - m_scale: 0.008555389
+    m_speed: 0.43193704
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.926545, y: -1.0270828}
+    m_starIndex: 0
+  - m_scale: 0.0113190655
+    m_speed: 0.30582553
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -0.65099025, y: 1.6079777}
+    m_starIndex: 0
+  - m_scale: 0.011513782
+    m_speed: 0.30880558
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.1801336, y: 3.403173}
+    m_starIndex: 0
+  - m_scale: 0.0072364807
+    m_speed: 0.6268659
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.545455, y: -2.0857573}
+    m_starIndex: 0
+  - m_scale: 0.04322961
+    m_speed: 0.3920774
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 8.062405, y: -1.1105605}
+    m_starIndex: 0
+  - m_scale: 0.059733387
+    m_speed: 0.3024214
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 4.7981634, y: -0.29278517}
+    m_starIndex: 0
+  - m_scale: 0.022922814
+    m_speed: 0.11933583
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.2689574, y: -3.8412838}
+    m_starIndex: 0
+  - m_scale: 0.005447173
+    m_speed: 0.53588897
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -8.242096, y: -1.8838639}
+    m_starIndex: 0
+  - m_scale: 0.013179791
+    m_speed: 0.7893369
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -3.541731, y: 3.5846348}
+    m_starIndex: 0
+  - m_scale: 0.049411066
+    m_speed: 0.7966674
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 1.559336, y: -2.8152647}
+    m_starIndex: 0
+  - m_scale: 0.004022932
+    m_speed: 0.43800196
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 3.1125436, y: 0.38869667}
+    m_starIndex: 0
+  - m_scale: 0.009844494
+    m_speed: 0.7520406
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -0.7062037, y: 0.22185993}
+    m_starIndex: 0
+  - m_scale: 0.09932258
+    m_speed: 0.9472224
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.21642494, y: 0.5382041}
+    m_starIndex: 0
+  - m_scale: 0.07088747
+    m_speed: 0.3408103
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 1.141324, y: -4.0643215}
+    m_starIndex: 0
+  - m_scale: 0.015101338
+    m_speed: 0.78830695
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -8.465347, y: -2.95673}
+    m_starIndex: 0
+  - m_scale: 0.043934304
+    m_speed: 0.17720234
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.5065165, y: -1.9453069}
+    m_starIndex: 0
+  - m_scale: 0.029854506
+    m_speed: 0.39297283
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -4.4144516, y: -3.779787}
+    m_starIndex: 0
+  - m_scale: 0.003501451
+    m_speed: 0.17232974
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 3.1581936, y: -2.2687721}
+    m_starIndex: 0
+  - m_scale: 0.07709991
+    m_speed: 0.12787619
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 8.370081, y: 3.1364808}
+    m_starIndex: 0
+  - m_scale: 0.038535386
+    m_speed: 0.17656097
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -7.9575977, y: -2.3314052}
+    m_starIndex: 0
+  - m_scale: 0.02865613
+    m_speed: 0.5502313
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -2.887844, y: 1.1933372}
+    m_starIndex: 0
+  - m_scale: 0.08256084
+    m_speed: 0.7415434
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -6.372222, y: -3.2399592}
+    m_starIndex: 0
+  - m_scale: 0.09056524
+    m_speed: 0.19297224
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 6.399391, y: 1.7613624}
+    m_starIndex: 0
+  - m_scale: 0.055740327
+    m_speed: 0.7644161
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -5.23571, y: 4.017338}
+    m_starIndex: 0
+  - m_scale: 0.029924173
+    m_speed: 0.62616545
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 6.7699356, y: 2.8494406}
+    m_starIndex: 0
+  - m_scale: 0.09371187
+    m_speed: 0.14870913
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 5.030423, y: 1.933527}
+    m_starIndex: 0
+  - m_scale: 0.0983477
+    m_speed: 0.6631036
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -1.7168827, y: 1.4418459}
+    m_starIndex: 0
+  - m_scale: 0.009553909
+    m_speed: 0.22331607
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 3.9092157, y: 0.7423223}
+    m_starIndex: 0
+  - m_scale: 0.09622599
+    m_speed: 0.39680332
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 0.06427288, y: 0.58869934}
+    m_starIndex: 0
+  - m_scale: 0.051764734
+    m_speed: 0.66010153
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -7.0109234, y: 0.0423975}
+    m_starIndex: 0
+  - m_scale: 0.08575753
+    m_speed: 0.682328
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -0.41899586, y: -2.7144341}
+    m_starIndex: 0
+  - m_scale: 0.04502211
+    m_speed: 0.35418668
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -3.3505821, y: 2.5702653}
+    m_starIndex: 0
+  - m_scale: 0.0950014
+    m_speed: 0.39551684
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 3.4536839, y: -1.210681}
+    m_starIndex: 0
+  - m_scale: 0.018602729
+    m_speed: 0.5832737
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -8.098146, y: -0.7485633}
+    m_starIndex: 0
+  - m_scale: 0.0940093
+    m_speed: 0.3696965
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -4.3892183, y: -4.4113283}
+    m_starIndex: 0
+  - m_scale: 0.089231566
+    m_speed: 0.76495135
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 7.410267, y: -0.9093391}
+    m_starIndex: 0
+  - m_scale: 0.015069509
+    m_speed: 0.2327291
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -3.1623657, y: -1.5120583}
+    m_starIndex: 0
+  - m_scale: 0.023585845
+    m_speed: 0.39268228
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -6.10382, y: -2.5417943}
+    m_starIndex: 0
+  - m_scale: 0.044662148
+    m_speed: 0.64795554
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -8.371998, y: -0.7345524}
+    m_starIndex: 0
+  - m_scale: 0.005716598
+    m_speed: 0.313652
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -8.137363, y: 2.203866}
+    m_starIndex: 0
+  - m_scale: 0.04811197
+    m_speed: 0.63274544
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -0.3009081, y: -2.9149518}
+    m_starIndex: 0
+  - m_scale: 0.05155104
+    m_speed: 0.70219755
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -5.8885508, y: 2.4290287}
+    m_starIndex: 0
+  - m_scale: 0.0808043
+    m_speed: 0.54917544
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -7.820906, y: -1.1258492}
+    m_starIndex: 0
+  - m_scale: 0.013197148
+    m_speed: 0.48487365
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 5.577428, y: 1.6969422}
+    m_starIndex: 0
+  - m_scale: 0.01742251
+    m_speed: 0.9280034
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.2724755, y: -2.22794}
+    m_starIndex: 0
+  - m_scale: 0.030899031
+    m_speed: 0.15669997
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -4.733513, y: -0.95761025}
+    m_starIndex: 0
+  - m_scale: 0.04015543
+    m_speed: 0.12129138
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 3.3589058, y: 3.0712461}
+    m_starIndex: 0
+  - m_scale: 0.06801033
+    m_speed: 0.5658628
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 6.992365, y: 0.063153744}
+    m_starIndex: 0
+  - m_scale: 0.0063900235
+    m_speed: 0.6731339
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 1.1191635, y: 1.4165258}
+    m_starIndex: 0
+  - m_scale: 0.08253019
+    m_speed: 0.4345169
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 5.3203244, y: -3.5354948}
+    m_starIndex: 0
+  - m_scale: 0.012582851
+    m_speed: 0.8440777
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 6.8037834, y: 0.6174933}
+    m_starIndex: 0
+  - m_scale: 0.012270331
+    m_speed: 0.94878834
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 8.080572, y: -1.3183813}
+    m_starIndex: 0
+  - m_scale: 0.08965548
+    m_speed: 0.7364035
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -0.40962696, y: 1.8061211}
+    m_starIndex: 0
+  - m_scale: 0.060174208
+    m_speed: 0.49924278
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 4.0138736, y: 3.5017729}
+    m_starIndex: 0
+  - m_scale: 0.0585152
+    m_speed: 0.21948844
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -3.2777376, y: -1.3488212}
+    m_starIndex: 0
+  - m_scale: 0.068627395
+    m_speed: 0.64808965
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 6.612152, y: 2.2834415}
+    m_starIndex: 0
+  - m_scale: 0.05465246
+    m_speed: 0.34769788
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.2544613, y: -0.5793009}
+    m_starIndex: 0
+  - m_scale: 0.0032705308
+    m_speed: 0.9852559
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 5.3129053, y: 0.79529274}
+    m_starIndex: 0
+  - m_scale: 0.059808988
+    m_speed: 0.34078154
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.6591978, y: 3.488936}
+    m_starIndex: 0
+  - m_scale: 0.06505302
+    m_speed: 0.4305848
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 7.895674, y: -1.0647699}
+    m_starIndex: 0
+  - m_scale: 0.09689044
+    m_speed: 0.2850396
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 6.778603, y: -2.2382512}
+    m_starIndex: 0
+  - m_scale: 0.065123215
+    m_speed: 0.5489508
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 5.732216, y: 0.735209}
+    m_starIndex: 0
+  - m_scale: 0.06850868
+    m_speed: 0.5078307
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 2.2578485, y: 3.5329628}
+    m_starIndex: 0
+  - m_scale: 0.05098123
+    m_speed: 0.8647767
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 3.967222, y: -2.394302}
+    m_starIndex: 0
+  - m_scale: 0.072041415
+    m_speed: 0.33127794
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -6.454855, y: -3.96607}
+    m_starIndex: 0
+  - m_scale: 0.090565436
+    m_speed: 0.94567496
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 3.2250905, y: -0.25296164}
+    m_starIndex: 0
+  - m_scale: 0.05609214
+    m_speed: 0.12151303
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 0.8483362, y: 0.86010885}
+    m_starIndex: 0
+  - m_scale: 0.08823561
+    m_speed: 0.3919526
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -4.861273, y: -4.0335464}
+    m_starIndex: 0
+  - m_scale: 0.0019338488
+    m_speed: 0.6803515
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.5094047, y: 3.4289865}
+    m_starIndex: 0
+  - m_scale: 0.043603964
+    m_speed: 0.91944176
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -7.231969, y: 1.8127621}
+    m_starIndex: 0
+  - m_scale: 0.05998517
+    m_speed: 0.9908674
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 5.747085, y: -0.42889452}
+    m_starIndex: 0
+  - m_scale: 0.04246549
+    m_speed: 0.91867983
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -6.8499565, y: 2.279767}
+    m_starIndex: 0
+  - m_scale: 0.06431786
+    m_speed: 0.75842255
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.7594764, y: -2.5158243}
+    m_starIndex: 0
+  - m_scale: 0.049219377
+    m_speed: 0.5486257
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 0.14307594, y: -3.4021878}
+    m_starIndex: 0
+  - m_scale: 0.027486784
+    m_speed: 0.5145457
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -7.693539, y: -4.175254}
+    m_starIndex: 0
+  - m_scale: 0.048331864
+    m_speed: 0.39544666
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -7.0668955, y: -0.6833458}
+    m_starIndex: 0
+  - m_scale: 0.031070763
+    m_speed: 0.88883704
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 2.1745756, y: -2.6215763}
+    m_starIndex: 0
+  - m_scale: 0.025446171
+    m_speed: 0.6671237
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 2.012515, y: -0.9766573}
+    m_starIndex: 0
+  - m_scale: 0.091479115
+    m_speed: 0.8247952
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 5.0657825, y: 1.9763663}
+    m_starIndex: 0
+  - m_scale: 0.02400663
+    m_speed: 0.34290755
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 0.88691807, y: -3.185104}
+    m_starIndex: 0
+  - m_scale: 0.06694056
+    m_speed: 0.4162885
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -1.3149414, y: -2.5861611}
+    m_starIndex: 0
+  - m_scale: 0.08711409
+    m_speed: 0.79153776
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.456562, y: 3.1407156}
+    m_starIndex: 0
+  - m_scale: 0.031049354
+    m_speed: 0.87938964
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.6762378, y: 2.6586463}
+    m_starIndex: 0
+  - m_scale: 0.055109162
+    m_speed: 0.5995476
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 3.1290576, y: 0.9713775}
+    m_starIndex: 0
+  - m_scale: 0.017627442
+    m_speed: 0.11302223
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -0.6195848, y: 0.42214394}
+    m_starIndex: 0
+  - m_scale: 0.06410523
+    m_speed: 0.51046324
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 6.1028376, y: 4.1946898}
+    m_starIndex: 0
+  - m_scale: 0.061233517
+    m_speed: 0.7792192
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -1.1899977, y: 3.7876663}
+    m_starIndex: 0
+  - m_scale: 0.03557088
+    m_speed: 0.7143355
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -2.8794603, y: 0.25854063}
+    m_starIndex: 0
+  - m_scale: 0.00700717
+    m_speed: 0.79773045
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 3.6316504, y: -3.85939}
+    m_starIndex: 0
+  - m_scale: 0.09506645
+    m_speed: 0.83606327
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -6.135335, y: 2.9251914}
+    m_starIndex: 0
+  - m_scale: 0.081912056
+    m_speed: 0.8871572
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -5.9081078, y: 0.87730825}
+    m_starIndex: 0
+  - m_scale: 0.058478065
+    m_speed: 0.15705478
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -5.5654364, y: 3.1614425}
+    m_starIndex: 0
+  - m_scale: 0.0393897
+    m_speed: 0.99388725
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 0.38075924, y: -2.957529}
+    m_starIndex: 0
+  - m_scale: 0.04426064
+    m_speed: 0.50245994
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.8363814, y: 0.9972652}
+    m_starIndex: 0
+  - m_scale: 0.0072008492
+    m_speed: 0.28650966
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 0.114349365, y: 0.55276096}
+    m_starIndex: 0
+  - m_scale: 0.041824337
+    m_speed: 0.7986308
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 5.5483665, y: 1.0784525}
+    m_starIndex: 0
+  - m_scale: 0.009287382
+    m_speed: 0.6755116
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.54218, y: -2.5042768}
+    m_starIndex: 0
+  - m_scale: 0.0021523
+    m_speed: 0.3492143
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 3.1942015, y: -0.84869003}
+    m_starIndex: 0
+  - m_scale: 0.0682105
+    m_speed: 0.13176799
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.6441791, y: 2.3909457}
+    m_starIndex: 0
+  - m_scale: 0.0638317
+    m_speed: 0.30722705
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.18625355, y: -1.137712}
+    m_starIndex: 0
+  - m_scale: 0.08569782
+    m_speed: 0.5252499
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -6.4872627, y: 0.86332643}
+    m_starIndex: 0
+  - m_scale: 0.013567567
+    m_speed: 0.40400335
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 2.1590316, y: -3.662694}
+    m_starIndex: 0
+  - m_scale: 0.047226485
+    m_speed: 0.6024122
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -2.416973, y: -1.6247797}
+    m_starIndex: 0
+  - m_scale: 0.04166871
+    m_speed: 0.38990897
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 6.2084618, y: -1.9769195}
+    m_starIndex: 0
+  - m_scale: 0.03687976
+    m_speed: 0.7657396
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.7411323, y: -1.3648028}
+    m_starIndex: 0
+  - m_scale: 0.068477035
+    m_speed: 0.44230872
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.526388, y: -1.4669994}
+    m_starIndex: 0
+  - m_scale: 0.056239612
+    m_speed: 0.21621701
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -7.294956, y: -0.31565046}
+    m_starIndex: 0
+  - m_scale: 0.089484155
+    m_speed: 0.5535055
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 7.414444, y: -3.4008274}
+    m_starIndex: 0
+  - m_scale: 0.031969734
+    m_speed: 0.91214234
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -8.456081, y: 3.1615863}
+    m_starIndex: 0
+  - m_scale: 0.08479389
+    m_speed: 0.40045413
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -2.6724596, y: 3.8917618}
+    m_starIndex: 0
+  - m_scale: 0.07270606
+    m_speed: 0.73682725
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.7763271, y: -0.89735174}
+    m_starIndex: 0
+  - m_scale: 0.0126656415
+    m_speed: 0.58887833
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.6150727, y: -1.5847869}
+    m_starIndex: 0
+  - m_scale: 0.05447529
+    m_speed: 0.83087736
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 3.4006367, y: -0.42106438}
+    m_starIndex: 0
+  - m_scale: 0.075387575
+    m_speed: 0.49677944
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 6.8819656, y: 2.1684446}
+    m_starIndex: 0
+  - m_scale: 0.053135283
+    m_speed: 0.805286
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.8180656, y: 0.31509256}
+    m_starIndex: 0
+  - m_scale: 0.013879812
+    m_speed: 0.45859295
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -8.458826, y: 4.4080305}
+    m_starIndex: 0
+  - m_scale: 0.042067464
+    m_speed: 0.25888085
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -3.9671602, y: 2.2723331}
+    m_starIndex: 0
+  - m_scale: 0.047204893
+    m_speed: 0.83306295
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -7.316395, y: -3.9292734}
+    m_starIndex: 0
+  - m_scale: 0.039184876
+    m_speed: 0.9117812
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -6.789814, y: 1.156947}
+    m_starIndex: 0
+  - m_scale: 0.041553564
+    m_speed: 0.60477334
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 6.4130607, y: -4.437009}
+    m_starIndex: 0
+  - m_scale: 0.04400303
+    m_speed: 0.24668571
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 0.902318, y: -2.7505455}
+    m_starIndex: 0
+  - m_scale: 0.04301072
+    m_speed: 0.25280985
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -4.3849707, y: 2.963973}
+    m_starIndex: 0
+  - m_scale: 0.010014963
+    m_speed: 0.18082997
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -6.181348, y: 3.7999027}
+    m_starIndex: 0
+  - m_scale: 0.086266294
+    m_speed: 0.8970694
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.90444756, y: 1.0973812}
+    m_starIndex: 0
+  - m_scale: 0.066889524
+    m_speed: 0.33584446
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.5889015, y: 2.2688332}
+    m_starIndex: 0
+  - m_scale: 0.019583095
+    m_speed: 0.42531115
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 7.4620275, y: 3.1151862}
+    m_starIndex: 0
+  - m_scale: 0.023571134
+    m_speed: 0.1361799
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -1.8316708, y: -3.4785738}
+    m_starIndex: 0
+  - m_scale: 0.025155932
+    m_speed: 0.59432787
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 8.415371, y: -0.37851715}
+    m_starIndex: 0
+  - m_scale: 0.036731776
+    m_speed: 0.59820503
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 3.2883816, y: 4.178993}
+    m_starIndex: 0
+  - m_scale: 0.076182984
+    m_speed: 0.732843
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -4.1828327, y: -2.5333486}
+    m_starIndex: 0
+  - m_scale: 0.020622183
+    m_speed: 0.96059436
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -5.818424, y: 1.316604}
+    m_starIndex: 0
+  - m_scale: 0.076072834
+    m_speed: 0.82698166
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -3.1622257, y: -3.9923878}
+    m_starIndex: 0
+  - m_scale: 0.08448227
+    m_speed: 0.85944444
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 1.736824, y: -3.1337395}
+    m_starIndex: 0
+  - m_scale: 0.022760654
+    m_speed: 0.3580762
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.0482614, y: -1.41013}
+    m_starIndex: 0
+  - m_scale: 0.009318316
+    m_speed: 0.57148135
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -7.7876687, y: -1.1825694}
+    m_starIndex: 0
+  - m_scale: 0.04725444
+    m_speed: 0.72949576
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 6.5361195, y: 1.3170117}
+    m_starIndex: 0
+  - m_scale: 0.024404813
+    m_speed: 0.111004464
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -2.1766965, y: -4.0767555}
+    m_starIndex: 0
+  - m_scale: 0.058099683
+    m_speed: 0.50628906
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 1.0664976, y: -2.514721}
+    m_starIndex: 0
+  - m_scale: 0.008092999
+    m_speed: 0.27548674
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 4.188344, y: 2.6244395}
+    m_starIndex: 0
+  - m_scale: 0.046648163
+    m_speed: 0.14084865
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.8677251, y: 4.0694275}
+    m_starIndex: 0
+  - m_scale: 0.04200166
+    m_speed: 0.966539
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -2.0579443, y: -2.3417273}
+    m_starIndex: 0
+  - m_scale: 0.027210731
+    m_speed: 0.99699336
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -0.88792706, y: -1.3143816}
+    m_starIndex: 0
+  - m_scale: 0.018011713
+    m_speed: 0.10785126
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 2.1651053, y: -3.0930872}
+    m_starIndex: 0
+  - m_scale: 0.03919241
+    m_speed: 0.13652664
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -0.8023617, y: 1.1773738}
+    m_starIndex: 0
+  - m_scale: 0.06026419
+    m_speed: 0.17770198
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 7.6904635, y: 2.2785332}
+    m_starIndex: 0
+  - m_scale: 0.09481364
+    m_speed: 0.5162854
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -3.8498814, y: -1.6932019}
+    m_starIndex: 0
+  - m_scale: 0.033732217
+    m_speed: 0.7012989
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -2.2398603, y: 3.7736695}
+    m_starIndex: 0
+  - m_scale: 0.045826823
+    m_speed: 0.97975296
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -4.14248, y: -4.334797}
+    m_starIndex: 0
+  - m_scale: 0.087400995
+    m_speed: 0.65191895
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -5.5153522, y: -4.4817066}
+    m_starIndex: 0
+  - m_scale: 0.08836303
+    m_speed: 0.3258277
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.362316, y: 0.05109787}
+    m_starIndex: 0
+  - m_scale: 0.0648103
+    m_speed: 0.29015326
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -2.549737, y: 0.2518878}
+    m_starIndex: 0
+  - m_scale: 0.06951354
+    m_speed: 0.2692713
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 3.501063, y: 2.578227}
+    m_starIndex: 0
+  - m_scale: 0.07960477
+    m_speed: 0.18895277
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 1.2130601, y: -0.27405262}
+    m_starIndex: 0
+  - m_scale: 0.06320113
+    m_speed: 0.17847651
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -4.2193193, y: 0.58118916}
+    m_starIndex: 0
+  - m_scale: 0.0385094
+    m_speed: 0.42067927
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 5.6083226, y: 1.4804666}
+    m_starIndex: 0
+  - m_scale: 0.01483835
+    m_speed: 0.5543797
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 8.267546, y: 2.840836}
+    m_starIndex: 0
+  - m_scale: 0.06906742
+    m_speed: 0.35977662
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -1.6220825, y: -0.545033}
+    m_starIndex: 0
+  - m_scale: 0.019594753
+    m_speed: 0.19244385
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 8.18989, y: 4.069658}
+    m_starIndex: 0
+  - m_scale: 0.09511826
+    m_speed: 0.6847104
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -5.6478243, y: -0.09846115}
+    m_starIndex: 0
+  - m_scale: 0.08986308
+    m_speed: 0.27420026
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.30582905, y: -0.82065773}
+    m_starIndex: 0
+  - m_scale: 0.023197223
+    m_speed: 0.82945764
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 3.9768703, y: -1.7990783}
+    m_starIndex: 0
+  - m_scale: 0.045502394
+    m_speed: 0.30743036
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -5.717862, y: 1.7055395}
+    m_starIndex: 0
+  - m_scale: 0.035718232
+    m_speed: 0.27581194
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.1640284, y: 3.7802858}
+    m_starIndex: 0
+  - m_scale: 0.013398158
+    m_speed: 0.6657943
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 2.791395, y: 2.5231507}
+    m_starIndex: 0
+  - m_scale: 0.09171104
+    m_speed: 0.3699365
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -7.7087917, y: -0.6988522}
+    m_starIndex: 0
+  - m_scale: 0.093226984
+    m_speed: 0.8609736
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 1.7144871, y: 3.1294117}
+    m_starIndex: 0
+  - m_scale: 0.004365504
+    m_speed: 0.7000354
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 1.9581158, y: -4.395855}
+    m_starIndex: 0
+  - m_scale: 0.013422406
+    m_speed: 0.5373763
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 3.9049642, y: -3.080647}
+    m_starIndex: 0
+  - m_scale: 0.0738757
+    m_speed: 0.19350126
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 6.154952, y: 2.5551054}
+    m_starIndex: 0
+  - m_scale: 0.028382141
+    m_speed: 0.8527129
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -6.2273493, y: -2.8647957}
+    m_starIndex: 0
+  - m_scale: 0.01231519
+    m_speed: 0.14924374
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 3.6179245, y: -3.2370005}
+    m_starIndex: 0
+  - m_scale: 0.09702747
+    m_speed: 0.22837675
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -6.6103363, y: 0.58806944}
+    m_starIndex: 0
+  - m_scale: 0.09411196
+    m_speed: 0.59684277
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -0.33591557, y: -2.4591017}
+    m_starIndex: 0
+  - m_scale: 0.052572783
+    m_speed: 0.9951412
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 0.14180374, y: -2.273539}
+    m_starIndex: 0
+  - m_scale: 0.016166104
+    m_speed: 0.20830128
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.8588848, y: 1.3208655}
+    m_starIndex: 0
+  - m_scale: 0.06882359
+    m_speed: 0.3124463
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 2.282976, y: -0.5786947}
+    m_starIndex: 0
+  - m_scale: 0.034155387
+    m_speed: 0.22319332
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -5.9858217, y: -4.1528034}
+    m_starIndex: 0
+  - m_scale: 0.015954828
+    m_speed: 0.3551555
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -6.524908, y: 2.355386}
+    m_starIndex: 0
+  - m_scale: 0.08021992
+    m_speed: 0.93314016
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 7.7414737, y: -1.2412304}
+    m_starIndex: 0
+  - m_scale: 0.03907712
+    m_speed: 0.9680727
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 1.0466673, y: 1.6683543}
+    m_starIndex: 0
+  - m_scale: 0.030798215
+    m_speed: 0.21698338
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 4.1491337, y: -2.102653}
+    m_starIndex: 0
+  - m_scale: 0.024061263
+    m_speed: 0.605628
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 7.6155677, y: 3.7110312}
+    m_starIndex: 0
+  - m_scale: 0.028872222
+    m_speed: 0.44040906
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -3.8230703, y: -1.8607606}
+    m_starIndex: 0
+  - m_scale: 0.009662974
+    m_speed: 0.8807659
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -3.399396, y: -2.1346002}
+    m_starIndex: 0
+  - m_scale: 0.059066873
+    m_speed: 0.42197382
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 6.477805, y: -3.4023094}
+    m_starIndex: 0
+  - m_scale: 0.0105762845
+    m_speed: 0.44675347
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -6.7182302, y: 2.5796402}
+    m_starIndex: 0
+  - m_scale: 0.06643255
+    m_speed: 0.91481155
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.225723, y: -2.0213757}
+    m_starIndex: 0
+  - m_scale: 0.02291733
+    m_speed: 0.39120546
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -1.3168764, y: -3.8997698}
+    m_starIndex: 0
+  - m_scale: 0.0040536406
+    m_speed: 0.3610232
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -7.53077, y: -3.124474}
+    m_starIndex: 0
+  - m_scale: 0.0010232091
+    m_speed: 0.23051275
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.5792508, y: 2.3993368}
+    m_starIndex: 0
+  - m_scale: 0.03507491
+    m_speed: 0.100450076
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.3819005, y: 1.9176624}
+    m_starIndex: 0
+  - m_scale: 0.016280282
+    m_speed: 0.58429563
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0.2106762, y: -3.6742604}
+    m_starIndex: 0
+  - m_scale: 0.05802557
+    m_speed: 0.40996215
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -4.3191624, y: -0.26237535}
+    m_starIndex: 0
+  - m_scale: 0.019754564
+    m_speed: 0.4141835
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -4.041383, y: -1.7945625}
+    m_starIndex: 0
+  - m_scale: 0.050008543
+    m_speed: 0.46744338
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.036375, y: -2.2039695}
+    m_starIndex: 0
+  - m_scale: 0.043685373
+    m_speed: 0.52494454
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -3.893793, y: 1.8800213}
+    m_starIndex: 0
+  - m_scale: 0.05941052
+    m_speed: 0.45281395
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -8.417107, y: -0.9418206}
+    m_starIndex: 0
+  - m_scale: 0.06946454
+    m_speed: 0.883969
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.9662516, y: 2.4055648}
+    m_starIndex: 0
+  - m_scale: 0.025597006
+    m_speed: 0.63821566
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 6.206297, y: -1.0317101}
+    m_starIndex: 0
+  - m_scale: 0.044510074
+    m_speed: 0.85096174
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 4.7777824, y: 1.4777362}
+    m_starIndex: 0
+  - m_scale: 0.048224013
+    m_speed: 0.85803574
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0.57433987, y: 0.6905513}
+    m_starIndex: 0
+  - m_scale: 0.05189807
+    m_speed: 0.91993743
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 8.065565, y: -3.5626562}
+    m_starIndex: 0
+  - m_scale: 0.058083314
+    m_speed: 0.6908757
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -7.882368, y: -1.2950182}
+    m_starIndex: 0
+  - m_scale: 0.08166944
+    m_speed: 0.7478249
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -7.1823606, y: -0.29174995}
+    m_starIndex: 0
+  - m_scale: 0.098881856
+    m_speed: 0.3687339
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -7.9222627, y: -2.3950806}
+    m_starIndex: 0
+  - m_scale: 0.028330212
+    m_speed: 0.7669092
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.555412, y: -2.9009562}
+    m_starIndex: 0
+  - m_scale: 0.07947043
+    m_speed: 0.9181736
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 5.261903, y: 0.13216782}
+    m_starIndex: 0
+  - m_scale: 0.053062588
+    m_speed: 0.73065877
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -1.6676655, y: 0.027414799}
+    m_starIndex: 0
+  - m_scale: 0.022377241
+    m_speed: 0.9113227
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 5.1368985, y: -1.3904728}
+    m_starIndex: 0
+  - m_scale: 0.08199944
+    m_speed: 0.33145013
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 5.8094625, y: 3.732499}
+    m_starIndex: 0
+  - m_scale: 0.08611985
+    m_speed: 0.5901411
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -1.1361036, y: -3.5186357}
+    m_starIndex: 0
+  - m_scale: 0.05611486
+    m_speed: 0.35196045
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 8.302216, y: -3.2250118}
+    m_starIndex: 0
+  - m_scale: 0.016965747
+    m_speed: 0.28397465
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -3.806365, y: 1.6858829}
+    m_starIndex: 0
+  - m_scale: 0.09298968
+    m_speed: 0.9111602
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -6.1245136, y: -1.0241119}
+    m_starIndex: 0
+  - m_scale: 0.019691063
+    m_speed: 0.94892806
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.311218, y: -1.8196712}
+    m_starIndex: 0
+  - m_scale: 0.08047179
+    m_speed: 0.48679873
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 7.302023, y: 0.17498684}
+    m_starIndex: 0
+  - m_scale: 0.06531649
+    m_speed: 0.84233934
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -5.876998, y: -3.3385458}
+    m_starIndex: 0
+  - m_scale: 0.08751998
+    m_speed: 0.461454
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 6.987417, y: -3.7243319}
+    m_starIndex: 0
+  - m_scale: 0.057481702
+    m_speed: 0.7225504
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 0.4819107, y: 2.542275}
+    m_starIndex: 0
+  - m_scale: 0.07290144
+    m_speed: 0.8859914
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 0.07772541, y: -4.2012224}
+    m_starIndex: 0
+  - m_scale: 0.048728343
+    m_speed: 0.6235279
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 4.357172, y: 4.335225}
+    m_starIndex: 0
+  - m_scale: 0.022830844
+    m_speed: 0.37469572
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -0.417346, y: -0.7347423}
+    m_starIndex: 0
+  - m_scale: 0.0037876964
+    m_speed: 0.5354668
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -5.1809235, y: -1.9154015}
+    m_starIndex: 0
+  - m_scale: 0.059847232
+    m_speed: 0.71792066
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -7.6217766, y: 3.543801}
+    m_starIndex: 0
+  - m_scale: 0.0568204
+    m_speed: 0.22548854
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 8.140747, y: 2.6500719}
+    m_starIndex: 0
+  - m_scale: 0.055469997
+    m_speed: 0.7349693
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 3.4857624, y: 2.6135583}
+    m_starIndex: 0
+  - m_scale: 0.01437186
+    m_speed: 0.56484544
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 2.7474105, y: -2.9168606}
+    m_starIndex: 0
+  - m_scale: 0.013060677
+    m_speed: 0.8408637
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -4.6397514, y: 2.0244164}
+    m_starIndex: 0
+  - m_scale: 0.07666192
+    m_speed: 0.21477655
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 4.6507516, y: 1.8144329}
+    m_starIndex: 0
+  - m_scale: 0.07313367
+    m_speed: 0.92319256
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.412671, y: 4.0454607}
+    m_starIndex: 0
+  - m_scale: 0.073719025
+    m_speed: 0.3431067
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 3.0085447, y: 2.8970184}
+    m_starIndex: 0
+  - m_scale: 0.0710598
+    m_speed: 0.61687386
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -2.159331, y: -0.71575654}
+    m_starIndex: 0
+  - m_scale: 0.076919235
+    m_speed: 0.13456038
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 2.839793, y: 1.5441692}
+    m_starIndex: 0
+  - m_scale: 0.07750279
+    m_speed: 0.2380516
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 6.031257, y: 2.2819107}
+    m_starIndex: 0
+  - m_scale: 0.032583542
+    m_speed: 0.87799555
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -2.2161636, y: 4.4067545}
+    m_starIndex: 0
+  - m_scale: 0.07409047
+    m_speed: 0.5401954
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 3.3789566, y: 1.2999475}
+    m_starIndex: 0
+  - m_scale: 0.0216048
+    m_speed: 0.7965468
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -3.506321, y: -4.034004}
+    m_starIndex: 0
+  - m_scale: 0.08222349
+    m_speed: 0.6487714
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.8158486, y: 1.6235635}
+    m_starIndex: 0
+  - m_scale: 0.088617705
+    m_speed: 0.105128706
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -7.151453, y: -2.5490494}
+    m_starIndex: 0
+  - m_scale: 0.09615517
+    m_speed: 0.9547176
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -1.3109286, y: -1.7567401}
+    m_starIndex: 0
+  - m_scale: 0.0222772
+    m_speed: 0.7763823
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -3.703868, y: 1.7783397}
+    m_starIndex: 0
+  - m_scale: 0.06328938
+    m_speed: 0.67088264
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -7.2871027, y: 3.9468222}
+    m_starIndex: 0
+  - m_scale: 0.008862901
+    m_speed: 0.49837986
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 6.9637794, y: 0.94738245}
+    m_starIndex: 0
+  - m_scale: 0.02787723
+    m_speed: 0.82439697
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 3.1981227, y: -2.593739}
+    m_starIndex: 0
+  - m_scale: 0.06618408
+    m_speed: 0.13173527
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -7.215805, y: 1.4397763}
+    m_starIndex: 0
+  - m_scale: 0.09642102
+    m_speed: 0.74411756
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 2.3988626, y: -1.0435869}
+    m_starIndex: 0
+  - m_scale: 0.0045981645
+    m_speed: 0.84188163
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 6.1342, y: -3.2304492}
+    m_starIndex: 0
+  - m_scale: 0.036996085
+    m_speed: 0.19356865
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 6.455284, y: -3.7837641}
+    m_starIndex: 0
+  - m_scale: 0.08190451
+    m_speed: 0.7204368
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 3.9667296, y: -1.8342603}
+    m_starIndex: 0
+  - m_scale: 0.058381733
+    m_speed: 0.11123363
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.88229346, y: 0.51560915}
+    m_starIndex: 0
+  - m_scale: 0.087926604
+    m_speed: 0.19253911
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.867303, y: -0.5862349}
+    m_starIndex: 0
+  - m_scale: 0.09544424
+    m_speed: 0.98382777
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -3.0785875, y: -1.6102036}
+    m_starIndex: 0
+  - m_scale: 0.062262293
+    m_speed: 0.7852106
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -7.317872, y: 0.8675438}
+    m_starIndex: 0
+  - m_scale: 0.0986943
+    m_speed: 0.80297804
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -5.2283735, y: -3.830086}
+    m_starIndex: 0
+  - m_scale: 0.08587881
+    m_speed: 0.81290305
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -4.9684267, y: -3.286086}
+    m_starIndex: 0
+  - m_scale: 0.078885876
+    m_speed: 0.7892666
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -5.969656, y: 3.8526468}
+    m_starIndex: 0
+  - m_scale: 0.033120792
+    m_speed: 0.97439694
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 1.8847244, y: -2.6450338}
+    m_starIndex: 0
+  - m_scale: 0.011390067
+    m_speed: 0.14311823
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -2.5110075, y: -1.914454}
+    m_starIndex: 0
+  - m_scale: 0.09993638
+    m_speed: 0.6620841
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -0.004963875, y: -4.075736}
+    m_starIndex: 0
+  - m_scale: 0.0018845439
+    m_speed: 0.8130012
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.7999034, y: -1.3586435}
+    m_starIndex: 0
+  - m_scale: 0.011059821
+    m_speed: 0.49242687
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.343253, y: -1.471042}
+    m_starIndex: 0
+  - m_scale: 0.039526742
+    m_speed: 0.68099684
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -6.8156977, y: 3.2435966}
+    m_starIndex: 0
+  - m_scale: 0.095186375
+    m_speed: 0.37607598
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -0.8513355, y: 1.0404091}
+    m_starIndex: 0
+  - m_scale: 0.052180108
+    m_speed: 0.5264304
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -6.059041, y: -3.3630247}
+    m_starIndex: 0
+  - m_scale: 0.03693668
+    m_speed: 0.19823697
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 3.4571922, y: 0.21625519}
+    m_starIndex: 0
+  - m_scale: 0.07047655
+    m_speed: 0.5157769
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0.5093765, y: -4.141472}
+    m_starIndex: 0
+  - m_scale: 0.0049298643
+    m_speed: 0.17380786
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -2.610631, y: 0.9272466}
+    m_starIndex: 0
+  - m_scale: 0.055203944
+    m_speed: 0.6446877
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -7.9483323, y: 3.7846184}
+    m_starIndex: 0
+  - m_scale: 0.035617072
+    m_speed: 0.41434628
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -6.881692, y: 3.9184198}
+    m_starIndex: 0
+  - m_scale: 0.01476971
+    m_speed: 0.78436476
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -7.620466, y: 0.29017782}
+    m_starIndex: 0
+  - m_scale: 0.0008067012
+    m_speed: 0.7375087
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -4.4488153, y: -4.4383526}
+    m_starIndex: 0
+  - m_scale: 0.095382825
+    m_speed: 0.293903
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -2.3380833, y: 0.8786417}
+    m_starIndex: 0
+  - m_scale: 0.0025210262
+    m_speed: 0.44033173
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -2.0936825, y: -1.6206964}
+    m_starIndex: 0
+  - m_scale: 0.02832982
+    m_speed: 0.28090394
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 7.321721, y: -3.2894492}
+    m_starIndex: 0
+  - m_scale: 0.072128676
+    m_speed: 0.7646077
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 6.340925, y: 1.390251}
+    m_starIndex: 0
+  - m_scale: 0.07243891
+    m_speed: 0.34764197
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 3.6955905, y: 0.15995455}
+    m_starIndex: 0
+  - m_scale: 0.020657266
+    m_speed: 0.92570937
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -7.1558046, y: 0.36381626}
+    m_starIndex: 0
+  - m_scale: 0.06568267
+    m_speed: 0.115028314
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 7.0974236, y: -2.2078962}
+    m_starIndex: 0
+  - m_scale: 0.05538065
+    m_speed: 0.61882704
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 5.852584, y: -1.6738116}
+    m_starIndex: 0
+  - m_scale: 0.044707578
+    m_speed: 0.80231076
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -4.847579, y: 0.6595106}
+    m_starIndex: 0
+  - m_scale: 0.0774939
+    m_speed: 0.3432039
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 1.3498752, y: -0.4649949}
+    m_starIndex: 0
+  - m_scale: 0.050498575
+    m_speed: 0.21025103
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -3.156594, y: 0.57259846}
+    m_starIndex: 0
+  - m_scale: 0.09652265
+    m_speed: 0.37720004
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -7.4587345, y: -4.4981947}
+    m_starIndex: 0
+  - m_scale: 0.015969599
+    m_speed: 0.32337448
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -1.8451011, y: -2.5848417}
+    m_starIndex: 0
+  - m_scale: 0.07481243
+    m_speed: 0.31524962
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 8.391569, y: -1.623766}
+    m_starIndex: 0
+  - m_scale: 0.079735994
+    m_speed: 0.9514505
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -0.64428234, y: -3.8502576}
+    m_starIndex: 0
+  - m_scale: 0.040155407
+    m_speed: 0.6298857
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -4.4329014, y: 0.4930129}
+    m_starIndex: 0
+  - m_scale: 0.054718383
+    m_speed: 0.7508339
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 6.4543962, y: 3.191379}
+    m_starIndex: 0
+  - m_scale: 0.04267928
+    m_speed: 0.17501754
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -4.1954117, y: 1.392474}
+    m_starIndex: 0
+  - m_scale: 0.07528553
+    m_speed: 0.24212618
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: -6.1484222, y: 2.4285321}
+    m_starIndex: 0
+  - m_scale: 0.0588538
+    m_speed: 0.32993865
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.056578636, y: 3.9364045}
+    m_starIndex: 0
+  - m_scale: 0.0718916
+    m_speed: 0.32002848
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    m_spawnPosition: {x: 1.2672806, y: 2.8559527}
+    m_starIndex: 0
+  - m_scale: 0.0062260865
+    m_speed: 0.2756954
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: 0.39948463, y: 4.4912214}
+    m_starIndex: 0
+  - m_scale: 0.048000496
+    m_speed: 0.60932344
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 7.6195927, y: 0.731279}
+    m_starIndex: 0
+  - m_scale: 0.048841935
+    m_speed: 0.4050198
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 1.441824, y: 3.543474}
+    m_starIndex: 0
+  - m_scale: 0.071680106
+    m_speed: 0.36410826
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -7.3577003, y: 2.5378997}
+    m_starIndex: 0
+  - m_scale: 0.08537763
+    m_speed: 0.5039016
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -7.4165916, y: -0.6607145}
+    m_starIndex: 0
+  - m_scale: 0.05549043
+    m_speed: 0.68818164
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    m_spawnPosition: {x: -4.510848, y: 1.6340069}
+    m_starIndex: 0
+  - m_scale: 0.07901545
+    m_speed: 0.9806247
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 5.7364683, y: 3.3928742}
+    m_starIndex: 0
+  - m_scale: 0.031966455
+    m_speed: 0.80398136
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 0.76705337, y: -3.7699015}
+    m_starIndex: 0
+  - m_scale: 0.05707676
+    m_speed: 0.8638484
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: 1.3826971, y: -2.9131098}
+    m_starIndex: 0
+  - m_scale: 0.0036782266
+    m_speed: 0.5587399
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 3.820481, y: -2.5257492}
+    m_starIndex: 0
+  - m_scale: 0.048159223
+    m_speed: 0.31643453
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -1.2124054, y: -2.08075}
+    m_starIndex: 0
+  - m_scale: 0.07912245
+    m_speed: 0.17899632
+    m_color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    m_spawnPosition: {x: -6.8356323, y: 2.5447617}
+    m_starIndex: 0
+  - m_scale: 0.022839416
+    m_speed: 0.31452802
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0.18410397, y: -2.4568143}
+    m_starIndex: 0
+  - m_scale: 0.095965765
+    m_speed: 0.8566905
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: -4.8908663, y: -1.3820763}
+    m_starIndex: 0
+  - m_scale: 0.08379056
+    m_speed: 0.13814777
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 2.2835882, y: -4.468837}
+    m_starIndex: 0
+  - m_scale: 0.06220892
+    m_speed: 0.23245735
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 7.2428427, y: -3.0876937}
+    m_starIndex: 0
+  - m_scale: 0.098752774
+    m_speed: 0.21384454
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -0.85856247, y: -4.341401}
+    m_starIndex: 0
+  - m_scale: 0.03809436
+    m_speed: 0.89677113
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: -3.094243, y: 0.7911053}
+    m_starIndex: 0
+  - m_scale: 0.07623235
+    m_speed: 0.5555521
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    m_spawnPosition: {x: 5.014689, y: 3.952707}
+    m_starIndex: 0
+  m_colorList:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0, g: 0, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 0, g: 1, b: 0, a: 1}
+  m_prefab: {fileID: 6489788308722836279, guid: 98339fff2b972d14b8d3bbda363dbcf2, type: 3}
 --- !u!1 &243262761
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,54 +3046,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &654445442
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 654445444}
-  - component: {fileID: 654445443}
-  m_Layer: 0
-  m_Name: StarSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &654445443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654445442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6d714abd5a69442a263495c9b0e85a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_spawnAmount: 10
-  m_starScale: 1
-  m_spawnPositionLimit: {x: 8.5, y: 4.5}
-  m_starColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &654445444
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654445442}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1695,4 +4202,4 @@ SceneRoots:
   - {fileID: 669142147}
   - {fileID: 2019166325}
   - {fileID: 243262763}
-  - {fileID: 654445444}
+  - {fileID: 140396354}

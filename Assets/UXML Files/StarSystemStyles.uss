@@ -1,0 +1,25 @@
+.starListButtons {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-left-color: rgb(209, 209, 209);
+    border-right-color: rgb(209, 209, 209);
+    border-top-color: rgb(209, 209, 209);
+    border-bottom-color: rgb(209, 209, 209);
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    font-size: 12px;
+    transition-duration: 0.2s;
+    flex-basis: 50%;
+    -unity-font-style: bold;
+}

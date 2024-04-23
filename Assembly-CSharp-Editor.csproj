@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Editor\StarSystemEditor.cs" />
     <Compile Include="Assets\Editor\Car_Inspector.cs" />
+    <Compile Include="Assets\Editor\StarPropertyDrawer.cs" />
     <Compile Include="Assets\Editor\Tire_PropertyDrawer.cs" />
   </ItemGroup>
   <ItemGroup>

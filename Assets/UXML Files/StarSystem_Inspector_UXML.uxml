@@ -1,10 +1,24 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/UXML%20Files/StarSystemStyles.uss?fileID=7433441132597879392&amp;guid=75753e000c8b0c743a908829139eafe2&amp;type=3#StarSystemStyles" />
+    <uie:PropertyField name="prefabToSpawn" binding-path="m_prefab" label="Prefab To Spawn" />
     <ui:Label tabindex="-1" text="Spawns within (-x,x) &amp; (-y,y)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="spawnPosLimitLabel" style="align-self: center; margin-top: 4px; margin-bottom: 4px; font-size: 14px;" />
     <ui:Vector2Field name="spawnPositionLimit" binding-path="m_spawnPositionLimit" style="margin-bottom: 8px;" />
-    <uie:PropertyField name="spawnAmount" binding-path="m_spawnAmount" label="Amount to spawn" style="font-size: 14px;" />
-    <ui:VisualElement name="starScale" style="flex-direction: row; align-items: stretch;">
-        <ui:Label tabindex="-1" text="Scale" parse-escape-sequences="true" display-tooltip-when-elided="true" style="flex-grow: 1; -unity-text-align: middle-left; font-size: 14px; margin-left: 3px; margin-right: 16px;" />
-        <ui:Slider high-value="1" name="StarScaleSlider" binding-path="m_starScale" show-input-field="true" inverted="false" style="margin-bottom: 4px; flex-grow: 1;" />
-    </ui:VisualElement>
-    <uie:PropertyField name="starColor" binding-path="m_starColor" label="Star Color" style="font-size: 14px;" />
+    <ui:VisualElement name="divider" style="flex-grow: 1; height: 20px; max-height: 2px; background-color: rgb(38, 38, 38); border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; width: 95%; align-self: center;" />
+    <ui:GroupBox name="amountScaleGroup" style="background-color: rgba(19, 19, 19, 0.28); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; min-height: 40px; padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px; margin-bottom: 8px;">
+        <ui:GroupBox name="amountGroup" style="flex-direction: row; min-height: 40px;">
+            <ui:Label tabindex="-1" text="Amount To Spawn" parse-escape-sequences="true" display-tooltip-when-elided="true" name="amtToSpawnLabel" style="font-size: 14px; -unity-text-align: upper-center; flex-wrap: nowrap; flex-basis: 40%; white-space: normal; padding-right: 16px;" />
+            <ui:IntegerField value="10" name="amtToSpawnInt" binding-path="m_spawnAmount" style="flex-basis: 60%; font-size: 14px; -unity-text-align: upper-left; justify-content: flex-start;" />
+        </ui:GroupBox>
+        <ui:GroupBox name="scaleGroup" style="flex-direction: row; margin-top: 2px;">
+            <ui:Label tabindex="-1" text="Max Scale" parse-escape-sequences="true" display-tooltip-when-elided="true" name="scaleLabel" style="flex-basis: 40%; -unity-text-align: upper-center; font-size: 14px; padding-right: 16px;" />
+            <ui:Slider high-value="1" binding-path="m_starScale" name="scaleSlider" show-input-field="true" style="flex-basis: 60%;" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+    <uie:PropertyField name="colorList" binding-path="m_colorList" label="Color Choices" style="margin-bottom: 8px;" />
+    <ui:GroupBox name="btnGroup" style="flex-direction: row; justify-content: center; margin-right: 4px; margin-left: 4px; margin-bottom: 4px; margin-top: 4px; padding-left: 4px; padding-right: 4px; padding-bottom: 2px;">
+        <ui:Button text="Populate" parse-escape-sequences="true" display-tooltip-when-elided="true" name="populateListBtn" class="starListButtons" style="flex-basis: 33%;" />
+        <ui:Button text="Randomize" parse-escape-sequences="true" display-tooltip-when-elided="true" name="randomizeStarsBtn" focusable="true" class="starListButtons" style="flex-basis: 33%;" />
+        <ui:Button text="Clear" parse-escape-sequences="true" display-tooltip-when-elided="true" name="clearListBtn" class="starListButtons" style="flex-basis: 33%;" />
+    </ui:GroupBox>
+    <uie:PropertyField name="starList" binding-path="m_starList" label="Star List" />
 </ui:UXML>

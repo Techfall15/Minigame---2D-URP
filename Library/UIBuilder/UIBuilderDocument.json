@@ -11,7 +11,19 @@
         "m_CodePreviewVisible": true,
         "m_OpenUXMLFiles": [
             {
-                "m_OpenUSSFiles": [],
+                "m_OpenUSSFiles": [
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "75753e000c8b0c743a908829139eafe2",
+                            "type": 3
+                        },
+                        "m_BackupStyleSheet": {
+                            "instanceID": 0
+                        },
+                        "m_OldPath": "Assets/UXML Files/StarSystemStyles.uss"
+                    }
+                ],
                 "m_OpenendVisualTreeAssetOldPath": "Assets/UXML Files/StarSystem_Inspector_UXML.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
@@ -19,7 +31,9 @@
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "instanceID": 0
+                    "fileID": 7433441132597879392,
+                    "guid": "75753e000c8b0c743a908829139eafe2",
+                    "type": 3
                 },
                 "m_Settings": {
                     "UxmlGuid": "6396b75601a7758408be3bf7f2a43a71",
@@ -29,10 +43,10 @@
                     "CanvasWidth": 350,
                     "CanvasHeight": 443,
                     "MatchGameView": false,
-                    "ZoomScale": 0.8999999761581421,
+                    "ZoomScale": 0.949999988079071,
                     "PanOffset": {
-                        "x": 127.25,
-                        "y": 93.20001220703125
+                        "x": 175.3289794921875,
+                        "y": 150.6943817138672
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,

@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:GroupBox name="detailsGroup" style="flex-direction: row; justify-content: center; margin-top: 2px;">
+        <ui:Label tabindex="-1" text="Star #" parse-escape-sequences="true" display-tooltip-when-elided="true" name="starDetailsLabel" style="-unity-text-align: upper-center; font-size: 12px; -unity-font-style: bold;" />
+        <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="starIndexLabel" binding-path="m_starIndex" style="-unity-font-style: bold;" />
+    </ui:GroupBox>
+    <ui:GroupBox name="positionColorGroup" style="flex-direction: row; padding-left: 0; margin-top: 0; padding-top: 2px;">
+        <ui:Label tabindex="-1" text="Spawn&#10;Pos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="spawnPositionLabel" style="-unity-text-align: middle-center; flex-basis: 15%; white-space: nowrap; min-width: 50px;" />
+        <ui:Vector2Field name="spawnPosition" style="flex-basis: 50%; -unity-text-align: middle-left;" />
+        <uie:ColorField value="RGBA(0.000, 1.000, 1.000, 1.000)" name="starColor" hdr="false" style="flex-basis: 30%; -unity-text-align: middle-left; align-self: center;" />
+    </ui:GroupBox>
+</ui:UXML>

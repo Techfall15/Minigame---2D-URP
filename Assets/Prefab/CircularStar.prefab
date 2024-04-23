@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6669629342674813557}
   - component: {fileID: 1229376736238872429}
+  - component: {fileID: -2294383184122945032}
   m_Layer: 0
   m_Name: CircularStar
   m_TagString: Untagged
@@ -84,3 +85,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2294383184122945032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6489788308722836279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2642144cdd4d6c640b0368c8c5b95102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_starClass:
+    m_scale: 1
+    m_speed: 1
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0, y: 0}
+    m_starIndex: 0
+  m_spriteRenderer: {fileID: 0}
+  m_scale: 0
+  m_speed: 0
+  m_spawnPosition: {x: 0, y: 0}

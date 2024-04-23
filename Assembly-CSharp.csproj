@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\NoiseTriggerController.cs" />
     <Compile Include="Assets\Scripts\Star.cs" />
     <Compile Include="Assets\Scripts\Tire.cs" />
+    <Compile Include="Assets\Scripts\StarObjectPool.cs" />
+    <Compile Include="Assets\Scripts\StarController.cs" />
     <Compile Include="Assets\Scripts\FirstUIDocController.cs" />
   </ItemGroup>
   <ItemGroup>

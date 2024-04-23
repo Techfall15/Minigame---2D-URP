@@ -15,39 +15,38 @@ public class StarSystem: MonoBehaviour
     [SerializeField] private List<Color> m_colorList = new List<Color>() {
         Color.white, Color.blue, Color.red, Color.yellow, Color.green};
     [SerializeField] private GameObject m_prefab;
+    private bool m_starsSpawned = false;
 
 
-    protected void Start()
+    private void Start()
     {
-        if (m_prefab == null) return;
         SpawnStars();
     }
+
     private void SpawnStars()
     {
-        RandomizeStars();
-        foreach (var star in m_starList)
+        for(int i = 0; i < m_spawnAmount; i++)
         {
-            var newStar = Instantiate(m_prefab);
-            var scale = star.GetScale();
-
-            newStar.transform.position = star.GetSpawnPosition();
-            newStar.GetComponent<SpriteRenderer>().color = star.GetColor();
-            newStar.transform.localScale = new Vector2(scale, scale);
+            GameObject star = StarObjectPool.m_SharedInstance.GetPooledObject();
+            if (star != null)
+            {
+                StarController starController = star.GetComponent<StarController>();
+                RandomizeStar(starController);
+                star.SetActive(true);
+            }
         }
+        
     }
     public void PopulateList() => m_starList = new Star[m_spawnAmount];
-    public void RandomizeStars()
+    public void RandomizeStar(StarController star)
     {
-        if (m_starList.Length <= 0) return;
-        foreach(var star in m_starList)
-        {
-            star.SetScaleTo(Random.Range(0,m_starScale));
-            star.SetSpeedTo(Random.Range(0.1f, 1f));
-            star.SetColorTo(m_colorList[Random.Range(0, m_colorList.Count)]);
-            star.SetSpawnPositionTo(new Vector2(
-                Random.Range(-m_spawnPositionLimit.x, m_spawnPositionLimit.x),
-                Random.Range(-m_spawnPositionLimit.y, m_spawnPositionLimit.y)));
-        }
+        star.m_starClass.SetScaleTo(Random.Range(0,m_starScale));
+        star.m_starClass.SetSpeedTo(Random.Range(0.1f, 1f));
+        star.m_starClass.SetColorTo(m_colorList[Random.Range(0, m_colorList.Count)]);
+        star.m_starClass.SetSpawnPositionTo(new Vector2(
+            Random.Range(-m_spawnPositionLimit.x, m_spawnPositionLimit.x),
+            Random.Range(-m_spawnPositionLimit.y, m_spawnPositionLimit.y)));
+        
     }
     public void ClearList() => m_starList = new Star[0];
 

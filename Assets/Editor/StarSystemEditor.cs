@@ -21,8 +21,6 @@ public class StarSystemEditor : Editor
 
         Button populateBtn = root.Q<Button>("populateListBtn");
         populateBtn.RegisterCallback<ClickEvent>(OnPopulateButtonClick);
-        Button randomizeBtn = root.Q<Button>("randomizeStarsBtn");
-        randomizeBtn.RegisterCallback<ClickEvent>(OnRandomButtonClick);
         Button clearBtn = root.Q<Button>("clearListBtn");
         clearBtn.RegisterCallback<ClickEvent>(OnClearButtonClick);
 
@@ -32,7 +30,6 @@ public class StarSystemEditor : Editor
     #region Button Events
 
     private void OnPopulateButtonClick(ClickEvent evt) => m_starSystem.PopulateList();
-    private void OnRandomButtonClick(ClickEvent evt) => m_starSystem.RandomizeStars();
     private void OnClearButtonClick(ClickEvent evt) => m_starSystem.ClearList();
 
     #endregion

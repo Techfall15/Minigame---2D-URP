@@ -6,6 +6,7 @@ public class StarController : MonoBehaviour
 {
     public Star m_starClass;
     [SerializeField] private SpriteRenderer m_spriteRenderer;
+    private Rigidbody2D m_Rigidbody;
     [SerializeField] private float m_scale;
     [SerializeField] private float m_speed;
     [SerializeField] private Vector2 m_spawnPosition;
@@ -13,6 +14,7 @@ public class StarController : MonoBehaviour
     private void Awake()
     {
         m_spriteRenderer = GetComponent<SpriteRenderer>();
+        m_Rigidbody = GetComponent<Rigidbody2D>();
         CreateStarClass();
     }
 
@@ -25,6 +27,12 @@ public class StarController : MonoBehaviour
         SetColor(m_starClass.GetColor());
         SetPosition(m_spawnPosition);
         SetScale(m_scale);
+        m_Rigidbody.velocity = Vector2.right * (m_speed * Time.deltaTime);
+    }
+    private void Update()
+    {
+        if (transform.position.x < 9.2f) return;
+        else transform.position = new Vector2(-9.2f, transform.position.y);
     }
     private void UpdateClassValues()
     {

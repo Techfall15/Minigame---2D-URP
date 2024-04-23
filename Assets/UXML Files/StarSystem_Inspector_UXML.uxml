@@ -13,12 +13,14 @@
             <ui:Label tabindex="-1" text="Max Scale" parse-escape-sequences="true" display-tooltip-when-elided="true" name="scaleLabel" style="flex-basis: 40%; -unity-text-align: upper-center; font-size: 14px; padding-right: 16px;" />
             <ui:Slider high-value="1" binding-path="m_starScale" name="scaleSlider" show-input-field="true" style="flex-basis: 60%;" />
         </ui:GroupBox>
+        <ui:GroupBox name="speedGroup" style="flex-direction: row; margin-top: 2px;">
+            <ui:Label tabindex="-1" text="Max Speed" parse-escape-sequences="true" display-tooltip-when-elided="true" name="speedLabel" style="flex-basis: 40%; -unity-text-align: upper-center; font-size: 14px; padding-right: 16px;" />
+            <ui:Slider high-value="10" binding-path="m_starSpeed" name="speedSlider" show-input-field="true" low-value="0.1" style="flex-basis: 60%;" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+    <ui:GroupBox name="btnGroup" style="flex-direction: row; justify-content: center; margin-right: 4px; margin-left: 4px; margin-bottom: 4px; margin-top: 4px; padding-left: 4px; padding-right: 4px; padding-bottom: 2px;">
+        <ui:Button text="Spawn Stars" parse-escape-sequences="true" display-tooltip-when-elided="true" name="spawnStarsBtn" class="starListButtons" style="flex-basis: 33%;" />
+        <ui:Button text="Clear All Stars" parse-escape-sequences="true" display-tooltip-when-elided="true" name="clearAllStarsBtn" class="starListButtons" style="flex-basis: 33%;" />
     </ui:GroupBox>
     <uie:PropertyField name="colorList" binding-path="m_colorList" label="Color Choices" style="margin-bottom: 8px;" />
-    <ui:GroupBox name="btnGroup" style="flex-direction: row; justify-content: center; margin-right: 4px; margin-left: 4px; margin-bottom: 4px; margin-top: 4px; padding-left: 4px; padding-right: 4px; padding-bottom: 2px;">
-        <ui:Button text="Populate" parse-escape-sequences="true" display-tooltip-when-elided="true" name="populateListBtn" class="starListButtons" style="flex-basis: 33%;" />
-        <ui:Button text="Randomize" parse-escape-sequences="true" display-tooltip-when-elided="true" name="randomizeStarsBtn" focusable="true" class="starListButtons" style="flex-basis: 33%;" />
-        <ui:Button text="Clear" parse-escape-sequences="true" display-tooltip-when-elided="true" name="clearListBtn" class="starListButtons" style="flex-basis: 33%;" />
-    </ui:GroupBox>
-    <uie:PropertyField name="starList" binding-path="m_starList" label="Star List" />
 </ui:UXML>

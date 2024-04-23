@@ -16,21 +16,20 @@ public class StarSystemEditor : Editor
     public override VisualElement CreateInspectorGUI()
     {
         var root = new VisualElement();
-
         m_treeAsset.CloneTree(root);
 
-        Button populateBtn = root.Q<Button>("populateListBtn");
-        populateBtn.RegisterCallback<ClickEvent>(OnPopulateButtonClick);
-        Button clearBtn = root.Q<Button>("clearListBtn");
-        clearBtn.RegisterCallback<ClickEvent>(OnClearButtonClick);
-
+        Button spawnStarsBtn = root.Q<Button>("spawnStarsBtn");
+        spawnStarsBtn.RegisterCallback<ClickEvent>(OnSpawnStarsButtonClick);
+        Button clearBtn = root.Q<Button>("clearAllStarsBtn");
+        clearBtn.RegisterCallback<ClickEvent>(OnClearAllStarsButtonClick);
+        
         return root;
     }
 
     #region Button Events
 
-    private void OnPopulateButtonClick(ClickEvent evt) => m_starSystem.PopulateList();
-    private void OnClearButtonClick(ClickEvent evt) => m_starSystem.ClearList();
+    private void OnSpawnStarsButtonClick(ClickEvent evt) => m_starSystem.SpawnStars();
+    private void OnClearAllStarsButtonClick(ClickEvent evt) => m_starSystem.DisableAllStars();
 
     #endregion
 }

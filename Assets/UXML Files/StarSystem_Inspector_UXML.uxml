@@ -1,8 +1,121 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
     <Style src="project://database/Assets/UXML%20Files/StarSystemStyles.uss?fileID=7433441132597879392&amp;guid=75753e000c8b0c743a908829139eafe2&amp;type=3#StarSystemStyles" />
     <uie:PropertyField name="prefabToSpawn" binding-path="m_prefab" label="Prefab To Spawn" />
-    <ui:Label tabindex="-1" text="Spawns within (-x,x) &amp; (-y,y)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="spawnPosLimitLabel" style="align-self: center; margin-top: 4px; margin-bottom: 4px; font-size: 14px;" />
-    <ui:Vector2Field name="spawnPositionLimit" binding-path="m_spawnPositionLimit" style="margin-bottom: 8px;" />
+    <ui:Label tabindex="-1" text="Spawns Within (-x,x) &amp; (-y,y)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="spawnPosLimitLabel" style="align-self: center; margin-top: 4px; margin-bottom: 4px; font-size: 14px;" />
+    <ui:GroupBox style="flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 8px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+        <ui:GroupBox name="spawnPositionLimit" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+            <ui:Label tabindex="-1" text="( x1,y1 )" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center;" />
+            <ui:Vector2Field binding-path="m_spawnPositionLimit" name="spawnPos1" />
+        </ui:GroupBox>
+        <ui:GroupBox name="spawnPositionLimit2" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+            <ui:Label tabindex="-1" text="( x2,y2 )" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center;" />
+            <ui:Vector2Field binding-path="m_spawnPositionLimit2" name="spawnPos2" x="2" y="2" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+    <ui:Toggle label="Customize Spawn" name="customizeSpawnToggle" binding-path="m_customizeSpawn" value="false" />
+    <ui:DropdownField label="Spawn Direction" index="-1" choices="As Above, So Below" name="spawnDirectionDropField" focusable="true" />
+    <ui:GroupBox name="spawnAreaGroup" class="myGroupBox" style="max-width: 200px; max-height: 200px; width: 200px; height: 250px; align-items: flex-start; align-self: center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; flex-direction: row; min-width: 100px; flex-wrap: wrap; min-height: 100px; justify-content: flex-start; flex-basis: 100%;">
+        <ui:VisualElement class="gridSpace" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+    </ui:GroupBox>
     <ui:VisualElement name="divider" style="flex-grow: 1; height: 20px; max-height: 2px; background-color: rgb(38, 38, 38); border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; width: 95%; align-self: center;" />
     <ui:GroupBox name="amountScaleGroup" style="background-color: rgba(19, 19, 19, 0.28); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; min-height: 40px; padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px; margin-bottom: 8px;">
         <ui:GroupBox name="amountGroup" style="flex-direction: row; min-height: 40px;">

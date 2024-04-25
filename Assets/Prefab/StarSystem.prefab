@@ -93,13 +93,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnAmount: 500
-  m_starScale: 0.2
-  m_starSpeed: 2
-  m_spawnPositionLimit: {x: 9, y: 4.5}
-  m_starList: []
+  m_starScale: 0.547
+  m_starSpeed: 10
+  m_spawnPositionLimit: {x: -2, y: -2}
+  m_spawnPositionLimit2: {x: 2, y: 2}
+  m_starList:
+  - m_scale: 1
+    m_speed: 1
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0, y: 0}
+    m_starIndex: 0
+  - m_scale: 1
+    m_speed: 1
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0, y: 0}
+    m_starIndex: 0
+  - m_scale: 1
+    m_speed: 1
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0, y: 0}
+    m_starIndex: 0
+  - m_scale: 1
+    m_speed: 1
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0, y: 0}
+    m_starIndex: 0
+  - m_scale: 1
+    m_speed: 1
+    m_color: {r: 1, g: 1, b: 1, a: 1}
+    m_spawnPosition: {x: 0, y: 0}
+    m_starIndex: 0
   m_colorList:
-  - {r: 0.03137255, g: 0.8509804, b: 0.8392157, a: 1}
-  - {r: 0.14509805, g: 0.16470589, b: 0.20392157, a: 1}
-  - {r: 1, g: 0.18039216, b: 0.3882353, a: 1}
-  - {r: 0.91764706, g: 0.91764706, b: 0.91764706, a: 1}
+  - {r: 0.34901962, g: 0.8745098, b: 0.8784314, a: 1}
+  - {r: 0.9607843, g: 0.8666667, b: 0.38039216, a: 1}
+  - {r: 0.98039216, g: 0.6392157, b: 0, a: 1}
+  - {r: 0.95686275, g: 0.3254902, b: 0.5411765, a: 1}
   m_prefab: {fileID: 6489788308722836279, guid: 98339fff2b972d14b8d3bbda363dbcf2, type: 3}
+  m_customizeSpawn: 1
+  m_onlySpawnAbove: 0
+  m_onlySpawnBelow: 1

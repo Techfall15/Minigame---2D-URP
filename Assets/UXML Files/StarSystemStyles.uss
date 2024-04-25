@@ -23,3 +23,36 @@
     flex-basis: 50%;
     -unity-font-style: bold;
 }
+
+.myGroupBox {
+    width: 50%;
+    height: 50%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.gridSpace {
+    flex-grow: 1;
+    width: 20px;
+    height: 10%;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    flex-basis: 1%;
+    min-width: 18px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 20px;
+    max-height: 10%;
+}

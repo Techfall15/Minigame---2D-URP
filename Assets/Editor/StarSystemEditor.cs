@@ -224,7 +224,7 @@ public class StarSystemEditor : Editor
         Debug.Log("Which is: " + (m_spawnPositionLimit2.value.y - m_spawnPositionLimit.value.y) + " / " + (m_spawnPositionLimit2.value.x - m_spawnPositionLimit.value.x) + " after being simplified");
         Debug.Log("Y-Intercept of line is: " + yIntercept);
 
-        m_coloredPoints.Clear();
+        
         foreach (var point in root.Q<VisualElement>("spawnAreaGroup").Children())
         {
             var x3 = int.Parse(point.name[1].ToString());
@@ -240,7 +240,7 @@ public class StarSystemEditor : Editor
 
             if(aboveBelow == true)
             {
-                if (newIntercept >= yIntercept) m_coloredPoints.Add(point);
+                if (newIntercept > yIntercept) m_coloredPoints.Add(point);
                 
             }
             else
@@ -250,6 +250,8 @@ public class StarSystemEditor : Editor
             }
 
         }
+        foreach (var point in root.Q<VisualElement>("spawnAreaGroup").Children()) { point.style.backgroundColor = Color.clear; }
+        foreach (var point in m_coloredPoints) { point.style.backgroundColor = Color.red; }
         root.MarkDirtyRepaint();
     }
     #endregion

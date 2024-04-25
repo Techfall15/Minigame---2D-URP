@@ -1046,15 +1046,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_spawnPositionLimit.x
-      value: -2
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_spawnPositionLimit.y
-      value: -2
+      value: -2.01
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_spawnPositionLimit2.x
-      value: 1
+      value: 3.99
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_spawnPositionLimit2.y

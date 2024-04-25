@@ -27,7 +27,8 @@ public class StarSystemEditor : Editor
     private int row2Index;
     private int col2Index;
     private HashSet<VisualElement> m_coloredPoints;
-    
+    private float m_slope;
+    private FloatField m_slopeField;
     
     private void OnEnable()
     {
@@ -36,9 +37,9 @@ public class StarSystemEditor : Editor
     public override VisualElement CreateInspectorGUI()
     {
         var root = new VisualElement();
-        m_coloredPoints = new HashSet<VisualElement>();
         m_treeAsset.CloneTree(root);
-
+        m_slopeField = root.Q<FloatField>("slopeFloatField");
+        m_slopeField.SetEnabled(false);
         InitializeElements(root);
         RegisterCallbacks(root);
 
@@ -57,26 +58,29 @@ public class StarSystemEditor : Editor
         m_spawnPosLimitLabel = root.Q<Label>("spawnPosLimitLabel");
         m_spawnPositionLimit = root.Q<Vector2Field>("spawnPos1");
         m_spawnPositionLimit2 = root.Q<Vector2Field>("spawnPos2");
+        m_coloredPoints = new HashSet<VisualElement>();
 
         spawnStarsBtn = root.Q<Button>("spawnStarsBtn");
         clearBtn = root.Q<Button>("clearAllStarsBtn");
         customizeSpawnToggle = root.Q<Toggle>("customizeSpawnToggle");
         spawnDirectionField = root.Q<DropdownField>("spawnDirectionDropField");
         m_spawnPosLimitLabel.SetEnabled(customizeSpawnToggle.value);
-        gridIndexes = GetGridIndexes(root);
+        InitGrid(root);
 
-        rowIndex = GetTargetRow(m_spawnPositionLimit.value.x);
-        colIndex = GetTargetCol(m_spawnPositionLimit.value.y);
-        row2Index = GetTargetRow(m_spawnPositionLimit2.value.x);
-        col2Index = GetTargetCol(m_spawnPositionLimit2.value.y);
-        m_coloredPoints.Clear();
-        m_coloredPoints.Add(root.Q<VisualElement>(rowIndex.ToString() + colIndex.ToString()));
-        m_coloredPoints.Add(root.Q<VisualElement>(row2Index.ToString() + col2Index.ToString()));
-
-        foreach (var point in m_coloredPoints) { point.style.backgroundColor = Color.red; }
+    }
+    #region Grid Initialization
+    private void InitGrid(VisualElement root)
+    {
+        gridIndexes = GetGridIndices(root);
+        rowIndex    = GetTargetRow(m_spawnPositionLimit.value.x);                       // This stuff could probaly end up in a list with one function passing in the value. TBD
+        colIndex    = GetTargetCol(m_spawnPositionLimit.value.y);
+        row2Index   = GetTargetRow(m_spawnPositionLimit2.value.x);
+        col2Index   = GetTargetCol(m_spawnPositionLimit2.value.y);
+        PopulateColoredList(root, spawnDirectionField.value == "As Above");
     }
     #endregion
-    
+    #endregion
+
     #region Register Callbacks
     private void RegisterCallbacks(VisualElement root)
     {
@@ -143,7 +147,8 @@ public class StarSystemEditor : Editor
     #endregion
 
     #region Grid Events
-    private List<Vector2> GetGridIndexes(VisualElement root)
+
+    private List<Vector2> GetGridIndices(VisualElement root)
     {
         var indexes = new List<Vector2>();
         var points = new List<VisualElement>();
@@ -179,17 +184,6 @@ public class StarSystemEditor : Editor
         var aboveBelow = spawnDirectionField.value == "As Above";
         PopulateColoredList(root, aboveBelow);
 
-
-        m_coloredPoints.Add(root.Q<VisualElement>(rowIndex.ToString() + colIndex.ToString()));
-        m_coloredPoints.Add(root.Q<VisualElement>(row2Index.ToString() + col2Index.ToString()));
-
-        foreach (var point in m_coloredPoints) { point.style.backgroundColor = Color.red; }
-        // Edit the color of the target points here
-        // TBD
-        m_coloredPoints.Add(root.Q<VisualElement>(rowIndex.ToString() + colIndex.ToString()));
-        m_coloredPoints.Add(root.Q<VisualElement>(row2Index.ToString() + col2Index.ToString()));
-
-        foreach (var point in m_coloredPoints) { point.style.backgroundColor = Color.red; }
     }
     private int GetTargetCol(float x)
     {
@@ -217,10 +211,11 @@ public class StarSystemEditor : Editor
     private void PopulateColoredList(VisualElement root, bool aboveBelow)
     {
         m_coloredPoints.Clear();
-        var slope = (m_spawnPositionLimit2.value.y - m_spawnPositionLimit.value.y) / (m_spawnPositionLimit2.value.x- m_spawnPositionLimit.value.x);
-        var yIntercept = m_spawnPositionLimit2.value.y - (slope * m_spawnPositionLimit2.value.x);
+        m_slope = (m_spawnPositionLimit2.value.y - m_spawnPositionLimit.value.y) / (m_spawnPositionLimit2.value.x- m_spawnPositionLimit.value.x);
+        m_slopeField.value = m_slope;
+        var yIntercept = m_spawnPositionLimit2.value.y - (m_slope * m_spawnPositionLimit2.value.x);
         
-        Debug.Log("Slope of line is: " + slope);
+        Debug.Log("Slope of line is: " + m_slope);
         Debug.Log("Which is: " + (m_spawnPositionLimit2.value.y - m_spawnPositionLimit.value.y) + " / " + (m_spawnPositionLimit2.value.x - m_spawnPositionLimit.value.x) + " after being simplified");
         Debug.Log("Y-Intercept of line is: " + yIntercept);
 
@@ -236,7 +231,7 @@ public class StarSystemEditor : Editor
             x3 = x3 - 5;
             y3 = 5 - y3;
 
-            var newIntercept = y3 - (slope * x3);
+            var newIntercept = y3 - (m_slope * x3);
 
             if(aboveBelow == true)
             {
@@ -262,13 +257,9 @@ public class StarSystemEditor : Editor
         }
         root.MarkDirtyRepaint();
     }
+
     #endregion
 
-
-
-
-
-   
 
 }
 

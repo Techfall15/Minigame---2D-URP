@@ -1038,27 +1038,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_onlySpawnAbove
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_onlySpawnBelow
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_spawnPositionLimit.x
-      value: 0.06
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_spawnPositionLimit.y
-      value: -2.01
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_spawnPositionLimit2.x
-      value: 3.99
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_spawnPositionLimit2.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_LocalPosition.x

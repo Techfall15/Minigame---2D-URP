@@ -27,10 +27,11 @@ public class StarSystemEditor : Editor
     private int row2Index;
     private int col2Index;
     private HashSet<VisualElement> m_coloredPoints;
+    
+    
     private void OnEnable()
     {
         m_starSystem = (StarSystem)target;
-        
     }
     public override VisualElement CreateInspectorGUI()
     {
@@ -47,9 +48,6 @@ public class StarSystemEditor : Editor
         var choices = new List<string> { "As Above", "So Below"};
         spawnDirectionField.choices = choices;
         spawnDirectionField.value = choices[0];
-
-
-        
         
         return root;
     }
@@ -171,12 +169,7 @@ public class StarSystemEditor : Editor
 
         var aboveBelow = spawnDirectionField.value == "As Above";
         PopulateColoredList(root, aboveBelow);
-
-
-        m_coloredPoints.Add(root.Q<VisualElement>(rowIndex.ToString()+colIndex.ToString()));
-        m_coloredPoints.Add(root.Q<VisualElement>(row2Index.ToString() + col2Index.ToString()));
         
-        foreach (var point in m_coloredPoints) { point.style.backgroundColor = Color.red; }
     }
     private void OnSpawnLimit2Change(ChangeEvent<Vector2> evt, VisualElement root)
     {
@@ -185,7 +178,12 @@ public class StarSystemEditor : Editor
 
         var aboveBelow = spawnDirectionField.value == "As Above";
         PopulateColoredList(root, aboveBelow);
-        
+
+
+        m_coloredPoints.Add(root.Q<VisualElement>(rowIndex.ToString() + colIndex.ToString()));
+        m_coloredPoints.Add(root.Q<VisualElement>(row2Index.ToString() + col2Index.ToString()));
+
+        foreach (var point in m_coloredPoints) { point.style.backgroundColor = Color.red; }
         // Edit the color of the target points here
         // TBD
         m_coloredPoints.Add(root.Q<VisualElement>(rowIndex.ToString() + colIndex.ToString()));
@@ -221,6 +219,7 @@ public class StarSystemEditor : Editor
         m_coloredPoints.Clear();
         var slope = (m_spawnPositionLimit2.value.y - m_spawnPositionLimit.value.y) / (m_spawnPositionLimit2.value.x- m_spawnPositionLimit.value.x);
         var yIntercept = m_spawnPositionLimit2.value.y - (slope * m_spawnPositionLimit2.value.x);
+        
         Debug.Log("Slope of line is: " + slope);
         Debug.Log("Which is: " + (m_spawnPositionLimit2.value.y - m_spawnPositionLimit.value.y) + " / " + (m_spawnPositionLimit2.value.x - m_spawnPositionLimit.value.x) + " after being simplified");
         Debug.Log("Y-Intercept of line is: " + yIntercept);
@@ -246,13 +245,21 @@ public class StarSystemEditor : Editor
             }
             else
             {
-                if (newIntercept <= yIntercept) m_coloredPoints.Add(point);
+                if (newIntercept < yIntercept) m_coloredPoints.Add(point);
                 
             }
 
         }
         foreach (var point in root.Q<VisualElement>("spawnAreaGroup").Children()) { point.style.backgroundColor = Color.clear; }
-        foreach (var point in m_coloredPoints) { point.style.backgroundColor = Color.red; }
+        var point1 = root.Q<VisualElement>(rowIndex.ToString() + colIndex.ToString());
+        var point2 = root.Q<VisualElement>(row2Index.ToString() + col2Index.ToString());
+        m_coloredPoints.Add(point1);
+        m_coloredPoints.Add(point2);
+        foreach (var point in m_coloredPoints)
+        {
+            if (point.name != point1.name && point.name != point2.name) point.style.backgroundColor = Color.red;
+            else point.style.backgroundColor = Color.black;
+        }
         root.MarkDirtyRepaint();
     }
     #endregion

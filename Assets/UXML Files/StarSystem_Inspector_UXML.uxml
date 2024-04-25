@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/UXML%20Files/StarSystemStyles.uss?fileID=7433441132597879392&amp;guid=75753e000c8b0c743a908829139eafe2&amp;type=3#StarSystemStyles" />
     <uie:PropertyField name="prefabToSpawn" binding-path="m_prefab" label="Prefab To Spawn" />
     <ui:Label tabindex="-1" text="Spawns Within (-x,x) &amp; (-y,y)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="spawnPosLimitLabel" style="align-self: center; margin-top: 4px; margin-bottom: 4px; font-size: 14px;" />
-    <ui:GroupBox style="flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 8px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+    <ui:GroupBox name="spawnPositionGroup" style="flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 8px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-wrap: wrap;">
         <ui:GroupBox name="spawnPositionLimit" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
             <ui:Label tabindex="-1" text="( x1,y1 )" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center;" />
             <ui:Vector2Field binding-path="m_spawnPositionLimit" name="spawnPos1" />
@@ -70,7 +70,7 @@
         <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
         <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
         <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
-        <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
         <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
         <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
         <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />

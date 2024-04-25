@@ -186,7 +186,8 @@ public class StarSystemEditor : Editor
         var aboveBelow = spawnDirectionField.value == "As Above";
         PopulateColoredList(root, aboveBelow);
         
-
+        // Edit the color of the target points here
+        // TBD
         m_coloredPoints.Add(root.Q<VisualElement>(rowIndex.ToString() + colIndex.ToString()));
         m_coloredPoints.Add(root.Q<VisualElement>(row2Index.ToString() + col2Index.ToString()));
 

@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System;
 using System.Xml;
 using System.Net.NetworkInformation;
+using UnityEngine.EventSystems;
+using Unity.VisualScripting;
 
 
 
@@ -21,7 +23,7 @@ public class StarSystemEditor : Editor
     private Toggle customizeSpawnToggle;
     private DropdownField spawnDirectionField;
     
-    private List<Vector2> gridIndexes;
+    private List<Vector2> m_gridIndexes;
     private int rowIndex;
     private int colIndex;
     private int row2Index;
@@ -42,7 +44,7 @@ public class StarSystemEditor : Editor
         m_slopeField.SetEnabled(false);
         InitializeElements(root);
         RegisterCallbacks(root);
-
+        
         if (customizeSpawnToggle.value == false) m_spawnPosLimitLabel.SetEnabled(true);
         
         spawnDirectionField.SetEnabled(customizeSpawnToggle.value);
@@ -66,12 +68,12 @@ public class StarSystemEditor : Editor
         spawnDirectionField = root.Q<DropdownField>("spawnDirectionDropField");
         m_spawnPosLimitLabel.SetEnabled(customizeSpawnToggle.value);
         InitGrid(root);
-
+        InitMouseTrack(root);
     }
     #region Grid Initialization
     private void InitGrid(VisualElement root)
     {
-        gridIndexes = GetGridIndices(root);
+        m_gridIndexes = GetGridIndices(root);
         rowIndex    = GetTargetRow(m_spawnPositionLimit.value.x);                       // This stuff could probaly end up in a list with one function passing in the value. TBD
         colIndex    = GetTargetCol(m_spawnPositionLimit.value.y);
         row2Index   = GetTargetRow(m_spawnPositionLimit2.value.x);
@@ -260,7 +262,28 @@ public class StarSystemEditor : Editor
 
     #endregion
 
+    private void InitMouseTrack(VisualElement root)
+    {
+        var mouseTrackArea = root.Q<VisualElement>("MouseTrackTest");
+        var hoverCircle = mouseTrackArea.ElementAt(0);
 
+        mouseTrackArea.RegisterCallback<PointerOverEvent>((evt) =>
+        {
+            if(hoverCircle.style.visibility == Visibility.Hidden) hoverCircle.style.visibility = Visibility.Visible;
+            mouseTrackArea.RegisterCallback<PointerMoveEvent>((evt) =>
+            {
+                
+                hoverCircle.style.left = Mathf.Clamp(evt.localPosition.x-20, 0, mouseTrackArea.layout.size.x);
+                hoverCircle.style.top = Mathf.Clamp(evt.localPosition.y - 20, -1, mouseTrackArea.layout.size.y-40);
+                if (hoverCircle.style.visibility == Visibility.Visible) return;
+                hoverCircle.style.visibility = Visibility.Visible;
+            });
+        });
+        mouseTrackArea.RegisterCallback<PointerOutEvent>((evt) => 
+        {
+            hoverCircle.style.visibility = Visibility.Hidden;
+        });
+    }
 }
 
 

@@ -74,7 +74,7 @@ public class StarSystemEditor : Editor
     private void InitGrid(VisualElement root)
     {
         m_gridIndexes = GetGridIndices(root);
-        rowIndex    = GetTargetRow(m_spawnPositionLimit.value.x);                       // This stuff could probaly end up in a list with one function passing in the value. TBD
+        rowIndex    = GetTargetRow(m_spawnPositionLimit.value.x);                       
         colIndex    = GetTargetCol(m_spawnPositionLimit.value.y);
         row2Index   = GetTargetRow(m_spawnPositionLimit2.value.x);
         col2Index   = GetTargetCol(m_spawnPositionLimit2.value.y);

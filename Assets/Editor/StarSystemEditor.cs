@@ -138,13 +138,13 @@ public class StarSystemEditor : Editor
     {
         if(evt.newValue == "As Above")
         {
-            m_starSystem.ToggleAsAboveSoBelow(StarSystem.m_spawnState.OnlySpawnAbove);
+            m_starSystem.ToggleAsAboveSoBelow(StarSystem.m_SpawnState.OnlySpawnAbove);
             PopulateColoredList(root, true);
             Debug.Log("Star System state value is now: " + m_starSystem.GetCurrentSpawnState());
         }
         else
         {
-            m_starSystem.ToggleAsAboveSoBelow(StarSystem.m_spawnState.OnlySpawnBelow);
+            m_starSystem.ToggleAsAboveSoBelow(StarSystem.m_SpawnState.OnlySpawnBelow);
             PopulateColoredList(root, false);
             Debug.Log("Star System state value is now: " + m_starSystem.GetCurrentSpawnState());
         }

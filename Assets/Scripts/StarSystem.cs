@@ -11,19 +11,18 @@ public class StarSystem : MonoBehaviour
     [SerializeField] private int m_spawnAmount = 10;
     [SerializeField] private float m_starScale = 1f;
     [SerializeField] private float m_starSpeed = 1f;
-    [SerializeField] private Vector2 m_spawnPositionLimit = new Vector2(8.5f, 4.5f);
-    [SerializeField] private Vector2 m_spawnPositionLimit2 = new Vector2(8.5f, 4.5f);
     [SerializeField] private float m_slope = 1f;
     [SerializeField] private float m_yIntercept = 0f;
-    [SerializeField] private Star[] m_starList = new Star[5];
-    [SerializeField] private List<Color> m_colorList = new List<Color>() {
-        Color.white, Color.blue, Color.red, Color.yellow, Color.green};
-    [SerializeField] private GameObject m_prefab;
     [SerializeField] private bool m_customizeSpawn = false;
     [SerializeField] private bool m_onlySpawnAbove = false;
     [SerializeField] private bool m_onlySpawnBelow = false;
-    public enum m_spawnState { OnlySpawnAbove, OnlySpawnBelow };
-    private m_spawnState spawnState;
+    [SerializeField] private GameObject m_prefab;
+    [SerializeField] private Vector2 m_spawnPositionLimit = new Vector2(8.5f, 4.5f);
+    [SerializeField] private Vector2 m_spawnPositionLimit2 = new Vector2(8.5f, 4.5f);
+    [SerializeField] private List<Color> m_colorList = new List<Color>() {
+        Color.white, Color.blue, Color.red, Color.yellow, Color.green};
+    public enum m_SpawnState { OnlySpawnAbove, OnlySpawnBelow };
+    private m_SpawnState spawnState;
 
     private void Awake()
     {
@@ -66,12 +65,12 @@ public class StarSystem : MonoBehaviour
             star.SetActive(false);
         }
     }
-    public m_spawnState GetCurrentSpawnState() => spawnState;
-    public void ToggleAsAboveSoBelow(m_spawnState state)
+    public m_SpawnState GetCurrentSpawnState() => spawnState;
+    public void ToggleAsAboveSoBelow(m_SpawnState state)
     {
         switch (state)
         {
-            case m_spawnState.OnlySpawnAbove:
+            case m_SpawnState.OnlySpawnAbove:
                 m_onlySpawnAbove = true;
                 m_onlySpawnBelow = false;
                 spawnState = state;
@@ -84,7 +83,7 @@ public class StarSystem : MonoBehaviour
 
 
                 break;
-            case m_spawnState.OnlySpawnBelow:
+            case m_SpawnState.OnlySpawnBelow:
                 m_onlySpawnAbove = false;
                 m_onlySpawnBelow = true;
                 spawnState = state;
@@ -141,15 +140,15 @@ public class StarSystem : MonoBehaviour
     #endregion
 
     #region Customize Functions
-    private void CustomizeSpawn(StarController star, Vector2 limits, m_spawnState state)
+    private void CustomizeSpawn(StarController star, Vector2 limits, m_SpawnState state)
     {
         switch (state)
         {
-            case m_spawnState.OnlySpawnBelow:
+            case m_SpawnState.OnlySpawnBelow:
                 m_onlySpawnAbove = false;
                 m_onlySpawnBelow = true;
                 break;
-            case m_spawnState.OnlySpawnAbove:
+            case m_SpawnState.OnlySpawnAbove:
                 m_onlySpawnAbove = true;
                 m_onlySpawnBelow = false;
                 break;

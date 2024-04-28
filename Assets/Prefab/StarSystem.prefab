@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PooledStars: []
   m_ObjectToPool: {fileID: 6489788308722836279, guid: 98339fff2b972d14b8d3bbda363dbcf2, type: 3}
-  m_AmountToPool: 1000
+  m_AmountToPool: 200
 --- !u!1 &8815411818423049041
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,8 +95,10 @@ MonoBehaviour:
   m_spawnAmount: 500
   m_starScale: 0.547
   m_starSpeed: 10
-  m_spawnPositionLimit: {x: -2, y: -2}
-  m_spawnPositionLimit2: {x: 2, y: 2}
+  m_spawnPositionLimit: {x: -1, y: -1}
+  m_spawnPositionLimit2: {x: 1, y: 1}
+  m_slope: 1
+  m_yIntercept: 0
   m_starList:
   - m_scale: 1
     m_speed: 1

@@ -2,8 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
+
 
 
 public class StarSystem : MonoBehaviour
@@ -28,7 +27,6 @@ public class StarSystem : MonoBehaviour
 
     private void Awake()
     {
-        spawnState = (m_customizeSpawn) ? m_spawnState.OnlySpawnAbove : m_spawnState.OnlySpawnBelow;
         m_slope = GetSlopeOfLine(m_spawnPositionLimit, m_spawnPositionLimit2);
         m_yIntercept = GetYInterceptOfLine(m_spawnPositionLimit, m_slope);
     }
@@ -40,6 +38,7 @@ public class StarSystem : MonoBehaviour
         else Debug.Log("Stars are not using custom spawn");
     }
 
+    #region Public Interface
     public void SpawnStars()
     {
         for(int i = 0; i < m_spawnAmount; i++)
@@ -50,11 +49,8 @@ public class StarSystem : MonoBehaviour
                 StarController starController = star.GetComponent<StarController>();
                 if(m_customizeSpawn == true)
                 {
-                    if(spawnState == m_spawnState.OnlySpawnAbove)
-                    {
-                        RandomizeStar(starController);
-                        CustomizeSpawn(starController, new Vector2(-4.5f,4.5f), spawnState);
-                    }
+                    CustomizeSpawn(starController, new Vector2(-4.5f,4.5f), spawnState);
+                    RandomizeStar(starController);
                 }
                 else RandomizeStar(starController);
                 star.SetActive(true);
@@ -70,6 +66,46 @@ public class StarSystem : MonoBehaviour
             star.SetActive(false);
         }
     }
+    public m_spawnState GetCurrentSpawnState() => spawnState;
+    public void ToggleAsAboveSoBelow(m_spawnState state)
+    {
+        switch (state)
+        {
+            case m_spawnState.OnlySpawnAbove:
+                m_onlySpawnAbove = true;
+                m_onlySpawnBelow = false;
+                spawnState = state;
+                //Debug.Log("Changed to As Above");
+                if (StarObjectPool.m_SharedInstance != null)
+                {
+                    DisableAllStars();
+                    SpawnStars();
+                }
+
+
+                break;
+            case m_spawnState.OnlySpawnBelow:
+                m_onlySpawnAbove = false;
+                m_onlySpawnBelow = true;
+                spawnState = state;
+                //Debug.Log("Changed to So Below");
+                if (StarObjectPool.m_SharedInstance != null)
+                {
+                    DisableAllStars();
+                    SpawnStars();
+                }
+                break;
+            default:
+                Debug.Log("Error toggling above or below spawner");
+                break;
+        }
+    }
+    public void SetCustomizeSpawnTo(bool state) => m_customizeSpawn = state;
+    #endregion
+
+    #region Private Interface
+    private float GetSlopeOfLine(Vector2 p1, Vector2 p2) => (p2.y - p1.y) / (p2.x - p1.x);
+    private float GetYInterceptOfLine(Vector2 point, float slope) => point.y - (m_slope * point.x);
 
     #region Randomize Functions
     private void RandomizeStar(StarController star)
@@ -78,11 +114,23 @@ public class StarSystem : MonoBehaviour
         RandomizeSpeed(star);
         RandomizeColor(star);
         var newSpawnPos = Vector2.zero;
-        do
+        
+        if (m_onlySpawnAbove == true)
+        { 
+            do
+            {
+                RandomizeSpawn(star);
+                newSpawnPos = star.m_starClass.GetSpawnPosition();
+            } while (GetYInterceptOfLine(newSpawnPos, m_slope) < m_yIntercept);
+        }
+        else if(m_onlySpawnBelow == true)
         {
-            RandomizeSpawn(star);
-            newSpawnPos = star.m_starClass.GetSpawnPosition();
-        }while((m_onlySpawnAbove == true) ? GetYInterceptOfLine(newSpawnPos,m_slope) < m_yIntercept : GetYInterceptOfLine(newSpawnPos, m_slope) > m_yIntercept);
+            do
+            {
+                RandomizeSpawn(star);
+                newSpawnPos = star.m_starClass.GetSpawnPosition();
+            } while (GetYInterceptOfLine(newSpawnPos, m_slope) > m_yIntercept);
+        }
     }
     private void RandomizeScale(StarController star) => star.m_starClass.SetScaleTo(Random.Range(0, m_starScale));
     private void RandomizeSpeed(StarController star) => star.m_starClass.SetSpeedTo(Random.Range(0.1f, m_starSpeed));
@@ -106,35 +154,13 @@ public class StarSystem : MonoBehaviour
                 m_onlySpawnBelow = false;
                 break;
             default:
-                Debug.Log("Error customizeing spawn position");
+                Debug.Log("Error customizing spawn position");
                 break;
         }
         
 
     }    
     #endregion
-    public void ToggleAsAboveSoBelow(m_spawnState state)
-    {
-        switch (state)
-        {
-            case m_spawnState.OnlySpawnAbove:
-                m_onlySpawnAbove = true;
-                m_onlySpawnBelow = false;
-                Debug.Log("Changed to As Above");
 
-                break;
-            case m_spawnState.OnlySpawnBelow:
-                m_onlySpawnAbove = false;
-                m_onlySpawnBelow = true;
-                Debug.Log("Changed to So Below");
-
-                break;
-            default:
-                Debug.Log("Error toggling above or below spawner");
-                break;
-        }
-    }
-    public void SetCustomizeSpawnTo(bool state) => m_customizeSpawn = state;
-    private float GetSlopeOfLine(Vector2 p1,  Vector2 p2) => (p2.y - p1.y) / (p2.x - p1.x);
-    private float GetYInterceptOfLine(Vector2 point, float slope) => point.y - (m_slope * point.x);
+    #endregion
 }

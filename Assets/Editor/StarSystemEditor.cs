@@ -66,7 +66,7 @@ public class StarSystemEditor : Editor
         clearBtn = root.Q<Button>("clearAllStarsBtn");
         customizeSpawnToggle = root.Q<Toggle>("customizeSpawnToggle");
         spawnDirectionField = root.Q<DropdownField>("spawnDirectionDropField");
-        m_spawnPosLimitLabel.SetEnabled(customizeSpawnToggle.value);
+        
         InitGrid(root);
         InitMouseTrack(root);
     }
@@ -120,6 +120,8 @@ public class StarSystemEditor : Editor
         {
             OnAsAboveSoBelowChange(evt, root);
             m_spawnPosLimitLabel.text = (evt.newValue == "As Above") ? "Spawns Stars Above (x,y)" : "Spawns Stars Below (x,y)";
+
+            
         });
     }
     #endregion
@@ -138,11 +140,13 @@ public class StarSystemEditor : Editor
         {
             m_starSystem.ToggleAsAboveSoBelow(StarSystem.m_spawnState.OnlySpawnAbove);
             PopulateColoredList(root, true);
+            Debug.Log("Star System state value is now: " + m_starSystem.GetCurrentSpawnState());
         }
         else
         {
             m_starSystem.ToggleAsAboveSoBelow(StarSystem.m_spawnState.OnlySpawnBelow);
             PopulateColoredList(root, false);
+            Debug.Log("Star System state value is now: " + m_starSystem.GetCurrentSpawnState());
         }
     }
 
@@ -217,9 +221,9 @@ public class StarSystemEditor : Editor
         m_slopeField.value = m_slope;
         var yIntercept = m_spawnPositionLimit2.value.y - (m_slope * m_spawnPositionLimit2.value.x);
         
-        Debug.Log("Slope of line is: " + m_slope);
+        /*Debug.Log("Slope of line is: " + m_slope);
         Debug.Log("Which is: " + (m_spawnPositionLimit2.value.y - m_spawnPositionLimit.value.y) + " / " + (m_spawnPositionLimit2.value.x - m_spawnPositionLimit.value.x) + " after being simplified");
-        Debug.Log("Y-Intercept of line is: " + yIntercept);
+        Debug.Log("Y-Intercept of line is: " + yIntercept);*/
 
         
         foreach (var point in root.Q<VisualElement>("spawnAreaGroup").Children())

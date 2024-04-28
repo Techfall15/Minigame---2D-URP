@@ -17,7 +17,7 @@
         <ui:FloatField value="1" name="slopeFloatField" readonly="true" class="defaultFloatField" />
     </ui:GroupBox>
     <ui:Toggle label="Customize Spawn" name="customizeSpawnToggle" binding-path="m_customizeSpawn" value="false" />
-    <ui:DropdownField label="Spawn Direction" index="-1" choices="As Above, So Below" name="spawnDirectionDropField" focusable="true" />
+    <ui:DropdownField label="Spawn Direction" index="-1" choices="As Above, So Below" name="spawnDirectionDropField" focusable="true" view-data-key="spawnDirDropField" binding-path="m_spawnState" />
     <ui:GroupBox name="spawnAreaGroup" class="myGroupBox" style="max-width: 200px; max-height: 200px; width: 200px; height: 250px; align-items: flex-start; align-self: center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; flex-direction: row; min-width: 100px; flex-wrap: wrap; min-height: 100px; justify-content: flex-start; flex-basis: 100%; background-color: rgba(0, 0, 0, 0);">
         <ui:VisualElement class="gridSpace" />
         <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />

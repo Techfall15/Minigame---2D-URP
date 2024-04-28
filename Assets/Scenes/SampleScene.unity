@@ -182,13 +182,14 @@ GameObject:
   m_Component:
   - component: {fileID: 383684206}
   - component: {fileID: 383684205}
+  - component: {fileID: 383684207}
   m_Layer: 5
   m_Name: UIDocument
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &383684205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +221,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &383684207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383684204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05393b24947099944a52723a93371e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetDoc: {fileID: 383684205}
+  m_spriteList:
+  - {fileID: 21300000, guid: 7f9ab4afaabd06c408273b856504f4b8, type: 3}
+  - {fileID: 21300000, guid: 2dce238441dd3a948a961b48dee7cc26, type: 3}
+  m_spriteChangeAmount: 20
+  m_timeBetweenSpriteChanges: 0.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +320,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.01441794, g: 0.01441794, b: 0.11320752, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -439,6 +458,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1856450372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815411818423049041, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_Name
+      value: StarSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815411818423049041, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -447,3 +527,4 @@ SceneRoots:
   - {fileID: 841205058}
   - {fileID: 366717790}
   - {fileID: 383684206}
+  - {fileID: 1856450372}

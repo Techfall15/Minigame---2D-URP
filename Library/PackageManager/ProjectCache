@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638490668536215456
-    m_Hash: 4213906566
+      ticks: 638499092348777588
+    m_Hash: 1459345120
   m_LockFileStatus:
     m_FilePath: C:/Users/marti/Minigame - 2D URP/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638490668536543421
-    m_Hash: 931419645
+      ticks: 638499092348867394
+    m_Hash: 293251507
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -163,6 +163,400 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.entities@1.0.16
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.16
+  source: 1
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.entities@1.0.16
+  assetPath: Packages/com.unity.entities
+  name: com.unity.entities
+  displayName: Entities
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: The Entities package provides a modern Entity Component System (ECS)
+    implementation with a basic set of systems and components made for Unity.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.4
+    - 0.0.12-preview.5
+    - 0.0.12-preview.6
+    - 0.0.12-preview.8
+    - 0.0.12-preview.11
+    - 0.0.12-preview.12
+    - 0.0.12-preview.13
+    - 0.0.12-preview.14
+    - 0.0.12-preview.15
+    - 0.0.12-preview.16
+    - 0.0.12-preview.17
+    - 0.0.12-preview.18
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 0.0.12-preview.21
+    - 0.0.12-preview.23
+    - 0.0.12-preview.24
+    - 0.0.12-preview.26
+    - 0.0.12-preview.27
+    - 0.0.12-preview.28
+    - 0.0.12-preview.29
+    - 0.0.12-preview.30
+    - 0.0.12-preview.31
+    - 0.0.12-preview.32
+    - 0.0.12-preview.33
+    - 0.1.0-preview
+    - 0.1.1-preview
+    - 0.2.0-preview.18
+    - 0.3.0-preview.4
+    - 0.4.0-preview.10
+    - 0.5.0-preview.17
+    - 0.5.1-preview.11
+    - 0.6.0-preview.24
+    - 0.7.0-preview.19
+    - 0.8.0-preview.8
+    - 0.9.0-preview.6
+    - 0.9.1-preview.15
+    - 0.10.0-preview.6
+    - 0.11.0-preview.7
+    - 0.11.1-preview.4
+    - 0.11.2-preview.1
+    - 0.13.0-preview.24
+    - 0.14.0-preview.18
+    - 0.14.0-preview.19
+    - 0.16.0-preview.21
+    - 0.17.0-preview.41
+    - 0.17.0-preview.42
+    - 0.50.0-preview.24
+    - 0.50.1-preview.2
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.8
+    - 1.0.0-exp.12
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.47
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    - 1.1.0-exp.1
+    - 1.1.0-pre.3
+    - 1.2.0-exp.3
+    - 1.2.0-pre.4
+    - 1.2.0-pre.6
+    - 1.2.0-pre.12
+    - 1.2.0
+    compatible:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.4
+    - 0.0.12-preview.5
+    - 0.0.12-preview.6
+    - 0.0.12-preview.8
+    - 0.0.12-preview.11
+    - 0.0.12-preview.12
+    - 0.0.12-preview.13
+    - 0.0.12-preview.14
+    - 0.0.12-preview.15
+    - 0.0.12-preview.16
+    - 0.0.12-preview.17
+    - 0.0.12-preview.18
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 0.0.12-preview.21
+    - 0.0.12-preview.23
+    - 0.0.12-preview.24
+    - 0.0.12-preview.26
+    - 0.0.12-preview.27
+    - 0.0.12-preview.28
+    - 0.0.12-preview.29
+    - 0.0.12-preview.30
+    - 0.0.12-preview.31
+    - 0.0.12-preview.32
+    - 0.0.12-preview.33
+    - 0.1.0-preview
+    - 0.1.1-preview
+    - 0.2.0-preview.18
+    - 0.3.0-preview.4
+    - 0.4.0-preview.10
+    - 0.5.0-preview.17
+    - 0.5.1-preview.11
+    - 0.6.0-preview.24
+    - 0.7.0-preview.19
+    - 0.8.0-preview.8
+    - 0.9.0-preview.6
+    - 0.9.1-preview.15
+    - 0.10.0-preview.6
+    - 0.11.0-preview.7
+    - 0.11.1-preview.4
+    - 0.11.2-preview.1
+    - 0.13.0-preview.24
+    - 0.14.0-preview.18
+    - 0.14.0-preview.19
+    - 0.16.0-preview.21
+    - 0.17.0-preview.41
+    - 0.17.0-preview.42
+    - 0.50.0-preview.24
+    - 0.50.1-preview.2
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.8
+    - 1.0.0-exp.12
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.47
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    - 1.1.0-exp.1
+    - 1.1.0-pre.3
+    - 1.2.0-exp.3
+    - 1.2.0-pre.4
+    - 1.2.0-pre.6
+    - 1.2.0-pre.12
+    - 1.2.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.serialization
+    version: 3.1.1
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.assetbundle
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 3.0.2
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  - name: com.unity.scriptablebuildpipeline
+    version: 1.20.2
+  - name: com.unity.profiling.core
+    version: 1.0.2
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.12
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.serialization
+    version: 3.1.1
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  - name: com.unity.modules.assetbundle
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 3.0.2
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.scriptablebuildpipeline
+    version: 1.21.21
+  - name: com.unity.profiling.core
+    version: 1.0.2
+  keywords:
+  - entities
+  - dots
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638302011930000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.entities@1.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/dots.git
+    revision: 8f9a34fef643cca2b5f84470ac61c171c1831168
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.entities.graphics@1.0.16
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.16
+  source: 1
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.entities.graphics@1.0.16
+  assetPath: Packages/com.unity.entities.graphics
+  name: com.unity.entities.graphics
+  displayName: Entities Graphics
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: The Entities Graphics package provides systems and components for
+    drawing meshes using DOTS, including support for instanced mesh rendering and
+    LOD.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-exp.8
+    - 1.0.0-exp.14
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    - 1.1.0-exp.1
+    - 1.1.0-pre.3
+    - 1.2.0-exp.3
+    - 1.2.0-pre.4
+    - 1.2.0-pre.6
+    - 1.2.0-pre.12
+    - 1.2.0
+    compatible:
+    - 1.0.0-exp.8
+    - 1.0.0-exp.14
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    - 1.1.0-exp.1
+    - 1.1.0-pre.3
+    - 1.2.0-exp.3
+    - 1.2.0-pre.4
+    - 1.2.0-pre.6
+    - 1.2.0-pre.12
+    - 1.2.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.entities
+    version: 1.0.16
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.unity.render-pipelines.core
+    version: 14.0.7
+  resolvedDependencies:
+  - name: com.unity.entities
+    version: 1.0.16
+  - name: com.unity.burst
+    version: 1.8.12
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.serialization
+    version: 3.1.1
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  - name: com.unity.modules.assetbundle
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 3.0.2
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.scriptablebuildpipeline
+    version: 1.21.21
+  - name: com.unity.profiling.core
+    version: 1.0.2
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.unity.render-pipelines.core
+    version: 14.0.10
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.terrain
+    version: 1.0.0
+  keywords:
+  - dots
+  - hybrid
+  - rendering
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638302012110000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.entities.graphics@1.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/dots.git
+    revision: 8f9a34fef643cca2b5f84470ac61c171c1831168
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.feature.2d@2.0.0
   testable: 0
   isDirectDependency: 1
@@ -231,11 +625,13 @@ m_ResolvedPackages:
   - name: com.unity.burst
     version: 1.8.12
   - name: com.unity.collections
-    version: 1.2.4
-  - name: com.unity.test-framework
-    version: 1.1.33
-  - name: com.unity.ext.nunit
-    version: 1.0.6
+    version: 2.1.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
   - name: com.unity.2d.pixel-perfect
     version: 5.0.3
   - name: com.unity.2d.psdimporter
@@ -466,6 +862,189 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 2.0.22
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.physics@1.0.16
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.16
+  source: 1
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.physics@1.0.16
+  assetPath: Packages/com.unity.physics
+  name: com.unity.physics
+  displayName: Unity Physics
+  author:
+    name: 
+    email: 
+    url: 
+  category: Unity
+  type: assets
+  description: 'Unity''s C# stateless physics library.
+
+
+    Built on top of the
+    Unity C# DOTS framework, Unity Physics is network-ready, completely customizable,
+    and built for performance out of the box. Whether you''re building the next mobile
+    hit or a new networked multiplayer console experience, Unity Physics leverages
+    the Burst compiler and Job system to scale across a range of hardware.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.1-preview.1
+    - 0.0.2-preview.1
+    - 0.1.0-preview
+    - 0.2.0-preview
+    - 0.2.2-preview
+    - 0.2.3-preview
+    - 0.2.4-preview
+    - 0.2.5-preview
+    - 0.2.5-preview.1
+    - 0.3.0-preview.1
+    - 0.3.1-preview
+    - 0.3.2-preview
+    - 0.4.0-preview.5
+    - 0.4.1-preview
+    - 0.5.0-preview.1
+    - 0.5.1-preview.2
+    - 0.6.0-preview.3
+    - 0.50.0-preview.24
+    - 0.50.0-preview.43
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.8
+    - 1.0.0-exp.12
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    - 1.1.0-exp.1
+    - 1.1.0-pre.3
+    - 1.2.0-exp.3
+    - 1.2.0-pre.4
+    - 1.2.0-pre.6
+    - 1.2.0-pre.12
+    - 1.2.0
+    compatible:
+    - 0.0.1-preview.1
+    - 0.0.2-preview.1
+    - 0.1.0-preview
+    - 0.2.0-preview
+    - 0.2.2-preview
+    - 0.2.3-preview
+    - 0.2.4-preview
+    - 0.2.5-preview
+    - 0.2.5-preview.1
+    - 0.3.0-preview.1
+    - 0.3.1-preview
+    - 0.3.2-preview
+    - 0.4.0-preview.5
+    - 0.4.1-preview
+    - 0.5.0-preview.1
+    - 0.5.1-preview.2
+    - 0.6.0-preview.3
+    - 0.50.0-preview.24
+    - 0.50.0-preview.43
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.8
+    - 1.0.0-exp.12
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    - 1.1.0-exp.1
+    - 1.1.0-pre.3
+    - 1.2.0-exp.3
+    - 1.2.0-pre.4
+    - 1.2.0-pre.6
+    - 1.2.0-pre.12
+    - 1.2.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.entities
+    version: 1.0.16
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.12
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  - name: com.unity.entities
+    version: 1.0.16
+  - name: com.unity.serialization
+    version: 3.1.1
+  - name: com.unity.modules.assetbundle
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 3.0.2
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.scriptablebuildpipeline
+    version: 1.21.21
+  - name: com.unity.profiling.core
+    version: 1.0.2
+  keywords:
+  - unity
+  - physics
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638302012050000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.physics@1.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/dots.git
+    revision: 8f9a34fef643cca2b5f84470ac61c171c1831168
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -3945,6 +4524,163 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.collections@2.1.4
+  testable: 0
+  isDirectDependency: 0
+  version: 2.1.4
+  source: 1
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.collections@2.1.4
+  assetPath: Packages/com.unity.collections
+  name: com.unity.collections
+  displayName: Collections
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: A C# collections library providing data structures that can be used
+    in jobs, and optimized by Burst compiler.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.9-preview.1
+    - 0.0.9-preview.2
+    - 0.0.9-preview.3
+    - 0.0.9-preview.4
+    - 0.0.9-preview.5
+    - 0.0.9-preview.6
+    - 0.0.9-preview.7
+    - 0.0.9-preview.8
+    - 0.0.9-preview.9
+    - 0.0.9-preview.10
+    - 0.0.9-preview.11
+    - 0.0.9-preview.12
+    - 0.0.9-preview.13
+    - 0.0.9-preview.14
+    - 0.0.9-preview.15
+    - 0.0.9-preview.16
+    - 0.0.9-preview.17
+    - 0.0.9-preview.18
+    - 0.0.9-preview.19
+    - 0.0.9-preview.20
+    - 0.1.0-preview
+    - 0.1.1-preview
+    - 0.2.0-preview.13
+    - 0.3.0-preview.0
+    - 0.4.0-preview.6
+    - 0.5.0-preview.9
+    - 0.5.1-preview.11
+    - 0.5.2-preview.8
+    - 0.6.0-preview.9
+    - 0.7.0-preview.2
+    - 0.7.1-preview.3
+    - 0.8.0-preview.5
+    - 0.9.0-preview.5
+    - 0.9.0-preview.6
+    - 0.11.0-preview.17
+    - 0.12.0-preview.13
+    - 0.14.0-preview.16
+    - 0.15.0-preview.21
+    - 0.17.0-preview.18
+    - 1.0.0-pre.3
+    - 1.0.0-pre.5
+    - 1.0.0-pre.6
+    - 1.1.0
+    - 1.2.3-pre.1
+    - 1.2.3
+    - 1.2.4
+    - 1.3.1
+    - 1.4.0
+    - 1.5.1
+    - 2.1.0-exp.4
+    - 2.1.0-pre.2
+    - 2.1.0-pre.6
+    - 2.1.0-pre.11
+    - 2.1.0-pre.18
+    - 2.1.1
+    - 2.1.4
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0-exp.1
+    - 2.3.0-pre.3
+    - 2.4.0-exp.2
+    - 2.4.0-pre.2
+    - 2.4.0-pre.5
+    - 2.4.0
+    compatible:
+    - 1.2.4
+    - 1.3.1
+    - 1.4.0
+    - 1.5.1
+    - 2.1.0-exp.4
+    - 2.1.0-pre.2
+    - 2.1.0-pre.6
+    - 2.1.0-pre.11
+    - 2.1.0-pre.18
+    - 2.1.1
+    - 2.1.4
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0-exp.1
+    - 2.3.0-pre.3
+    - 2.4.0-exp.2
+    - 2.4.0-pre.2
+    - 2.4.0-pre.5
+    - 2.4.0
+    recommended: 1.2.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.12
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  keywords:
+  - dots
+  - collections
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638194181200000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collections@2.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/dots.git
+    revision: 70c2a66d8670be047d7b9c6d7057a8b71b7303fb
+    path: 
+  unityLifecycle:
+    version: 1.2.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.2d.animation@9.1.0
   testable: 0
   isDirectDependency: 0
@@ -4123,11 +4859,13 @@ m_ResolvedPackages:
   - name: com.unity.burst
     version: 1.8.12
   - name: com.unity.collections
-    version: 1.2.4
-  - name: com.unity.test-framework
-    version: 1.1.33
-  - name: com.unity.ext.nunit
-    version: 1.0.6
+    version: 2.1.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
   keywords:
   - 2d
   - animation
@@ -4373,11 +5111,13 @@ m_ResolvedPackages:
   - name: com.unity.burst
     version: 1.8.12
   - name: com.unity.collections
-    version: 1.2.4
-  - name: com.unity.test-framework
-    version: 1.1.33
-  - name: com.unity.ext.nunit
-    version: 1.0.6
+    version: 2.1.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
   keywords:
   - 2d
   - psdimporter
@@ -4935,6 +5675,535 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.serialization@3.1.1
+  testable: 0
+  isDirectDependency: 0
+  version: 3.1.1
+  source: 1
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.serialization@3.1.1
+  assetPath: Packages/com.unity.serialization
+  name: com.unity.serialization
+  displayName: Serialization
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Use Unity's Serialization to serialize and deserialize from/to JSON
+    and Binary formats.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.2.1-preview
+    - 0.3.0-preview
+    - 0.3.1-preview
+    - 0.4.0-preview
+    - 0.4.1-preview
+    - 0.5.0-preview
+    - 0.5.1-preview
+    - 0.6.0-preview
+    - 0.6.1-preview
+    - 0.6.2-preview
+    - 0.6.3-preview
+    - 0.6.4-preview
+    - 1.0.0-preview.5
+    - 1.1.0-preview
+    - 1.1.1-preview
+    - 1.2.0-preview
+    - 1.3.0-preview
+    - 1.3.1-preview
+    - 1.4.3-preview
+    - 1.5.0-preview
+    - 1.6.0-preview
+    - 1.6.1-preview
+    - 1.6.2-preview
+    - 1.7.0-preview.1
+    - 1.7.1-preview
+    - 1.7.3-preview
+    - 1.7.4-preview
+    - 1.7.5-preview
+    - 1.8.2-preview
+    - 1.8.3-preview
+    - 2.0.0-exp.11
+    - 2.0.0-exp.13
+    - 2.1.0-exp.1
+    - 2.1.1-exp.1
+    - 2.1.2-exp.1
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.0-pre.3
+    - 3.1.1
+    compatible:
+    - 2.0.0-exp.11
+    - 2.0.0-exp.13
+    - 2.1.0-exp.1
+    - 2.1.1-exp.1
+    - 2.1.2-exp.1
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.0-pre.3
+    - 3.1.1
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.burst
+    version: 1.7.2
+  resolvedDependencies:
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.burst
+    version: 1.8.12
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  keywords:
+  - serialization
+  - json
+  - binary
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638194181240000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.serialization@3.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.properties.git
+    revision: 090f848dff6515cf21787143f17c107644263fe9
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.test-framework.performance@3.0.2
+  testable: 0
+  isDirectDependency: 0
+  version: 3.0.2
+  source: 1
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.test-framework.performance@3.0.2
+  assetPath: Packages/com.unity.test-framework.performance
+  name: com.unity.test-framework.performance
+  displayName: Performance testing API
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Extension to the Unity Test framework package. Adds performance testing
+    capabilities and collects configuration metadata.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.27-preview
+    - 0.1.29-preview
+    - 0.1.31-preview
+    - 0.1.33-preview
+    - 0.1.34-preview
+    - 0.1.36-preview
+    - 0.1.37-preview
+    - 0.1.39-preview
+    - 0.1.40-preview
+    - 0.1.41-preview
+    - 0.1.42-preview
+    - 0.1.44-preview
+    - 0.1.45-preview
+    - 0.1.47-preview
+    - 0.1.48-preview
+    - 0.1.49-preview
+    - 0.1.50-preview
+    - 1.0.4-preview
+    - 1.0.6-preview
+    - 1.0.9-preview
+    - 1.1.2-preview
+    - 1.2.0-preview
+    - 1.2.1-preview
+    - 1.2.3-preview
+    - 1.2.5-preview
+    - 1.2.6-preview
+    - 1.3.0-preview
+    - 1.3.1-preview
+    - 1.3.2-preview
+    - 1.3.3-preview
+    - 2.0.1-preview
+    - 2.0.2-preview
+    - 2.0.3-preview
+    - 2.0.6-preview
+    - 2.0.7-preview
+    - 2.0.8-preview
+    - 2.0.9-preview
+    - 2.1.0-preview
+    - 2.2.0-preview
+    - 2.3.1-preview
+    - 2.4.1-preview
+    - 2.5.1-preview
+    - 2.6.0-preview
+    - 2.7.0-preview
+    - 2.8.0-preview
+    - 2.8.1-preview
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.1
+    - 3.0.2
+    - 3.0.3
+    compatible:
+    - 1.3.3-preview
+    - 2.0.1-preview
+    - 2.0.2-preview
+    - 2.0.3-preview
+    - 2.0.6-preview
+    - 2.0.7-preview
+    - 2.0.8-preview
+    - 2.0.9-preview
+    - 2.1.0-preview
+    - 2.2.0-preview
+    - 2.3.1-preview
+    - 2.4.1-preview
+    - 2.5.1-preview
+    - 2.6.0-preview
+    - 2.7.0-preview
+    - 2.8.0-preview
+    - 2.8.1-preview
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.1
+    - 3.0.2
+    - 3.0.3
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.1.31
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - performance
+  - test
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638247729970000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework.performance@3.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.test-framework.performance.git
+    revision: 1b5b8963c496694439bad232d2abe0de1848fb71
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.nuget.mono-cecil@1.11.4
+  testable: 0
+  isDirectDependency: 0
+  version: 1.11.4
+  source: 1
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.nuget.mono-cecil@1.11.4
+  assetPath: Packages/com.unity.nuget.mono-cecil
+  name: com.unity.nuget.mono-cecil
+  displayName: Mono Cecil
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
+
+
+    This
+    package is intended for internal Unity use only. Most Unity users will be better
+    suite using the existing community tooling.
+
+    To avoid assembly clashes, please
+    use this package if you intend to use Mono.Cecil.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    - 1.10.2
+    - 1.11.4
+    compatible:
+    - 1.11.4
+    recommended: 1.11.4
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637852971930000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
+    revision: d0133ce672d724694b56bfd20672acf6f8737fec
+    path: 
+  unityLifecycle:
+    version: 1.11.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.scriptablebuildpipeline@1.21.21
+  testable: 0
+  isDirectDependency: 0
+  version: 1.21.21
+  source: 1
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.scriptablebuildpipeline@1.21.21
+  assetPath: Packages/com.unity.scriptablebuildpipeline
+  name: com.unity.scriptablebuildpipeline
+  displayName: Scriptable Build Pipeline
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: The Scriptable Build Pipeline moves the asset bundle build pipeline
+    to C#.  Use the pre-defined build flows, or create your own using the divided
+    up APIs.  This system improves build time, fixes incremental build, and provides
+    greater flexibility.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.5-preview
+    - 0.0.6-preview
+    - 0.0.8-preview
+    - 0.0.9-preview
+    - 0.0.10-preview
+    - 0.0.14-preview
+    - 0.0.15-preview
+    - 0.1.0-preview
+    - 0.2.0-preview
+    - 1.0.1-preview
+    - 1.1.0-preview
+    - 1.1.1-preview
+    - 1.2.1-preview
+    - 1.3.5-preview
+    - 1.4.1-preview
+    - 1.5.0-preview
+    - 1.5.1
+    - 1.5.2
+    - 1.5.4
+    - 1.5.6
+    - 1.5.10
+    - 1.6.3-preview
+    - 1.6.4-preview
+    - 1.6.5-preview
+    - 1.7.2
+    - 1.7.3
+    - 1.8.2
+    - 1.8.4
+    - 1.8.6
+    - 1.9.0
+    - 1.10.0
+    - 1.11.1
+    - 1.11.2
+    - 1.12.0
+    - 1.13.1
+    - 1.14.0
+    - 1.14.1
+    - 1.15.1
+    - 1.15.2
+    - 1.16.1
+    - 1.17.0
+    - 1.18.0
+    - 1.19.0
+    - 1.19.1
+    - 1.19.2
+    - 1.19.3
+    - 1.19.4
+    - 1.19.5
+    - 1.19.6
+    - 1.20.1
+    - 1.20.2
+    - 1.21.0
+    - 1.21.1
+    - 1.21.2
+    - 1.21.3
+    - 1.21.5
+    - 1.21.7
+    - 1.21.8
+    - 1.21.9
+    - 1.21.20
+    - 1.21.21
+    - 1.21.22
+    - 2.0.1
+    - 2.0.2
+    - 2.1.0
+    - 2.1.2
+    - 2.1.3
+    compatible:
+    - 1.21.21
+    - 1.21.22
+    - 2.0.1
+    - 2.0.2
+    - 2.1.0
+    - 2.1.2
+    - 2.1.3
+    recommended: 1.21.22
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - build
+  - bundle
+  - bundles
+  - assetbundles
+  - cache
+  - server
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638342531640000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.scriptablebuildpipeline@1.21/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/Addressables.git
+    revision: a981d4bc6c5de7a6a62ec3f63f3bdfc87ece371a
+    path: 
+  unityLifecycle:
+    version: 1.21.21
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.profiling.core@1.0.2
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.2
+  source: 1
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.profiling.core@1.0.2
+  assetPath: Packages/com.unity.profiling.core
+  name: com.unity.profiling.core
+  displayName: Unity Profiling Core API
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: The Unity Profiling Core package provides an API for code instrumentation
+    markup, and for profiling statistic collection.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.1
+    - 0.2.0-preview.1
+    - 0.2.1-preview.1
+    - 1.0.0-pre.1
+    - 1.0.0
+    - 1.0.2
+    compatible:
+    - 1.0.2
+    recommended: 1.0.2
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - profiler
+  - profiling
+  - api
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637828752310000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/profiler.git
+    revision: 2189ba14439d76a4083f59fae87163b4bdfd49c2
+    path: 
+  unityLifecycle:
+    version: 1.0.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.searcher@4.9.2
   testable: 0
   isDirectDependency: 0
@@ -5136,161 +6405,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 8.0.2
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.collections@1.2.4
-  testable: 0
-  isDirectDependency: 0
-  version: 1.2.4
-  source: 1
-  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.collections@1.2.4
-  assetPath: Packages/com.unity.collections
-  name: com.unity.collections
-  displayName: Collections
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: A C# collections library providing data structures that can be used
-    in jobs, and optimized by Burst compiler.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.0.9-preview.1
-    - 0.0.9-preview.2
-    - 0.0.9-preview.3
-    - 0.0.9-preview.4
-    - 0.0.9-preview.5
-    - 0.0.9-preview.6
-    - 0.0.9-preview.7
-    - 0.0.9-preview.8
-    - 0.0.9-preview.9
-    - 0.0.9-preview.10
-    - 0.0.9-preview.11
-    - 0.0.9-preview.12
-    - 0.0.9-preview.13
-    - 0.0.9-preview.14
-    - 0.0.9-preview.15
-    - 0.0.9-preview.16
-    - 0.0.9-preview.17
-    - 0.0.9-preview.18
-    - 0.0.9-preview.19
-    - 0.0.9-preview.20
-    - 0.1.0-preview
-    - 0.1.1-preview
-    - 0.2.0-preview.13
-    - 0.3.0-preview.0
-    - 0.4.0-preview.6
-    - 0.5.0-preview.9
-    - 0.5.1-preview.11
-    - 0.5.2-preview.8
-    - 0.6.0-preview.9
-    - 0.7.0-preview.2
-    - 0.7.1-preview.3
-    - 0.8.0-preview.5
-    - 0.9.0-preview.5
-    - 0.9.0-preview.6
-    - 0.11.0-preview.17
-    - 0.12.0-preview.13
-    - 0.14.0-preview.16
-    - 0.15.0-preview.21
-    - 0.17.0-preview.18
-    - 1.0.0-pre.3
-    - 1.0.0-pre.5
-    - 1.0.0-pre.6
-    - 1.1.0
-    - 1.2.3-pre.1
-    - 1.2.3
-    - 1.2.4
-    - 1.3.1
-    - 1.4.0
-    - 1.5.1
-    - 2.1.0-exp.4
-    - 2.1.0-pre.2
-    - 2.1.0-pre.6
-    - 2.1.0-pre.11
-    - 2.1.0-pre.18
-    - 2.1.1
-    - 2.1.4
-    - 2.2.0
-    - 2.2.1
-    - 2.3.0-exp.1
-    - 2.3.0-pre.3
-    - 2.4.0-exp.2
-    - 2.4.0-pre.2
-    - 2.4.0-pre.5
-    - 2.4.0
-    compatible:
-    - 1.2.4
-    - 1.3.1
-    - 1.4.0
-    - 1.5.1
-    - 2.1.0-exp.4
-    - 2.1.0-pre.2
-    - 2.1.0-pre.6
-    - 2.1.0-pre.11
-    - 2.1.0-pre.18
-    - 2.1.1
-    - 2.1.4
-    - 2.2.0
-    - 2.2.1
-    - 2.3.0-exp.1
-    - 2.3.0-pre.3
-    - 2.4.0-exp.2
-    - 2.4.0-pre.2
-    - 2.4.0-pre.5
-    - 2.4.0
-    recommended: 1.2.4
-    deprecated: []
-  dependencies:
-  - name: com.unity.burst
-    version: 1.6.6
-  - name: com.unity.test-framework
-    version: 1.1.31
-  resolvedDependencies:
-  - name: com.unity.burst
-    version: 1.8.12
-  - name: com.unity.mathematics
-    version: 1.2.6
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.test-framework
-    version: 1.1.33
-  - name: com.unity.ext.nunit
-    version: 1.0.6
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  keywords:
-  - dots
-  - collections
-  - unity
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 637908244640000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/dots.git
-    revision: 32d153034bea0703098263469b88c73619422782
-    path: 
-  unityLifecycle:
-    version: 1.2.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0

@@ -31,8 +31,8 @@ public class StarController : MonoBehaviour
     }
     private void Update()
     {
-        if (transform.position.x < 9.2f) return;
-        else transform.position = new Vector2(-9.2f, transform.position.y);
+        if (transform.position.x < 5f) return;
+        else transform.position = new Vector2(-5.25f, transform.position.y);
     }
     private void UpdateClassValues()
     {

@@ -72,6 +72,7 @@
     <Analyzer Include="C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.unity.entities@1.0.16\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.JobEntityGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PlayerChopController.cs" />
     <Compile Include="Assets\BasicUIController.cs" />
     <Compile Include="Assets\Scripts\Car.cs" />
     <Compile Include="Assets\Scripts\StarSystem.cs" />

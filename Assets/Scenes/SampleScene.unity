@@ -240,6 +240,8 @@ MonoBehaviour:
   m_spriteChangeAmount: 20
   m_timeBetweenSpriteChanges: 0.5
   m_playerChopController: {fileID: 2112187433}
+  m_defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  m_hoverColor: {r: 0.024075488, g: 0.2735849, b: 0, a: 1}
 --- !u!1 &452287984
 GameObject:
   m_ObjectHideFlags: 0

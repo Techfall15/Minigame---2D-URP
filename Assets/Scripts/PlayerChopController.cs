@@ -40,9 +40,11 @@ public class PlayerChopController : MonoBehaviour
     }
     public void StartRevertToDefault()
     {
+        StopCoroutine("RevertToDefault");
         AdvanceSwingState();
         StartCoroutine("RevertToDefaultCoroutine", 0.5f);
     }
+    
     public void AdvanceSwingState()
     {
         IncrementSwingState(m_currentSwingState);

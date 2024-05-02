@@ -20,8 +20,8 @@ public class BasicUIController : MonoBehaviour
     [SerializeField] private float m_timeBetweenSpriteChanges = 0.5f;
     [SerializeField] private PlayerChopController m_playerChopController;
     private int m_currentSpriteIndex = 0;
-    private Color m_defaultColor = Color.white;
-    private Color m_hoverColor = Color.black;
+    [SerializeField] private Color m_defaultColor = Color.white;
+    [SerializeField] private Color m_hoverColor = Color.black;
     protected void Awake()
     {
         var root = targetDoc.rootVisualElement;
@@ -60,38 +60,45 @@ public class BasicUIController : MonoBehaviour
     private void RegisterCallbacks()
     {
         m_chopButton.RegisterCallback<PointerDownEvent>(evt => m_playerChopController.AdvanceSwingState());
-        m_chopButton.RegisterCallback<PointerUpEvent>(evt => m_playerChopController.StartRevertToDefault());
+        m_chopButton.RegisterCallback<PointerUpEvent>(evt =>
+        {
+
+            m_playerChopController.StartRevertToDefault();
+
+        });
         m_chopButton.RegisterCallback<PointerOverEvent>(evt =>
         {
             if(m_chopButton.resolvedStyle.backgroundColor == m_defaultColor)
             {
                 m_chopButton.style.backgroundColor = m_hoverColor;
             }
-            m_chopButton.RegisterCallback<PointerMoveEvent>(evt =>
-            {
-                if (m_chopButton.resolvedStyle.backgroundColor == m_defaultColor)
-                {
-                    m_chopButton.style.backgroundColor = m_hoverColor;
-                }
-            });
+            StartCoroutine("CheckMouseOverPosition");
         });
         
-        m_chopButton.RegisterCallback<PointerOutEvent>(evt =>
-        {
-            if (m_chopButton.resolvedStyle.backgroundColor == m_hoverColor)
-            {
-                m_chopButton.style.backgroundColor = m_defaultColor;
-            }
-            m_chopButton.UnregisterCallback<PointerMoveEvent>(evt =>
-            {
-                if (m_chopButton.resolvedStyle.backgroundColor == m_hoverColor)
-                {
-                    m_chopButton.style.backgroundColor = m_defaultColor;
-                }
-            });
-        });
+        
     }
-     
+    private IEnumerator CheckMouseOverPosition()
+    {
+        /*Debug.Log("mouse is at: " + Input.mousePosition);
+        Debug.Log("Button xPos: " + m_chopButton.worldTransform.GetPosition().x + " yPos: " + m_chopButton.localBound + " layout: " + m_chopButton.layout);*/
+        
+        WaitForSeconds delay = new WaitForSeconds(0.25f);
+        yield return delay;
+        var mousePos = Input.mousePosition;
+        if(mousePos.x > m_chopButton.localBound.position.x && mousePos.x < m_chopButton.localBound.x + m_chopButton.localBound.width)
+        {
+            
+            if(mousePos.y > m_chopButton.localBound.y + 50f && mousePos.y < m_chopButton.localBound.y + m_chopButton.localBound.height + 50)
+            {
+                Debug.Log("Mouse is in the area");
+                yield return StartCoroutine("CheckMouseOverPosition");
+            }
+            m_chopButton.style.backgroundColor = m_defaultColor;
+            yield return null;
+        }
+        m_chopButton.style.backgroundColor = m_defaultColor;
+        yield return null;
+    }
     private IEnumerator ToggleXButtonImageCoroutine(float delay)
     {
         WaitForSeconds newWait = new WaitForSeconds(delay);

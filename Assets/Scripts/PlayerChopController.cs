@@ -35,10 +35,28 @@ public class PlayerChopController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            IncrementSwingState(m_currentSwingState);
-            Debug.Log("m_currentSwingState changed to: " + m_currentSwingState);
-            InitializeSwingStateValues(m_currentSwingState);
+            AdvanceSwingState();
         }
+    }
+    public void StartRevertToDefault()
+    {
+        AdvanceSwingState();
+        StartCoroutine("RevertToDefaultCoroutine", 0.5f);
+    }
+    public void AdvanceSwingState()
+    {
+        IncrementSwingState(m_currentSwingState);
+        Debug.Log("m_currentSwingState changed to: " + m_currentSwingState);
+        InitializeSwingStateValues(m_currentSwingState);
+    }
+    private IEnumerator RevertToDefaultCoroutine(float delay)
+    {
+        WaitForSeconds newDelay = new WaitForSeconds(delay);
+        yield return newDelay;
+
+        AdvanceSwingState();
+
+        yield return null;
     }
     public void BuildChargeMeterBy(float amount)
     {

@@ -1,3 +1,31 @@
 .chopButton:hover {
-    background-color: rgb(23, 55, 10);
+    background-color: rgb(19, 60, 2);
+}
+
+.chopButton {
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    min-width: 30%;
+    -unity-font-definition: url("project://database/Assets/Fonts/monogram-extended%20SDF%201.asset?fileID=11400000&guid=28931ed29fde8fc499cacaa26bf35824&type=2#monogram-extended SDF 1");
+    font-size: 48px;
+    -unity-font-style: normal;
+    background-color: rgb(24, 89, 15);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-top: 8px;
+    display: none;
+    color: rgb(255, 255, 255);
+    transition-duration: 1s;
 }

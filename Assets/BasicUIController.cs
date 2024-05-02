@@ -13,13 +13,15 @@ public class BasicUIController : MonoBehaviour
     [SerializeField] private UIDocument targetDoc;
     [SerializeField] private List<Sprite> m_spriteList = new List<Sprite>();
     [SerializeField] private VisualElement m_xButtonElement;
-    [SerializeField] private Button m_chopButton;
+    [SerializeField] private VisualElement m_chopButton;
     [SerializeField] private Label m_conversationTextElement;
     [SerializeField] private float m_spriteChangeAmount = 20f;
     [Range(0.4f, 2f)]
     [SerializeField] private float m_timeBetweenSpriteChanges = 0.5f;
     [SerializeField] private PlayerChopController m_playerChopController;
     private int m_currentSpriteIndex = 0;
+    private Color m_defaultColor = Color.white;
+    private Color m_hoverColor = Color.black;
     protected void Awake()
     {
         var root = targetDoc.rootVisualElement;
@@ -30,6 +32,7 @@ public class BasicUIController : MonoBehaviour
     void Start()
     {
         m_xButtonElement.style.backgroundImage = Background.FromSprite(m_spriteList[m_currentSpriteIndex]);
+        
         StartCoroutine(ToggleXButtonImageCoroutine(m_timeBetweenSpriteChanges));
     }
 
@@ -50,7 +53,43 @@ public class BasicUIController : MonoBehaviour
     {
         m_xButtonElement = root.Q<VisualElement>("buttonXElement");
         m_conversationTextElement = root.Q<Label>("ConversationText");
-        m_chopButton = root.Q<Button>("chopButton");
+        m_chopButton = root.Q<VisualElement>("chopButton");
+        m_defaultColor = m_chopButton.resolvedStyle.backgroundColor;
+        RegisterCallbacks();
+    }
+    private void RegisterCallbacks()
+    {
+        m_chopButton.RegisterCallback<PointerDownEvent>(evt => m_playerChopController.AdvanceSwingState());
+        m_chopButton.RegisterCallback<PointerUpEvent>(evt => m_playerChopController.StartRevertToDefault());
+        m_chopButton.RegisterCallback<PointerOverEvent>(evt =>
+        {
+            if(m_chopButton.resolvedStyle.backgroundColor == m_defaultColor)
+            {
+                m_chopButton.style.backgroundColor = m_hoverColor;
+            }
+            m_chopButton.RegisterCallback<PointerMoveEvent>(evt =>
+            {
+                if (m_chopButton.resolvedStyle.backgroundColor == m_defaultColor)
+                {
+                    m_chopButton.style.backgroundColor = m_hoverColor;
+                }
+            });
+        });
+        
+        m_chopButton.RegisterCallback<PointerOutEvent>(evt =>
+        {
+            if (m_chopButton.resolvedStyle.backgroundColor == m_hoverColor)
+            {
+                m_chopButton.style.backgroundColor = m_defaultColor;
+            }
+            m_chopButton.UnregisterCallback<PointerMoveEvent>(evt =>
+            {
+                if (m_chopButton.resolvedStyle.backgroundColor == m_hoverColor)
+                {
+                    m_chopButton.style.backgroundColor = m_defaultColor;
+                }
+            });
+        });
     }
      
     private IEnumerator ToggleXButtonImageCoroutine(float delay)
@@ -65,5 +104,6 @@ public class BasicUIController : MonoBehaviour
             StartCoroutine(ToggleXButtonImageCoroutine(m_timeBetweenSpriteChanges));
         }
     }
+    
     #endregion
 }

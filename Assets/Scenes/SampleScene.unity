@@ -485,14 +485,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546680584}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.25, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 988588664}
   m_Father: {fileID: 2112187432}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &841205056
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,7 +779,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 2682715421685015503, guid: 12e398614e6946c4c85a702aa83b0e4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -819,6 +819,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_currentPower: 0
+  m_playerPivot: {fileID: 546680584}
+  m_spriteRenderer: {fileID: 2112187431}
+  m_spriteArray:
+  - {fileID: 5652289940101462874, guid: 12e398614e6946c4c85a702aa83b0e4c, type: 3}
+  - {fileID: 2682715421685015503, guid: 12e398614e6946c4c85a702aa83b0e4c, type: 3}
+  - {fileID: 4417387967889502226, guid: 12e398614e6946c4c85a702aa83b0e4c, type: 3}
+  m_xPivotStateValues: {x: 0, y: -0.25, z: 0.25}
+  m_yOffsetStateValues: {x: 0.5, y: 0.5, z: 0.65}
+  m_zRotationStateValues: {x: 0, y: -90, z: 45}
+  m_currentSwingState: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

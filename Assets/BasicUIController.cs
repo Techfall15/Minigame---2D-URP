@@ -23,38 +23,27 @@ public class BasicUIController : MonoBehaviour
     [SerializeField] private Color m_defaultColor = Color.white;
     [SerializeField] private Color m_hoverColor = Color.black;
     [SerializeField] private Color m_clickColor = Color.black;
+
+
     protected void Awake()
     {
         var root = targetDoc.rootVisualElement;
-        InitializeElements(root);
-        
+        InitializeElements(root); 
     }
-    // Start is called before the first frame update
     void Start()
     {
         m_xButtonElement.style.backgroundImage = Background.FromSprite(m_spriteList[m_currentSpriteIndex]);
-        
         StartCoroutine(ToggleXButtonImageCoroutine(m_timeBetweenSpriteChanges));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.X))
-        {
-            m_conversationTextElement.text = (m_conversationTextElement.text == "") ? "This is a basic text ui that could be used for conversations in game.You could also display item or stat info here..." : "";
-            m_conversationTextElement.style.display = DisplayStyle.None;
-            m_chopButton.style.display = DisplayStyle.Flex;
-        }
-        
-    }
 
     #region Private Interface
     private void InitializeElements(VisualElement root)
     {
-        m_xButtonElement = root.Q<VisualElement>("buttonXElement");
-        m_conversationTextElement = root.Q<Label>("ConversationText");
-        m_chopButton = root.Q<VisualElement>("chopButton");
+        m_conversationTextElement   = root.Q<Label>("ConversationText");
+        m_chopButton                = root.Q<VisualElement>("chopButton");
+        m_xButtonElement            = root.Q<VisualElement>("buttonXElement");
+        
         m_defaultColor = m_chopButton.resolvedStyle.backgroundColor;
         RegisterCallbacks();
     }
@@ -63,30 +52,19 @@ public class BasicUIController : MonoBehaviour
         m_chopButton.RegisterCallback<PointerDownEvent>(evt =>
         {
             m_playerChopController.AdvanceSwingState();
-            if (m_chopButton.resolvedStyle.backgroundColor != m_clickColor) StartCoroutine("ChangeColorTo", m_clickColor);
+            if (m_chopButton.resolvedStyle.backgroundColor != m_clickColor) StartCoroutine("SetBgColorToClick", evt.target);
         });
         m_chopButton.RegisterCallback<PointerUpEvent>(evt => 
         {
             m_playerChopController.StartRevertToDefault();
-            if (m_chopButton.resolvedStyle.backgroundColor != m_hoverColor) StartCoroutine("ChangeColorTo", m_hoverColor);
+            if (m_chopButton.resolvedStyle.backgroundColor != m_hoverColor) StartCoroutine("SetBgColorToHover", evt.target);
         });
         m_chopButton.RegisterCallback<PointerOverEvent>(evt =>
         {
-            if (m_chopButton.resolvedStyle.backgroundColor == m_defaultColor) StartCoroutine("ChangeColorTo", m_hoverColor);
-            StartCoroutine("CheckMouseOverPosition");
-        });
-        
+            if (m_chopButton.resolvedStyle.backgroundColor == m_defaultColor) StartCoroutine("SetBgColorToHover", evt.target);
+            StartCoroutine("CheckMouseOverPosition", evt.target);
+        });  
     }
-    private IEnumerator CheckMouseOverPosition()
-    {
-        WaitForSeconds delay = new WaitForSeconds(0.25f);
-        yield return delay;
-
-        if (IsMouseOverElement(m_chopButton) == true) yield return StartCoroutine("CheckMouseOverPosition");
-        yield return StartCoroutine("ChangeColorTo", m_defaultColor);
-    }
-    private IEnumerator ChangeColorTo(Color color) { yield return m_chopButton.style.backgroundColor = color; }
-    
     private bool IsMouseOverElement(VisualElement element)
     {
         var mousePos    = Input.mousePosition;
@@ -96,14 +74,25 @@ public class BasicUIController : MonoBehaviour
         var elementX    = elementLB.x;
         var elementY    = elementLB.y;
 
-        if (mouseX > elementX && mouseX < elementX + elementLB.width)
-        {
-            if (mouseY > elementY + 50f && 
-                mouseY < elementY + elementLB.height + 50) return true;
-            else return false;
-        }
-        return false;
+        if (mouseX < elementX       || mouseX > elementX + elementLB.width) return false;
+        if (mouseY < elementY + 50f || mouseY > elementY + elementLB.height + 50) return false;
+
+
+        return true;
     }
+    private IEnumerator CheckMouseOverPosition(VisualElement element)
+    {
+        WaitForSeconds delay = new WaitForSeconds(0.1f);
+        yield return delay;
+
+        if (IsMouseOverElement(element) == true) yield return StartCoroutine("CheckMouseOverPosition", element);
+        yield return StartCoroutine("ResetBgColor", element);
+    }
+    private IEnumerator ResetBgColor(VisualElement element) { yield return element.style.backgroundColor = m_defaultColor; }
+    private IEnumerator SetBgColorToHover(VisualElement element) { yield return element.style.backgroundColor = m_hoverColor; }
+    private IEnumerator SetBgColorToClick(VisualElement element) { yield return element.style.backgroundColor = m_clickColor; }
+    private IEnumerator SetDisplayToNone(VisualElement element) { yield return element.style.display = DisplayStyle.None; }
+    private IEnumerator SetDisplayToFlex(VisualElement element) { yield return element.style.display = DisplayStyle.Flex; }
     private IEnumerator ToggleXButtonImageCoroutine(float delay)
     {
         WaitForSeconds newWait = new WaitForSeconds(delay);
@@ -113,7 +102,7 @@ public class BasicUIController : MonoBehaviour
         if(m_spriteChangeAmount > 0)
         {
             m_spriteChangeAmount--;
-            StartCoroutine(ToggleXButtonImageCoroutine(m_timeBetweenSpriteChanges));
+            StartCoroutine("ToggleXButtonImageCoroutine",m_timeBetweenSpriteChanges);
         }
     }
     

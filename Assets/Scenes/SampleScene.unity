@@ -189,7 +189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &383684205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -596,7 +596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1165180424
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5573,7 +5573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8815411818423049041, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5597,7 +5597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2112187431
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5680,7 +5680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_currentPower: 0
   m_playerPivot: {fileID: 546680584}
-  logParticles: {fileID: 1165180427}
+  m_logParticles: {fileID: 1165180427}
   m_spriteRenderer: {fileID: 2112187431}
   m_spriteArray:
   - {fileID: 5652289940101462874, guid: 12e398614e6946c4c85a702aa83b0e4c, type: 3}

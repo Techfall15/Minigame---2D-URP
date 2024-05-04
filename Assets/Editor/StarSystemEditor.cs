@@ -129,7 +129,7 @@ public class StarSystemEditor : Editor
     #region Button Events
 
     private void OnSpawnStarsButtonClick(ClickEvent evt) => m_starSystem.SpawnStars();
-    private void OnClearAllStarsButtonClick(ClickEvent evt) => m_starSystem.DisableAllStars();
+    private void OnClearAllStarsButtonClick(ClickEvent evt) => StarSystem.DisableAllStars();
     private void OnCustomizeSpawnChange(ChangeEvent<bool> evt)
     {
         m_starSystem.SetCustomizeSpawnTo(evt.newValue);

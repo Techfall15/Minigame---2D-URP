@@ -36,26 +36,24 @@ public class StarSystem : MonoBehaviour
     public void SpawnStars()
     {
         UpdateSlopeAndYIntercept();
-        for(int i = 0; i < m_spawnAmount; i++)
+        for(var i = 0; i < m_spawnAmount; i++)
         {
-            GameObject star = StarObjectPool.m_SharedInstance.GetPooledObject();
-            if (star != null)
+            var star = StarObjectPool.SharedInstance.GetPooledObject();
+            if (star == null) continue;
+            var starController = star.GetComponent<StarController>();
+            if(m_customizeSpawn)
             {
-                StarController starController = star.GetComponent<StarController>();
-                if(m_customizeSpawn)
-                {
-                    CustomizeSpawn(m_spawnState);
-                    RandomizeStar(starController);
-                }
-                else RandomizeStar(starController);
-                star.SetActive(true);
+                CustomizeSpawn(m_spawnState);
+                RandomizeStar(starController);
             }
+            else RandomizeStar(starController);
+            star.SetActive(true);
         }
         
     }
-    public void DisableAllStars()
+    public static void DisableAllStars()
     {
-        foreach(var star in StarObjectPool.m_SharedInstance.m_PooledStars)
+        foreach(var star in StarObjectPool.SharedInstance.m_PooledStars)
         {
             star.SetActive(false);
         }
@@ -70,7 +68,7 @@ public class StarSystem : MonoBehaviour
                 m_onlySpawnBelow = false;
                 m_spawnState = state;
                 //Debug.Log("Changed to As Above");
-                if (StarObjectPool.m_SharedInstance != null)
+                if (StarObjectPool.SharedInstance != null)
                 {
                     DisableAllStars();
                     SpawnStars();
@@ -83,7 +81,7 @@ public class StarSystem : MonoBehaviour
                 m_onlySpawnBelow = true;
                 m_spawnState = state;
                 //Debug.Log("Changed to So Below");
-                if (StarObjectPool.m_SharedInstance != null)
+                if (StarObjectPool.SharedInstance != null)
                 {
                     DisableAllStars();
                     SpawnStars();
@@ -98,8 +96,8 @@ public class StarSystem : MonoBehaviour
     #endregion
 
     #region Private Interface
-    private float GetSlopeOfLine(Vector2 p1, Vector2 p2) => (p2.y - p1.y) / (p2.x - p1.x);
-    private float GetYInterceptOfLine(Vector2 point, float slope) => point.y - (slope * point.x);
+    private static float GetSlopeOfLine(Vector2 p1, Vector2 p2) => (p2.y - p1.y) / (p2.x - p1.x);
+    private static float GetYInterceptOfLine(Vector2 point, float slope) => point.y - (slope * point.x);
 
     private void UpdateSlopeAndYIntercept()
     {
@@ -134,8 +132,10 @@ public class StarSystem : MonoBehaviour
     }
     private void RandomizeScale(StarController star) => star.m_starClass.SetScaleTo(Random.Range(0, m_starScale));
     private void RandomizeSpeed(StarController star) => star.m_starClass.SetSpeedTo(Random.Range(0.1f, m_starSpeed));
-    private void RandomizeColor(StarController star) => star.m_starClass.SetColorTo(m_colorList[Random.Range(0, m_colorList.Count)]);
-    private void RandomizeSpawn(StarController star) => star.m_starClass.SetSpawnPositionTo(new Vector2(
+    private void RandomizeColor(StarController star) => star.m_starClass.SetColorTo(
+        m_colorList[Random.Range(0, m_colorList.Count)]);
+    // Update RandomizeSpawn(). Right now the limits are set numbers and should be variables.
+    private static void RandomizeSpawn(StarController star) => star.m_starClass.SetSpawnPositionTo(new Vector2(
             Random.Range(-5f, 5f),
             Random.Range(-5f, 5f)));
     

@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05393b24947099944a52723a93371e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetDoc: {fileID: 383684205}
+  m_targetDoc: {fileID: 383684205}
   m_spriteList:
   - {fileID: 21300000, guid: 7f9ab4afaabd06c408273b856504f4b8, type: 3}
   - {fileID: 21300000, guid: 2dce238441dd3a948a961b48dee7cc26, type: 3}
@@ -5527,6 +5527,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_spawnPositionLimit.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8211896617337967612, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

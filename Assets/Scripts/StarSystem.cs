@@ -161,6 +161,7 @@ public class StarSystem : MonoBehaviour
     {
         switch (state)
         {
+            
             case SpawnState.OnlySpawnBelow:
                 m_onlySpawnAbove = false;
                 m_onlySpawnBelow = true;

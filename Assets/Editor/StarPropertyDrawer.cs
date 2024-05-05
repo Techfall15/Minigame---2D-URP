@@ -1,29 +1,34 @@
-using UnityEngine;
-using UnityEngine.UIElements;
 using UnityEditor;
 using UnityEditor.UIElements;
-using UnityEditor.Tilemaps;
+using UnityEngine.UIElements;
 
-[CustomPropertyDrawer(typeof(Star))]
-public class StarPropertyDrawer : PropertyDrawer
+namespace Editor
 {
-    
-    public override VisualElement CreatePropertyGUI(SerializedProperty property)
+    [CustomPropertyDrawer(typeof(Star))]
+    public class StarPropertyDrawer : PropertyDrawer
     {
-        var root = new VisualElement();
-        var popup = new UnityEngine.UIElements.PopupWindow();
-        
-
-        popup.text = "Star Details";
-        PropertyField spawnPos = new PropertyField(property.FindPropertyRelative("m_spawnPosition"));
-        spawnPos.label = "Spawn Pos";
-        
-        popup.Add(spawnPos);
-        popup.Add(new PropertyField(property.FindPropertyRelative("m_color")));
-
-        root.Add(popup);
+    
+        public override VisualElement CreatePropertyGUI(SerializedProperty property)
+        {
+            var root = new VisualElement();
+            var popup = new UnityEngine.UIElements.PopupWindow
+            {
+                text = "Star Details"
+            };
 
 
-        return root;
+            var spawnPos = new PropertyField(property.FindPropertyRelative("m_spawnPosition"))
+            {
+                label = "Spawn Pos"
+            };
+
+            popup.Add(spawnPos);
+            popup.Add(new PropertyField(property.FindPropertyRelative("m_color")));
+
+            root.Add(popup);
+
+
+            return root;
+        }
     }
 }

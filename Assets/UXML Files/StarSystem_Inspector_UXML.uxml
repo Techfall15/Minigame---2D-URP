@@ -3,9 +3,18 @@
     <uie:PropertyField name="prefabToSpawn" binding-path="m_prefab" label="Prefab To Spawn" />
     <ui:Label tabindex="-1" text="Spawns Within (-x,x) &amp; (-y,y)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="spawnPosLimitLabel" style="align-self: center; margin-top: 4px; margin-bottom: 4px; font-size: 14px;" />
     <ui:GroupBox name="spawnPositionGroup" style="flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 8px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-wrap: wrap;">
-        <ui:GroupBox name="spawnPositionLimit" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
-            <ui:Label tabindex="-1" text="( x1,y1 )" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center;" />
-            <ui:Vector2Field binding-path="m_spawnPositionLimit" name="spawnPos1" />
+        <ui:GroupBox name="firstPointElement" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+            <ui:Label tabindex="-1" text="( x1,y1 )" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="-unity-text-align: middle-center;" />
+            <ui:VisualElement name="firstPointElement" style="flex-grow: 1; flex-direction: column; flex-basis: 50%; justify-content: center; align-items: center; flex-wrap: nowrap;">
+                <ui:VisualElement name="firstPointFloatElement" style="flex-grow: 1; flex-direction: row; width: 100%;">
+                    <ui:FloatField value="1" binding-path="m_firstPointXPos" name="firstPointXFloatField" class="customFloatField" />
+                    <ui:FloatField value="1" binding-path="m_firstPointYPos" name="firstPointYFloatField" class="customFloatField" />
+                </ui:VisualElement>
+                <ui:VisualElement name="firstPointSliders" style="flex-direction: row; max-width: 100%;">
+                    <ui:Slider high-value="5" low-value="-5" name="firstPosXSlider" binding-path="m_firstPointXPos" class="customSlider" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                    <ui:Slider high-value="5" low-value="-5" name="firstPosYSlider" binding-path="m_firstPointYPos" class="customSlider" style="flex-grow: 1; flex-shrink: 1; align-self: auto; justify-content: center; align-items: center; flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:GroupBox>
         <ui:GroupBox name="spawnPositionLimit2" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
             <ui:Label tabindex="-1" text="( x2,y2 )" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center;" />
@@ -17,6 +26,7 @@
         <ui:FloatField value="1" name="slopeFloatField" readonly="true" class="defaultFloatField" />
     </ui:GroupBox>
     <ui:Toggle label="Customize Spawn" name="customizeSpawnToggle" binding-path="m_customizeSpawn" value="false" />
+    <ui:Button text="Respawn" parse-escape-sequences="true" display-tooltip-when-elided="true" name="respawnButton" style="width: 50%; align-self: center; justify-content: center; align-items: center; margin-bottom: 8px;" />
     <ui:DropdownField label="Spawn Direction" index="-1" choices="As Above, So Below" name="spawnDirectionDropField" focusable="true" view-data-key="spawnDirDropField" binding-path="m_spawnState" />
     <ui:GroupBox name="spawnAreaGroup" class="myGroupBox" style="max-width: 200px; max-height: 200px; width: 200px; height: 250px; align-items: flex-start; align-self: center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; flex-direction: row; min-width: 100px; flex-wrap: wrap; min-height: 100px; justify-content: flex-start; flex-basis: 100%; background-color: rgba(0, 0, 0, 0);">
         <ui:VisualElement class="gridSpace" />

@@ -772,6 +772,9 @@
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
       <HintPath>C:\Users\marti\Minigame - 2D URP\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="SingularityGroup.HotReload.Runtime.Public">
+      <HintPath>C:\Users\marti\Minigame - 2D URP\Library\ScriptAssemblies\SingularityGroup.HotReload.Runtime.Public.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Physics">
       <HintPath>C:\Users\marti\Minigame - 2D URP\Library\ScriptAssemblies\Unity.Physics.dll</HintPath>
     </Reference>

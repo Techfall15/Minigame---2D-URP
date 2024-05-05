@@ -2,20 +2,25 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 
-[CustomPropertyDrawer(typeof(Tire))]
-public class Tire_PropertyDrawer : PropertyDrawer
+namespace Editor
 {
-    public override VisualElement CreatePropertyGUI(SerializedProperty property)
+    [CustomPropertyDrawer(typeof(Tire))]
+    public class TirePropertyDrawer : PropertyDrawer
     {
-        var container = new VisualElement();
+        public override VisualElement CreatePropertyGUI(SerializedProperty property)
+        {
+            var container = new VisualElement();
 
-        var popup = new UnityEngine.UIElements.PopupWindow();
-        popup.text = "Tire Details";
-        popup.Add(new PropertyField(property.FindPropertyRelative("m_AirPressure"), "Air Pressure (psi)"));
-        popup.Add(new PropertyField(property.FindPropertyRelative("m_ProfileDepth"), "Profile Depth (mm)"));
-        container.Add(popup);
+            var popup = new UnityEngine.UIElements.PopupWindow
+            {
+                text = "Tire Details"
+            };
+            popup.Add(new PropertyField(property.FindPropertyRelative("m_AirPressure"), "Air Pressure (psi)"));
+            popup.Add(new PropertyField(property.FindPropertyRelative("m_ProfileDepth"), "Profile Depth (mm)"));
+            container.Add(popup);
 
 
-        return container;
+            return container;
+        }
     }
 }

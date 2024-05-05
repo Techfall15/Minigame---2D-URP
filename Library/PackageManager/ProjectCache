@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638504511087078218
-    m_Hash: 2092584843
+      ticks: 638504568476040367
+    m_Hash: 2801771474
   m_LockFileStatus:
     m_FilePath: C:/Users/marti/Minigame - 2D URP/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638504511090852188
-    m_Hash: 1596350938
+      ticks: 638504568480503584
+    m_Hash: 2195736187
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,76 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/marti/Minigame - 2D URP/Packages
 m_EditorVersion: 2022.3.20f1 (61c2feb0970d)
 m_ResolvedPackages:
+- packageId: com.singularitygroup.hotreload@git+https://gitlab.hotreload.net/root/hot-reload-releases.git#1.12.9
+  testable: 0
+  isDirectDependency: 1
+  version: 1.12.9
+  source: 5
+  resolvedPath: C:\Users\marti\Minigame - 2D URP\Library\PackageCache\com.singularitygroup.hotreload@15115347b8
+  assetPath: Packages/com.singularitygroup.hotreload
+  name: com.singularitygroup.hotreload
+  displayName: Hot Reload
+  author:
+    name: 
+    email: 
+    url: 
+  category: Engineering
+  type: 
+  description: Change code and get immediate updates in the Unity Editor or on-device.
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  keywords:
+  - Hot
+  - Reload
+  - patch
+  - code
+  - sg
+  - singularity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.collab-proxy@2.3.1
   testable: 0
   isDirectDependency: 1

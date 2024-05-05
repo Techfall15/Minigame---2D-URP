@@ -108,3 +108,27 @@
     background-color: rgba(0, 0, 0, 0.59);
     transition-duration: 0.2s;
 }
+
+.customFloatField {
+    flex-basis: 50%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    flex-grow: 1;
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.customSlider {
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    padding-right: 4px;
+    padding-left: 4px;
+}

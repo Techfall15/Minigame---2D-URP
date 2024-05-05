@@ -17,7 +17,7 @@ public class StarObjectPool : MonoBehaviour
     private void Start()
     {
         m_PooledStars = new List<GameObject>();
-        for(int i = 0; i < m_AmountToPool; i++)
+        for(var i = 0; i < m_AmountToPool; i++)
         {
             var tmp = Instantiate(m_ObjectToPool);
             tmp.SetActive(false);

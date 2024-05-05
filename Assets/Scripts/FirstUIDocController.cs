@@ -10,11 +10,11 @@ public class FirstUIDocController : MonoBehaviour
 
     protected void OnEnable()
     {
-        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+        var root = GetComponent<UIDocument>().rootVisualElement;
 
-        Button startShadersBtn = root.Q<Button>("StartShaders");
-        Button stopShadersBtn = root.Q<Button>("StopShaders");
-        Button logMessageBtn = root.Q<Button>("LogMessage");
+        var startShadersBtn = root.Q<Button>("StartShaders");
+        var stopShadersBtn = root.Q<Button>("StopShaders");
+        var logMessageBtn = root.Q<Button>("LogMessage");
 
         startShadersBtn.clicked += () => m_RoadNoiseTriggerLeft.SetNoiseTriggerTo(1f);
         startShadersBtn.clicked += () => m_RoadNoiseTriggerRight.SetNoiseTriggerTo(1f);

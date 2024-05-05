@@ -15,6 +15,11 @@ public class StarSystem : MonoBehaviour
     [SerializeField] private bool m_onlySpawnAbove;
     [SerializeField] private bool m_onlySpawnBelow;
     [SerializeField] private GameObject m_prefab;
+    [Range(-5f, 5f)]
+    [SerializeField] private float m_firstPointXPos = 0f;
+    [Range(-5f, 5f)]
+    [SerializeField] private float m_firstPointYPos = 0f;
+    
     [SerializeField] private Vector2 m_spawnPositionLimit = new Vector2(8.5f, 4.5f);
     [SerializeField] private Vector2 m_spawnPositionLimit2 = new Vector2(8.5f, 4.5f);
     [SerializeField] private List<Color> m_colorList = new List<Color>() {
@@ -33,9 +38,11 @@ public class StarSystem : MonoBehaviour
     }
 
     #region Public Interface
-    public void SpawnStars()
+    private void SpawnStars()
     {
         UpdateSlopeAndYIntercept();
+
+        if (StarObjectPool.SharedInstance == null) return;
         for(var i = 0; i < m_spawnAmount; i++)
         {
             var star = StarObjectPool.SharedInstance.GetPooledObject();
@@ -51,8 +58,15 @@ public class StarSystem : MonoBehaviour
         }
         
     }
+
+    public void RespawnAllStars()
+    {
+        DisableAllStars();
+        SpawnStars();
+    }
     public static void DisableAllStars()
     {
+        if (StarObjectPool.SharedInstance == null) return;
         foreach(var star in StarObjectPool.SharedInstance.m_PooledStars)
         {
             star.SetActive(false);
@@ -101,7 +115,8 @@ public class StarSystem : MonoBehaviour
 
     private void UpdateSlopeAndYIntercept()
     {
-        m_slope = GetSlopeOfLine(m_spawnPositionLimit, m_spawnPositionLimit2);
+        var firstPoint = new Vector2(m_firstPointXPos, m_firstPointYPos);
+        m_slope = GetSlopeOfLine(firstPoint, m_spawnPositionLimit2);
         m_yIntercept = GetYInterceptOfLine(m_spawnPositionLimit2, m_slope);
     }
 

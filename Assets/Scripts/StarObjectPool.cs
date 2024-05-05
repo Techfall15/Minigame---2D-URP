@@ -28,7 +28,7 @@ public class StarObjectPool : MonoBehaviour
 
     public GameObject GetPooledObject()
     {
-        for(var i = 0; i < m_AmountToPool; i++)
+        for(var i = 0; i < m_AmountToPool - 1; i++)
         {
             if (!m_PooledStars[i].activeInHierarchy)
                 return m_PooledStars[i];

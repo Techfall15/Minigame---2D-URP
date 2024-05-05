@@ -62,6 +62,7 @@ public class StarSystem : MonoBehaviour
     public void RespawnAllStars()
     {
         DisableAllStars();
+        if (StarObjectPool.SharedInstance == null) return;
         SpawnStars();
     }
     public static void DisableAllStars()

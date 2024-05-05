@@ -5527,6 +5527,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 194020139087729104, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_AmountToPool
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_slope
       value: 0
@@ -5545,11 +5549,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_firstPointXPos
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_firstPointYPos
-      value: -1
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_onlySpawnAbove

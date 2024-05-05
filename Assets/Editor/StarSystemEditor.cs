@@ -93,6 +93,8 @@ namespace Editor
             {
                 ClearListBackgroundColor(root);
                 OnFirstPositionXChange(evt, root);
+                if (Application.isPlaying == false) return;
+                if (StarObjectPool.SharedInstance.GetPooledObject() == null) return;
                 m_starSystem.RespawnAllStars();
             });
             m_firstPointYPosition.RegisterValueChangedCallback(evt =>

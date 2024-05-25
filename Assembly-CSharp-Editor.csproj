@@ -739,6 +739,9 @@
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>C:\Users\marti\Minigame - 2D URP\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+      <HintPath>C:\Users\marti\Minigame - 2D URP\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>C:\Users\marti\Minigame - 2D URP\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
@@ -987,9 +990,6 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>C:\Users\marti\Minigame - 2D URP\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>C:\Users\marti\Minigame - 2D URP\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
       <HintPath>C:\Users\marti\Minigame - 2D URP\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>

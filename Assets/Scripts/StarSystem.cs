@@ -1,11 +1,12 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
-
+using Random = UnityEngine.Random;
 
 
 public class StarSystem : MonoBehaviour
 {
-
+    
     [SerializeField] private int m_spawnAmount = 10;
     [SerializeField] private float m_starScale = 1f;
     [SerializeField] private float m_starSpeed = 1f;
@@ -19,6 +20,7 @@ public class StarSystem : MonoBehaviour
     [SerializeField] private float m_firstPointXPos = 0f;
     [Range(-5f, 5f)]
     [SerializeField] private float m_firstPointYPos = 0f;
+
     
     [SerializeField] private Vector2 m_spawnPositionLimit = new Vector2(8.5f, 4.5f);
     [SerializeField] private Vector2 m_spawnPositionLimit2 = new Vector2(8.5f, 4.5f);
@@ -26,6 +28,16 @@ public class StarSystem : MonoBehaviour
         Color.white, Color.blue, Color.red, Color.yellow, Color.green};
     public enum SpawnState { OnlySpawnAbove, OnlySpawnBelow };
     private SpawnState m_spawnState;
+
+    private void OnDrawGizmos()
+    {
+        var firstPoint = new Vector2(m_firstPointXPos, m_firstPointYPos);
+        var screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(firstPoint * 2, m_spawnPositionLimit2 * 5);
+        Gizmos.DrawLine(new Vector2(screenBounds.x/3,Mathf.FloorToInt(screenBounds.y)),new Vector2(-screenBounds.x/3,0f));
+        
+    }
 
     private void Awake()
     {

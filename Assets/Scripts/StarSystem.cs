@@ -49,6 +49,7 @@ public class StarSystem : MonoBehaviour
         Gizmos.DrawSphere(secondPoint, 0.25f);
         Gizmos.DrawLine(secondPoint, endPointOne);
         Gizmos.DrawLine(firstPoint, endPointTwo);
+        if(m_firstPointXPos > m_secondPointXPos) Gizmos.DrawLine(firstPoint, secondPoint);
 
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(endPointOne, 0.1f);

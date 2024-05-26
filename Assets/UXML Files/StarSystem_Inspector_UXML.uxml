@@ -3,7 +3,7 @@
     <uie:PropertyField name="prefabToSpawn" binding-path="m_prefab" label="Prefab To Spawn" />
     <ui:Label tabindex="-1" text="Spawns Within (-x,x) &amp; (-y,y)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="spawnPosLimitLabel" style="align-self: center; margin-top: 4px; margin-bottom: 4px; font-size: 14px;" />
     <ui:GroupBox name="spawnPositionGroup" style="flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 8px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-wrap: wrap;">
-        <ui:GroupBox name="firstPointElement" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+        <ui:GroupBox name="firstPointElement" class="pointElement">
             <ui:Label tabindex="-1" text="( x1,y1 )" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="-unity-text-align: middle-center;" />
             <ui:VisualElement name="firstPointElement" style="flex-grow: 1; flex-direction: column; flex-basis: 50%; justify-content: center; align-items: center; flex-wrap: nowrap;">
                 <ui:VisualElement name="firstPointFloatElement" style="flex-grow: 1; flex-direction: row; width: 100%;">
@@ -16,9 +16,22 @@
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:GroupBox>
-        <ui:GroupBox name="spawnPositionLimit2" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+        <ui:GroupBox name="spawnPositionLimit2" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; display: none;">
             <ui:Label tabindex="-1" text="( x2,y2 )" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center;" />
             <ui:Vector2Field binding-path="m_spawnPositionLimit2" name="spawnPos2" x="2" y="2" />
+        </ui:GroupBox>
+        <ui:GroupBox name="secondPointElement" class="pointElement" style="flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+            <ui:Label tabindex="-1" text="( x2,y2 )" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="-unity-text-align: middle-center;" />
+            <ui:VisualElement name="secondPointElement" style="flex-grow: 1; flex-direction: column; flex-basis: 50%; justify-content: center; align-items: center; flex-wrap: nowrap;">
+                <ui:VisualElement name="secondPointFloatElement" style="flex-grow: 1; flex-direction: row; width: 100%;">
+                    <ui:FloatField value="1" binding-path="m_secondPointXPos" name="secondPointXFloatField" class="customFloatField" />
+                    <ui:FloatField value="1" binding-path="m_secondPointYPos" name="secondPointYFloatField" class="customFloatField" />
+                </ui:VisualElement>
+                <ui:VisualElement name="secondPointSliders" style="flex-direction: row; max-width: 100%;">
+                    <ui:Slider high-value="5" low-value="-5" name="secondPosXSlider" binding-path="m_secondPointXPos" class="customSlider" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                    <ui:Slider high-value="5" low-value="-5" name="secondPosYSlider" binding-path="m_secondPointYPos" class="customSlider" style="flex-grow: 1; flex-shrink: 1; align-self: auto; justify-content: center; align-items: center; flex-basis: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:GroupBox>
     </ui:GroupBox>
     <ui:GroupBox name="lineDetailGroup" class="myDefaultGroup" style="flex-direction: row;">

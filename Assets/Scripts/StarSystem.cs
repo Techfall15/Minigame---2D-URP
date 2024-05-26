@@ -20,9 +20,11 @@ public class StarSystem : MonoBehaviour
     [SerializeField] private float m_firstPointXPos = 0f;
     [Range(-5f, 5f)]
     [SerializeField] private float m_firstPointYPos = 0f;
-
+    [Range(-5f, 5f)]
+    [SerializeField] private float m_secondPointXPos = 0f;
+    [Range(-5f, 5f)]
+    [SerializeField] private float m_secondPointYPos = 0f;
     
-    [SerializeField] private Vector2 m_spawnPositionLimit = new Vector2(8.5f, 4.5f);
     [SerializeField] private Vector2 m_spawnPositionLimit2 = new Vector2(8.5f, 4.5f);
     [SerializeField] private List<Color> m_colorList = new List<Color>() {
         Color.white, Color.blue, Color.red, Color.yellow, Color.green};
@@ -33,7 +35,7 @@ public class StarSystem : MonoBehaviour
     {
         // Get reference for first and second point
         var firstPoint = new Vector2(m_firstPointXPos, m_firstPointYPos);
-        var secondPoint = new Vector2(m_spawnPositionLimit2.x, m_spawnPositionLimit2.y);
+        var secondPoint = new Vector2(m_secondPointXPos, m_secondPointYPos);
         // Get slope of line created by first and second point
         var slope = GetSlopeOfLine(firstPoint, secondPoint);
         // Create variable for endpoints of line
@@ -56,12 +58,13 @@ public class StarSystem : MonoBehaviour
     private Vector2 CalculateEndPoint(float mod, Vector2 endPoint, float slope)
     {
         var point = endPoint;
+        var secondPoint = new Vector2(m_secondPointXPos, m_secondPointYPos);
         var isInScreen = true;
         do
         {
             if (point.x is <= -5f or >= 5f) isInScreen = false;
             if (point.y is <= -5f or >= 5f) isInScreen = false;
-            if (endPoint == m_spawnPositionLimit2)
+            if (endPoint == secondPoint)
             {
                 var newX = Mathf.Clamp(point.x + (1 / mod), -5f, 5f);
                 var newY = (slope < 0)
@@ -172,8 +175,9 @@ public class StarSystem : MonoBehaviour
     private void UpdateSlopeAndYIntercept()
     {
         var firstPoint = new Vector2(m_firstPointXPos, m_firstPointYPos);
-        m_slope = GetSlopeOfLine(firstPoint, m_spawnPositionLimit2);
-        m_yIntercept = GetYInterceptOfLine(m_spawnPositionLimit2, m_slope);
+        var secondPoint = new Vector2(m_secondPointXPos, m_secondPointYPos);
+        m_slope = GetSlopeOfLine(firstPoint, secondPoint);
+        m_yIntercept = GetYInterceptOfLine(secondPoint, m_slope);
     }
 
     #region Randomize Functions

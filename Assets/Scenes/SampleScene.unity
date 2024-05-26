@@ -5601,15 +5601,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_firstPointYPos
-      value: 2
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_onlySpawnAbove
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_onlySpawnBelow
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_secondPointXPos
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
+      propertyPath: m_secondPointYPos
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5161702023855173458, guid: 128d6e2d5040bfc498d0098023d07b2c, type: 3}
       propertyPath: m_spawnPositionLimit.y

@@ -14,8 +14,10 @@ namespace Editor
         private Label m_spawnPosLimitLabel;
         private FloatField m_firstPointXPosition;
         private FloatField m_firstPointYPosition;
+        private FloatField m_secondPointXPosition;
+        private FloatField m_secondPointYPosition;
         
-        private Vector2Field m_spawnPositionLimit2;
+        //private Vector2Field m_spawnPositionLimit2;
         private Button m_respawnBtn;
         private Button m_spawnStarsBtn;
         private Button m_clearBtn;
@@ -60,7 +62,9 @@ namespace Editor
             m_spawnPosLimitLabel = root.Q<Label>("spawnPosLimitLabel");
             m_firstPointXPosition = root.Q<FloatField>("firstPointXFloatField");
             m_firstPointYPosition = root.Q<FloatField>("firstPointYFloatField");
-            m_spawnPositionLimit2 = root.Q<Vector2Field>("spawnPos2");
+            m_secondPointXPosition = root.Q<FloatField>("secondPointXFloatField");
+            m_secondPointYPosition = root.Q<FloatField>("secondPointYFloatField");
+            /*m_spawnPositionLimit2 = root.Q<Vector2Field>("spawnPos2");*/
             m_coloredPoints = new HashSet<VisualElement>();
 
             m_respawnBtn = root.Q<Button>("respawnButton");
@@ -78,8 +82,8 @@ namespace Editor
             m_gridIndexes = GetGridIndices(root);
             m_rowIndex    = GetTargetRow(m_firstPointXPosition.value);                       
             m_colIndex    = GetTargetCol(m_firstPointYPosition.value);
-            m_row2Index   = GetTargetRow(m_spawnPositionLimit2.value.x);
-            m_col2Index   = GetTargetCol(m_spawnPositionLimit2.value.y);
+            m_row2Index   = GetTargetRow(m_secondPointXPosition.value);
+            m_col2Index   = GetTargetCol(m_secondPointYPosition.value);
             PopulateColoredList(root, m_spawnDirectionField.value == "As Above");
         }
         #endregion
@@ -103,14 +107,29 @@ namespace Editor
                 OnFirstPositionYChange(evt, root);
                 m_starSystem.RespawnAllStars();
             });
+            // Second Point On The Grid
+            m_secondPointXPosition.RegisterValueChangedCallback(evt =>
+            {
+                ClearListBackgroundColor(root);
+                OnSecondPositionXChange(evt, root);
+                if (Application.isPlaying == false) return;
+                if (StarObjectPool.SharedInstance.GetPooledObject() == null) return;
+                m_starSystem.RespawnAllStars();
+            });
+            m_secondPointYPosition.RegisterValueChangedCallback(evt =>
+            {
+                ClearListBackgroundColor(root);
+                OnSecondPositionYChange(evt, root);
+                m_starSystem.RespawnAllStars();
+            });
             
             // Second Point On The Grid
-            m_spawnPositionLimit2.RegisterValueChangedCallback(evt =>
+            /*m_spawnPositionLimit2.RegisterValueChangedCallback(evt =>
             {
                 ClearListBackgroundColor(root);
                 OnSpawnLimit2Change(evt, root);
                 m_starSystem.RespawnAllStars();
-            });
+            });*/
             m_spawnStarsBtn.RegisterCallback<ClickEvent>(OnSpawnStarsButtonClick);
             m_clearBtn.RegisterCallback<ClickEvent>(OnClearAllStarsButtonClick);
             m_respawnBtn.RegisterCallback<ClickEvent>(OnRespawnStarsButtonClick);
@@ -204,6 +223,18 @@ namespace Editor
             var aboveBelow = m_spawnDirectionField.value == "As Above";
             PopulateColoredList(root, aboveBelow);
         }
+        private void OnSecondPositionXChange(ChangeEvent<float> evt, VisualElement root)
+        {
+            m_col2Index = GetTargetCol(evt.newValue);
+            var aboveBelow = m_spawnDirectionField.value == "As Above";
+            PopulateColoredList(root, aboveBelow);
+        }
+        private void OnSecondPositionYChange(ChangeEvent<float> evt, VisualElement root)
+        {
+            m_row2Index = GetTargetRow(evt.newValue);
+            var aboveBelow = m_spawnDirectionField.value == "As Above";
+            PopulateColoredList(root, aboveBelow);
+        }
         private void OnSpawnLimit2Change(ChangeEvent<Vector2> evt, VisualElement root)
         {
             m_col2Index = GetTargetCol(evt.newValue.x);
@@ -238,7 +269,8 @@ namespace Editor
         }
         private void PopulateColoredList(VisualElement root, bool aboveBelow)
         {
-            var secondPoint = m_spawnPositionLimit2.value;
+            //var secondPoint = m_spawnPositionLimit2.value;
+            var secondPoint = new Vector2(m_secondPointXPosition.value,m_secondPointYPosition.value);
             m_coloredPoints.Clear();
             m_slope = (secondPoint.y - m_firstPointYPosition.value) / (secondPoint.x- m_firstPointXPosition.value);
             m_slopeField.value = m_slope;

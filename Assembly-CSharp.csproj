@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerChopController.cs" />
+    <Compile Include="Assets\Scripts\GridAreaUIToolkit.cs" />
     <Compile Include="Assets\BasicUIController.cs" />
     <Compile Include="Assets\Scripts\Car.cs" />
     <Compile Include="Assets\Scripts\StarSystem.cs" />
@@ -71,6 +72,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\UXML Files\GridAreaGroupUXML.uxml" />
     <None Include="Assets\UXML Files\Car_Inspector_UXML.uxml" />
     <None Include="Assets\UI Builder\FirstUIBuild.uxml" />
     <None Include="Assets\UXML Files\StarSystem_Inspector_UXML.uxml" />
@@ -89,6 +91,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\UXML Files\GridAreaGroup.uxml" />
     <None Include="Assets\UXML Files\StarPropertyDrawerUXML.uxml" />
     <None Include="Assets\UI Toolkit\UIStarSpawnEditor.uss" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />

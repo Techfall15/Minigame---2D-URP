@@ -1,0 +1,107 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/UXML%20Files/StarSystemStyles.uss?fileID=7433441132597879392&amp;guid=75753e000c8b0c743a908829139eafe2&amp;type=3#StarSystemStyles" />
+    <ui:VisualElement name="gridAreaMain" style="flex-grow: 1;">
+        <ui:GroupBox name="spawnAreaGroup" class="myGroupBox" style="max-width: 200px; max-height: 200px; width: 200px; height: 250px; align-items: flex-start; align-self: center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; flex-direction: row; min-width: 100px; flex-wrap: wrap; min-height: 100px; justify-content: flex-start; flex-basis: 100%; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement class="gridSpace" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1; align-items: center; justify-content: center;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+            <ui:VisualElement class="gridSpace" style="flex-grow: 1;" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>

@@ -31,14 +31,57 @@ public class StarSystem : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        // Get reference for first and second point
         var firstPoint = new Vector2(m_firstPointXPos, m_firstPointYPos);
-        var screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(firstPoint * 2, m_spawnPositionLimit2 * 5);
-        Gizmos.DrawLine(new Vector2(screenBounds.x/3,Mathf.FloorToInt(screenBounds.y)),new Vector2(-screenBounds.x/3,0f));
+        var secondPoint = new Vector2(m_spawnPositionLimit2.x, m_spawnPositionLimit2.y);
+        // Get slope of line created by first and second point
+        var slope = GetSlopeOfLine(firstPoint, secondPoint);
+        // Create variable for endpoints of line
+        var endPointOne = firstPoint;
+        var endPointTwo = secondPoint;
+        endPointOne = CalculateEndPoint(100f, endPointOne, slope);
+        endPointTwo = CalculateEndPoint(100f, endPointTwo, slope);
         
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(firstPoint, 0.25f);
+        Gizmos.DrawSphere(secondPoint, 0.25f);
+        Gizmos.DrawLine(secondPoint, endPointOne);
+        Gizmos.DrawLine(firstPoint, endPointTwo);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(endPointOne, 0.1f);
+        Gizmos.DrawSphere(endPointTwo, 0.1f);
     }
 
+    private Vector2 CalculateEndPoint(float mod, Vector2 endPoint, float slope)
+    {
+        var point = endPoint;
+        var isInScreen = true;
+        do
+        {
+            if (point.x is <= -5f or >= 5f) isInScreen = false;
+            if (point.y is <= -5f or >= 5f) isInScreen = false;
+            if (endPoint == m_spawnPositionLimit2)
+            {
+                var newX = Mathf.Clamp(point.x + (1 / mod), -5f, 5f);
+                var newY = (slope < 0)
+                    ? Mathf.Clamp(point.y - (Mathf.Abs(slope) / mod), -5f, 5f)
+                    : Mathf.Clamp(point.y + (Mathf.Abs(slope) / mod), -5f, 5f);
+                point = new Vector2(newX, newY);
+            }
+            else
+            {
+                var newX = Mathf.Clamp(point.x - (1 / mod), -5f, 5f);
+                var newY = (slope > 0)
+                    ? Mathf.Clamp(point.y - (Mathf.Abs(slope) / mod), -5f, 5f)
+                    : Mathf.Clamp(point.y + (Mathf.Abs(slope) / mod), -5f, 5f);
+                point = new Vector2(newX, newY);
+            }
+            
+        } while (isInScreen);
+
+        return point;
+    }
     private void Awake()
     {
         UpdateSlopeAndYIntercept();
